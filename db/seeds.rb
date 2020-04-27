@@ -80,38 +80,38 @@ home_decor_sales = SubCategory.create!(name: 'Sales', category: home_decor)
 # Merchant - Fashion
 # Products - Fashion
 
-# Merchant - BeautyAndWellness
-# Products - BeautyAndWellness
+# Merchant - Beauty and Wellness
+# Products - Beauty and Wellness
 
 # Merchant - Food
 # Products - Food
 
-# Merchant - HomeDecor
-# Products - HomeDecor
+# Merchant - Home Decor
+# Products - Home Decor
 
 
 # Labels
-organic = Label.create!(description: 'This brand uses organic fabrics,
-  ingredients and/or comply with standards or organic farming')
-made_in_canada = Label.create!(description: "At least 70 percent of this brand's
-  merchandise is produced in Canada")
-fair_trade
-cruelty_free
-vegan
-paraben_free
-green_and_clean
-recycle_material
-transparent
-ethical
-women_founded
-
+organic = Label.create!(description: 'This brand uses/offers organic fabrics,
+  ingredients and/or comply with standards of organic farming.')
+made_in_canada = Label.create!(description: 'At least 70 percent of this brand
+  merchandise is produced in Canada.')
+fair_trade = Label.create!(description: 'This brand helps artisans in developing
+  countries achieve good trading and improves social and environmental standards.')
+cruelty_free = Label.create!(description: 'This brand does not manufacture or
+  offer products made by methods that involve experimentation on animals.')
+vegan = Label.create!(description: 'This brand does not produce products that
+  comes from animals or goods containing animal products.')
+paraben_free = Label.create!(description: 'This brand offers and/or produces
+  paraben free products')
+green_and_clean = Label.create!(description: 'This brand offers and/or produces products with
+  environmentally friendly ingredients and their procedures are designed to
+  preserve human health and environmental quality.')
+recycle_material = Label.create!(description: 'This brand offers and/or manufures
+  products made of recycled materials(s)')
+transparent = Label.create!(description: 'This brand is transparent about its
+  business activities.')
+ethical = Label.create!(description: 'This brand follows ethical pratices regarding
+  their workplace and production activities.')
+women_founded = Label.create!(description: 'This brands is women founded and/or owned.')
 
 puts 'completed'
-
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
