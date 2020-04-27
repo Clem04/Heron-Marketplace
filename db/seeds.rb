@@ -115,4 +115,3 @@ ethical = Label.create!(description: 'This brand follows ethical pratices regard
 women_founded = Label.create!(description: 'This brands is women founded and/or owned.')
 
 puts 'completed'
-
