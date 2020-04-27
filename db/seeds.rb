@@ -93,8 +93,8 @@ home_decor_sales = SubCategory.create!(name: 'Sales', category: home_decor)
 # Labels
 organic = Label.create!(description: 'This brand uses organic fabrics,
   ingredients and/or comply with standards or organic farming')
-made_in_canada = Label.create!(description: 'At least 70 percent of this brand's
-  merchandise is produced in Canada')
+made_in_canada = Label.create!(description: "At least 70 percent of this brand's
+  merchandise is produced in Canada")
 fair_trade
 cruelty_free
 vegan
