@@ -101,7 +101,7 @@ high_rise_jeans_367 = Product.create!(name: 'High Rise Jeans 367',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 79.00,
-  merchant: boutique_sleek_chic, subcategory: bottoms,
+  merchant: boutique_sleek_chic, sub_category: bottoms,
   photo: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588099235/Heron-Market/Products/High-Rise-Jeans_nfax9y.jpg')
 
 
