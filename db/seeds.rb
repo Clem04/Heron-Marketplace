@@ -3,7 +3,7 @@ puts 'seeding'
 #Clear Database
 User.destroy_all
 Merchant.destroy_all
-Product.destroy_all
+# Product.destroy_all
 Label.destroy_all
 Category.destroy_all
 SubCategory.destroy_all
@@ -79,8 +79,6 @@ home_decor_sales = SubCategory.create!(name: 'Sales', category: home_decor)
 
 # Merchant - Fashion
 # Products - Fashion
-merchant_test = Merchant.create!(name: "Merchant")
-product_test = Product.create!(name: "test" , price: "200$" , merchant: merchant_test , category: home_decor)
 
 # Merchant - Beauty and Wellness
 # Products - Beauty and Wellness
