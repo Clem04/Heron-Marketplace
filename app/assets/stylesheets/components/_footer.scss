@@ -1,0 +1,41 @@
+.footer {
+  display: flex;
+  font-family: $poppins;
+  flex-direction: column;
+  padding: 0 24px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footer-menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  h4{
+    font-size: 18px;
+  }
+  ul{
+    padding: 0;
+  }
+  li{
+    list-style: none;
+  }
+  a{
+    color: black;
+  }
+}
+.footer-socials {
+  img{
+    width: 40px;
+    padding: 0px 8px 0px 0px;
+  }
+}
+.footer-credit{
+  display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: baseline;
+    a{
+      color: $gray;
+    }
+}
