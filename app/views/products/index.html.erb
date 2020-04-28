@@ -1,6 +1,41 @@
-<h1>Products</h1>
-<% @products.each do |p| %>
-  <%= p.name %>
-  <%= p.price %>
-  <%= p.merchant.name %>
-<% end %>
+<div class="content">
+  <div>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+  </div>
+  <div class="header">
+    <h1>Products</h1>
+  </div>
+
+  <div class="list">
+    <div class="filters">
+      <p>categories</p>
+    </div>
+    <div class="product-list">
+      <% @products.each do |p| %>
+        <div class="product-card">
+          <div class="product-img" style ="background-image: url(<%= p.photo %>)">
+             <div class="price">
+                <p><%= p.price %>$</p>
+              </div>
+             <div class="product-icons">
+              <div class="icon-btn">
+                <a href="#"><%= image_tag 'love-list-icon'%></a>
+              </div>
+              <div class="icon-btn">
+                <a href="#"><%= image_tag 'shopping-bag-icon' %></a>
+              </div>
+             </div>
+           </div>
+          <div class="product-infos">
+            <h4><%= p.name %></h4>
+            <p><%= p.merchant.name %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+</div>

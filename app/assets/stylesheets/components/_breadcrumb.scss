@@ -1,0 +1,12 @@
+.breadcrumb{
+  background: white;
+  font-family: $poppins;
+}
+.breadcrumb-item{
+  a{
+    color: $light-gray;
+  }
+}
+.breadcrumb-item.active {
+  color: $gray;
+}
