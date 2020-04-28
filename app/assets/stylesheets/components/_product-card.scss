@@ -1,0 +1,35 @@
+.product-list{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+.product-img{
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+}
+.product-icons{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+.icon-btn{
+  img{
+    width:30px;
+  }
+}
+.price{
+  padding: 10px;
+  font-size: 1.3rem;
+}
+.product-infos{
+  h4{
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+}

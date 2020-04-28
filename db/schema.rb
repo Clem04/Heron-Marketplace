@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_27_184807) do
+ActiveRecord::Schema.define(version: 2020_04_28_171009) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,6 +44,10 @@ ActiveRecord::Schema.define(version: 2020_04_27_184807) do
     t.string "website"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "picture_1"
+    t.string "picture_2"
+    t.string "picture_3"
+    t.string "picture_4"
   end
 
   create_table "order_items", force: :cascade do |t|
@@ -71,7 +75,7 @@ ActiveRecord::Schema.define(version: 2020_04_27_184807) do
   create_table "products", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.string "string"
+    t.string "photo"
     t.decimal "price"
     t.integer "score"
     t.string "currency"
@@ -105,6 +109,7 @@ ActiveRecord::Schema.define(version: 2020_04_27_184807) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "points"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
