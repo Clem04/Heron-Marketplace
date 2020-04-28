@@ -26,8 +26,7 @@ ines = User.create!(first_name: 'ines', last_name: 'Belghiti',
 fashion = Category.create!(name: 'Fashion')
 # SubCategories - Fashion
 tops = SubCategory.create!(name: 'Tops', category: fashion)
-pants = SubCategory.create!(name: 'Pants', category: fashion)
-skirts = SubCategory.create!(name: 'Skirts', category: fashion)
+bottoms = SubCategory.create!(name: 'Bottoms', category: fashion)
 underwears = SubCategory.create!(name: 'Underwears', category: fashion)
 shoes = SubCategory.create!(name: 'Shoes', category: fashion)
 jewelleries = SubCategory.create!(name: 'Jewelleries', category: fashion)
@@ -78,16 +77,84 @@ home_decor_sales = SubCategory.create!(name: 'Sales', category: home_decor)
 
 
 # Merchant - Fashion
+boutique_sleek_chic = Merchant.create!(name: 'Boutique sleek Chic',
+  description: 'Excepteur duis deserunt qui tempor velit veniam eu cupidatat
+  irure consectetur occaecat duis. In duis consectetur occaecat tempor minim
+  consectetur sint ', location: 'Montreal, Qc Canada',
+  public_email: 'info@boutiquesleekchic.com', facebook: 'www.facebook.com',
+  instagram: 'www.instagram.com', comment: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.',
+  website: 'https://www.sleekchic.net',
+  picture_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091050/Heron-Market/SleekChic-Photo1_uc0pfn.jpg',
+  picture_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091025/Heron-Market/SleekChic-Photo2_rajrqi.jpg',
+  picture_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091042/Heron-Market/SleekChic-Photo3_vpkq9q.jpg',
+  picture_4: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091028/Heron-Market/SleekChic-Photo4_at7ecu.jpg')
 # Products - Fashion
 
+
 # Merchant - Beauty and Wellness
+bare_beauty = Merchant.create!(name: 'Bare Beauty',
+  description: 'Excepteur duis deserunt qui tempor velit veniam eu cupidatat
+  irure consectetur occaecat duis. In duis consectetur occaecat tempor minim
+  consectetur sint ', location: 'Montreal, Qc Canada',
+  public_email: 'info@boutiquesleekchic.com', facebook: 'www.facebook.com',
+  instagram: 'www.instagram.com', comment: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.',
+  website: 'https://www.barebeauty.ca',
+  picture_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091074/Heron-Market/BareBeauty-BathInspo_b25zkz.jpg',
+  picture_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091010/Heron-Market/BareBeauty-Product_kcnuud.jpg',
+  picture_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091036/Heron-Market/BareBeauty-NailPolisg_mthses.jpg',
+  picture_4: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091047/Heron-Market/BareBeauty-EssentialOils_jkwoq5.jpg')
 # Products - Beauty and Wellness
 
+
 # Merchant - Food
+rustic_grocery = Merchant.create!(name: 'Rustic Grocery',
+  description: 'Excepteur duis deserunt qui tempor velit veniam eu cupidatat
+  irure consectetur occaecat duis. In duis consectetur occaecat tempor minim
+  consectetur sint ', location: 'Montreal, Qc Canada',
+  public_email: 'info@boutiquesleekchic.com', facebook: 'www.facebook.com',
+  instagram: 'www.instagram.com', comment: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.',
+  website: 'https://www.rusticgrocery.com',
+  picture_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091074/Heron-Market/RusticGrocery-Front-Store_qtrofr.jpg',
+  picture_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091080/Heron-Market/RusticGrocery-Fruits-Picking_lx92dc.jpg',
+  picture_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091071/Heron-Market/RusticGrocery-Bakery_kl0ycx.jpg',
+  picture_4: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091058/Heron-Market/RusticGrocery-Meat_ac5n8b.jpg')
 # Products - Food
 
+
 # Merchant - Home Decor
+wild_bungalow = Merchant.create!(name: 'Wild Bungalow',
+  description: 'Excepteur duis deserunt qui tempor velit veniam eu cupidatat
+  irure consectetur occaecat duis. In duis consectetur occaecat tempor minim
+  consectetur sint ', location: 'Montreal, Qc Canada',
+  public_email: 'info@boutiquesleekchic.com', facebook: 'www.facebook.com',
+  instagram: 'www.instagram.com', comment: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.',
+  website: 'https://www.wildbungalow.com',
+  picture_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091027/Heron-Market/HomeDecor-Photo1_f1w93m.jpg',
+  picture_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091086/Heron-Market/HomeDecor-Photo2_yhe9ww.jpg',
+  picture_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091042/Heron-Market/HomeDecor-Photo3_z9xjo8.jpg',
+  picture_4: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091063/Heron-Market/HomeDecor-Photo4_vofz6u.jpg')
 # Products - Home Decor
+
 
 
 # Labels
