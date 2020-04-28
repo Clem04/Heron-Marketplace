@@ -89,10 +89,10 @@ boutique_sleek_chic = Merchant.create!(name: 'Boutique sleek Chic',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.',
   website: 'https://www.sleekchic.net',
-  image1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091050/Heron-Market/SleekChic-Photo1_uc0pfn.jpg',
-  image2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091025/Heron-Market/SleekChic-Photo2_rajrqi.jpg',
-  image3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091042/Heron-Market/SleekChic-Photo3_vpkq9q.jpg',
-  image4: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091028/Heron-Market/SleekChic-Photo4_at7ecu.jpg')
+  picture_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091050/Heron-Market/SleekChic-Photo1_uc0pfn.jpg',
+  picture_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091025/Heron-Market/SleekChic-Photo2_rajrqi.jpg',
+  picture_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091042/Heron-Market/SleekChic-Photo3_vpkq9q.jpg',
+  picture_4: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091028/Heron-Market/SleekChic-Photo4_at7ecu.jpg')
 # Products - Fashion
 
 
@@ -109,10 +109,10 @@ bare_beauty = Merchant.create!(name: 'Bare Beauty',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.',
   website: 'https://www.barebeauty.ca',
-  image1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091074/Heron-Market/BareBeauty-BathInspo_b25zkz.jpg',
-  image2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091010/Heron-Market/BareBeauty-Product_kcnuud.jpg',
-  image3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091036/Heron-Market/BareBeauty-NailPolisg_mthses.jpg',
-  image4: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091047/Heron-Market/BareBeauty-EssentialOils_jkwoq5.jpg')
+  picture_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091074/Heron-Market/BareBeauty-BathInspo_b25zkz.jpg',
+  picture_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091010/Heron-Market/BareBeauty-Product_kcnuud.jpg',
+  picture_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091036/Heron-Market/BareBeauty-NailPolisg_mthses.jpg',
+  picture_4: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091047/Heron-Market/BareBeauty-EssentialOils_jkwoq5.jpg')
 # Products - Beauty and Wellness
 
 
@@ -129,10 +129,10 @@ rustic_grocery = Merchant.create!(name: 'Rustic Grocery',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.',
   website: 'https://www.rusticgrocery.com',
-  image1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091074/Heron-Market/RusticGrocery-Front-Store_qtrofr.jpg',
-  image2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091080/Heron-Market/RusticGrocery-Fruits-Picking_lx92dc.jpg',
-  image3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091071/Heron-Market/RusticGrocery-Bakery_kl0ycx.jpg',
-  image4: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091058/Heron-Market/RusticGrocery-Meat_ac5n8b.jpg')
+  picture_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091074/Heron-Market/RusticGrocery-Front-Store_qtrofr.jpg',
+  picture_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091080/Heron-Market/RusticGrocery-Fruits-Picking_lx92dc.jpg',
+  picture_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091071/Heron-Market/RusticGrocery-Bakery_kl0ycx.jpg',
+  picture_4: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091058/Heron-Market/RusticGrocery-Meat_ac5n8b.jpg')
 # Products - Food
 
 
@@ -149,10 +149,10 @@ wild_bungalow = Merchant.create!(name: 'Wild Bungalow',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.',
   website: 'https://www.wildbungalow.com',
-  image1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091027/Heron-Market/HomeDecor-Photo1_f1w93m.jpg',
-  image2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091086/Heron-Market/HomeDecor-Photo2_yhe9ww.jpg',
-  image3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091042/Heron-Market/HomeDecor-Photo3_z9xjo8.jpg',
-  image4: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091063/Heron-Market/HomeDecor-Photo4_vofz6u.jpg')
+  picture_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091027/Heron-Market/HomeDecor-Photo1_f1w93m.jpg',
+  picture_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091086/Heron-Market/HomeDecor-Photo2_yhe9ww.jpg',
+  picture_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091042/Heron-Market/HomeDecor-Photo3_z9xjo8.jpg',
+  picture_4: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091063/Heron-Market/HomeDecor-Photo4_vofz6u.jpg')
 # Products - Home Decor
 
 
