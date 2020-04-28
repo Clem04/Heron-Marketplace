@@ -94,6 +94,15 @@ boutique_sleek_chic = Merchant.create!(name: 'Boutique sleek Chic',
   picture_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091042/Heron-Market/SleekChic-Photo3_vpkq9q.jpg',
   picture_4: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091028/Heron-Market/SleekChic-Photo4_at7ecu.jpg')
 # Products - Fashion
+high_rise_jeans_367 = Product.create!(name: 'High Rise Jeans 367',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 79.00,
+  merchant: boutique_sleek_chic, subcategory: bottoms,
+  photo: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588099235/Heron-Market/Products/High-Rise-Jeans_nfax9y.jpg')
 
 
 # Merchant - Beauty and Wellness
