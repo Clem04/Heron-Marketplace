@@ -3,7 +3,7 @@ puts 'seeding'
 #Clear Database
 User.destroy_all
 Merchant.destroy_all
-# Products.destroy_all
+# Product.destroy_all
 Label.destroy_all
 Category.destroy_all
 SubCategory.destroy_all
