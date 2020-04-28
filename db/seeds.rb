@@ -26,8 +26,7 @@ ines = User.create!(first_name: 'ines', last_name: 'Belghiti',
 fashion = Category.create!(name: 'Fashion')
 # SubCategories - Fashion
 tops = SubCategory.create!(name: 'Tops', category: fashion)
-pants = SubCategory.create!(name: 'Pants', category: fashion)
-skirts = SubCategory.create!(name: 'Skirts', category: fashion)
+bottoms = SubCategory.create!(name: 'Bottoms', category: fashion)
 underwears = SubCategory.create!(name: 'Underwears', category: fashion)
 shoes = SubCategory.create!(name: 'Shoes', category: fashion)
 jewelleries = SubCategory.create!(name: 'Jewelleries', category: fashion)
@@ -78,16 +77,68 @@ home_decor_sales = SubCategory.create!(name: 'Sales', category: home_decor)
 
 
 # Merchant - Fashion
+boutique_sleek_chic = Merchant.create!(name: 'Boutique sleek Chic',
+  description: 'Excepteur duis deserunt qui tempor velit veniam eu cupidatat
+  irure consectetur occaecat duis. In duis consectetur occaecat tempor minim
+  consectetur sint ', location: 'Montreal, Qc Canada',
+  public_email: 'info@boutiquesleekchic.com', facebook: 'www.facebook.com',
+  instagram: 'www.instagram.com', comment: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.',
+  website: 'https://www.sleekchic.net')
 # Products - Fashion
 
+
 # Merchant - Beauty and Wellness
+bare_beauty = Merchant.create!(name: 'Bare Beauty',
+  description: 'Excepteur duis deserunt qui tempor velit veniam eu cupidatat
+  irure consectetur occaecat duis. In duis consectetur occaecat tempor minim
+  consectetur sint ', location: 'Montreal, Qc Canada',
+  public_email: 'info@boutiquesleekchic.com', facebook: 'www.facebook.com',
+  instagram: 'www.instagram.com', comment: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.',
+  website: 'https://www.barebeauty.ca')
 # Products - Beauty and Wellness
 
+
 # Merchant - Food
+rustic_grocery = Merchant.create!(name: 'Rustic Grocery',
+  description: 'Excepteur duis deserunt qui tempor velit veniam eu cupidatat
+  irure consectetur occaecat duis. In duis consectetur occaecat tempor minim
+  consectetur sint ', location: 'Montreal, Qc Canada',
+  public_email: 'info@boutiquesleekchic.com', facebook: 'www.facebook.com',
+  instagram: 'www.instagram.com', comment: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.',
+  website: 'https://www.rusticgrocery.com')
 # Products - Food
 
+
 # Merchant - Home Decor
+wild_bungalow = Merchant.create!(name: 'Wild Bungalow',
+  description: 'Excepteur duis deserunt qui tempor velit veniam eu cupidatat
+  irure consectetur occaecat duis. In duis consectetur occaecat tempor minim
+  consectetur sint ', location: 'Montreal, Qc Canada',
+  public_email: 'info@boutiquesleekchic.com', facebook: 'www.facebook.com',
+  instagram: 'www.instagram.com', comment: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.',
+  website: 'https://www.wildbungalow.com')
 # Products - Home Decor
+
 
 
 # Labels
