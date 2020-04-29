@@ -1,4 +1,9 @@
-<h4>Category: <%= @category.name %> </h4>
+<!-- category name -->
+<h4><%= @category.name %></h4>
+<!-- list of the sub categories -->
+<% @category.sub_categories.each do |sub_category| %>
+  <p><%= sub_category.name %></p>
+<% end %>
 <% @products.each do |sub_category_products| %>
     <% sub_category_products.each do |product|   %>
       <p><%= product.name %></p>
