@@ -5,4 +5,8 @@ class ProductsController < ApplicationController
       sub_category.products
     end
   end
+
+  def show
+    @product = Product.find(params[:id])
+  end
 end
