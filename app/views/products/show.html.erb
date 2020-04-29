@@ -1,1 +1,17 @@
-<%= @product.name %>
+<!-- product name -->
+<p><%= @product.name %></p>
+<!-- product picture -->
+<p><%= @product.photo %></p>
+<!-- product sub category -->
+<p><%= @product.sub_category.name %></p>
+<!-- product category -->
+<p><%= @product.sub_category.category.name %></p>
+<!-- price -->
+<p><%= @product.price %></p>
+<!-- nb of points it would bring to buy one -->
+<p><%= @product.score %></p>
+<!-- product description -->
+<p><%= @product.description %></p>
+<!-- product merchant -->
+<p><%= @product.merchant.name %></p>
+<!-- add to cart -->
