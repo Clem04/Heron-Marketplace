@@ -105,6 +105,92 @@ high_rise_jeans_367 = Product.create!(name: 'High Rise Jeans 367',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 79.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: bottoms.id,
   photo: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588099235/Heron-Market/Products/High-Rise-Jeans_nfax9y.jpg')
+black_backpack = Product.create!(name: 'Black Backpack',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 50.99,
+  merchant_id: boutique_sleek_chic.id, sub_category_id: bags.id,
+  photo: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175277/Heron-Market/Products/Black-Backpack_qnkoe5.jpg')
+red_dress = Product.create!(name: 'Red Dress',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 120.99,
+  merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id,
+  photo: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175245/Heron-Market/Products/Dress-Red-Front_znsbup.jpg',
+  photo_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175269/Heron-Market/Products/Dress-Red-Back_jf1hrm.jpg',
+  photo_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175271/Heron-Market/Products/Dress-Red-Details-Back_fww2ud.jpg')
+pink_heels = Product.create!(name: 'Pink Heels',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 118.99,
+  merchant_id: boutique_sleek_chic.id, sub_category_id: shoes.id,
+  photo: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175271/Heron-Market/Products/Pink-Heels_xwtoy9.jpg')
+scarf_blue = Product.create!(name: 'Blue Scarf',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 25.00,
+  merchant_id: boutique_sleek_chic.id, sub_category_id: scarves_and_belts.id,
+  photo: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175267/Heron-Market/Products/Scarf-Blue_eoastr.jpg')
+scarf_red = Product.create!(name: 'Red Scarf',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 25.00,
+  merchant_id: boutique_sleek_chic.id, sub_category_id: scarves_and_belts.id,
+  photo: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175207/Heron-Market/Products/Scarf-Red_pisovv.jpg')
+satin_blouse = Product.create!(name: 'Satin Blouse',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 89.99,
+  merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id,
+  photo: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175183/Heron-Market/Products/Satin-Blouse-Front_ud14op.jpg',
+  photo_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175171/Heron-Market/Products/Satin-Blouse-Details-Front_hrnoc9.jpg',
+  photo_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175177/Heron-Market/Products/Satin-Blouse-Back_bpbqxb.jpg')
+mid_rise_jeans = Product.create!(name: 'Mid-Rise Jeans 367',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 75.00,
+  merchant_id: boutique_sleek_chic.id, sub_category_id: bottoms.id,
+  photo: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588098951/Heron-Market/Products/Mid-Rise-Jeans367_n4eict.jpg')
+sweater_pink = Product.create!(name: 'Pink Sweater',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 67.00,
+  merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id,
+  photo: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588098951/Heron-Market/Products/pink-sweater_m8pyvw.jpg')
+over_the_knee_boots = Product.create!(name: 'Suede Over-the-Knee Boots',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 110.00,
+  merchant_id: boutique_sleek_chic.id, sub_category_id: shoes.id,
+  photo: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175207/Heron-Market/Products/Over-The-Knee-Boots_dms3zy.jpg')
+
 
 
 # Merchant - Beauty and Wellness
