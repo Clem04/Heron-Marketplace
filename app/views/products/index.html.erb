@@ -1,3 +1,51 @@
+<div class="content">
+  <div>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+  </div>
+  <div class="header">
+    <h1>Products</h1>
+  </div>
+  <div class="refine-results">
+    <div id="sort"><p>Sort by:</p></div>
+    <div class="search-input"><input type="text"></div>
+  </div>
+  <div class="list">
+    <div class="filters">
+      <p>categories</p>
+    </div>
+    <div class="product-list">
+      <% @products.each do |sub_category_products| %>
+        <% sub_category_products.each do |product|   %>
+          <%= link_to category_product_path(@category, product) do %>
+            <div class="product-card">
+              <div class="product-img" style ="background-image: url(<%= product.photo %>)">
+                <div class="price">
+                  <p><%= prodcut.price %>$</p>
+                </div>
+                <div class="product-icons">
+                  <div class="icon-btn">
+                    <a href="#"><%= image_tag 'love-list-icon'%></a>
+                  </div>
+                  <div class="icon-btn">
+                    <a href="#"><%= image_tag 'shopping-bag-icon' %></a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-infos">
+                <h4><%= product.name %></h4>
+                <p><%= product.merchant.name %></p>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+
+</div>
 
 <!-- category name -->
 <h4><%= @category.name %></h4>
@@ -5,12 +53,6 @@
 <% @category.sub_categories.each do |sub_category| %>
   <p><%= sub_category.name %></p>
 <% end %>
-<% @products.each do |sub_category_products| %>
-    <% sub_category_products.each do |product|   %>
-      <%= link_to category_product_path(@category, product) do %>
-        <p><%= product.name %></p>
-        <p><%= product.price %></p>
-        <p><%= product.merchant.name %></p>
-      <% end %>
-    <% end %>
-<% end %>
+
+
+

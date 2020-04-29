@@ -1,8 +1,7 @@
 .product-list{
-  display: flex;
-  align-items: center;
-  justify-content:space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
 }
 .product-img{
   height: 250px;
@@ -26,9 +25,11 @@
 .price{
   padding: 10px;
   font-size: 1.3rem;
+  font-family: $pt-serif;
 }
 .product-infos{
   h4{
+    font-size: 1.2rem;
     margin-bottom: 0;
     margin-top: 10px;
   }
