@@ -104,7 +104,93 @@ high_rise_jeans_367 = Product.create!(name: 'High Rise Jeans 367',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 79.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: bottoms.id,
-  photo: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588099235/Heron-Market/Products/High-Rise-Jeans_nfax9y.jpg')
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588099235/Heron-Market/Products/High-Rise-Jeans_nfax9y.jpg')
+black_backpack = Product.create!(name: 'Black Backpack',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 50.99,
+  merchant_id: boutique_sleek_chic.id, sub_category_id: bags.id,
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175277/Heron-Market/Products/Black-Backpack_qnkoe5.jpg')
+red_dress = Product.create!(name: 'Red Dress',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 120.99,
+  merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id,
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175245/Heron-Market/Products/Dress-Red-Front_znsbup.jpg',
+  photo_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175269/Heron-Market/Products/Dress-Red-Back_jf1hrm.jpg',
+  photo_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175271/Heron-Market/Products/Dress-Red-Details-Back_fww2ud.jpg')
+pink_heels = Product.create!(name: 'Pink Heels',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 118.99,
+  merchant_id: boutique_sleek_chic.id, sub_category_id: shoes.id,
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175271/Heron-Market/Products/Pink-Heels_xwtoy9.jpg')
+scarf_blue = Product.create!(name: 'Blue Scarf',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 25.00,
+  merchant_id: boutique_sleek_chic.id, sub_category_id: scarves_and_belts.id,
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175267/Heron-Market/Products/Scarf-Blue_eoastr.jpg')
+scarf_red = Product.create!(name: 'Red Scarf',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 25.00,
+  merchant_id: boutique_sleek_chic.id, sub_category_id: scarves_and_belts.id,
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175207/Heron-Market/Products/Scarf-Red_pisovv.jpg')
+satin_blouse = Product.create!(name: 'Satin Blouse',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 89.99,
+  merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id,
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175183/Heron-Market/Products/Satin-Blouse-Front_ud14op.jpg',
+  photo_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175171/Heron-Market/Products/Satin-Blouse-Details-Front_hrnoc9.jpg',
+  photo_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175177/Heron-Market/Products/Satin-Blouse-Back_bpbqxb.jpg')
+mid_rise_jeans = Product.create!(name: 'Mid-Rise Jeans 367',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 75.00,
+  merchant_id: boutique_sleek_chic.id, sub_category_id: bottoms.id,
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588098951/Heron-Market/Products/Mid-Rise-Jeans367_n4eict.jpg')
+sweater_pink = Product.create!(name: 'Pink Sweater',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 67.00,
+  merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id,
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588098951/Heron-Market/Products/pink-sweater_m8pyvw.jpg')
+over_the_knee_boots = Product.create!(name: 'Suede Over-the-Knee Boots',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 110.00,
+  merchant_id: boutique_sleek_chic.id, sub_category_id: shoes.id,
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175207/Heron-Market/Products/Over-The-Knee-Boots_dms3zy.jpg')
+
 
 
 # Merchant - Beauty and Wellness
@@ -170,26 +256,37 @@ wild_bungalow = Merchant.create!(name: 'Wild Bungalow',
 
 # Labels
 organic = Label.create!(description: 'This brand uses/offers organic fabrics,
-  ingredients and/or comply with standards of organic farming.')
+  ingredients and/or comply with standards of organic farming.',
+  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/Organic_-_Label_nqbzbh.png')
 made_in_canada = Label.create!(description: 'At least 70 percent of this brand
-  merchandise is produced in Canada.')
+  merchandise is produced in Canada.',
+  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/MadeInCanada-Label_thqrob.png')
 fair_trade = Label.create!(description: 'This brand helps artisans in developing
-  countries achieve good trading and improves social and environmental standards.')
+  countries achieve good trading and improves social and environmental standards.',
+  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/FairTrade-Label_atozrh.png')
 cruelty_free = Label.create!(description: 'This brand does not manufacture or
-  offer products made by methods that involve experimentation on animals.')
+  offer products made by methods that involve experimentation on animals.',
+  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/CrueltyFree-Label_bodsdp.png')
 vegan = Label.create!(description: 'This brand does not produce products that
-  comes from animals or goods containing animal products.')
+  comes from animals or goods containing animal products.',
+  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/Vegan-Label_w0oss7.png')
 paraben_free = Label.create!(description: 'This brand offers and/or produces
-  paraben free products')
+  paraben free products',
+  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/ParabenFree-Label_hphsok.png')
 green_and_clean = Label.create!(description: 'This brand offers and/or produces products with
   environmentally friendly ingredients and their procedures are designed to
-  preserve human health and environmental quality.')
+  preserve human health and environmental quality.',
+  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/GreenAndClean-Label_hulnkv.png')
 recycle_material = Label.create!(description: 'This brand offers and/or manufures
-  products made of recycled materials(s)')
+  products made of recycled materials(s)',
+  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/RecycleMaterial-Label_uhbgga.png')
 transparent = Label.create!(description: 'This brand is transparent about its
-  business activities.')
+  business activities.',
+  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/Transparency-Label_dnlgmt.png')
 ethical = Label.create!(description: 'This brand follows ethical pratices regarding
-  their workplace and production activities.')
-women_founded = Label.create!(description: 'This brands is women founded and/or owned.')
+  their workplace and production activities.',
+  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/Ethical-Label_kbypfh.png')
+women_founded = Label.create!(description: 'This brands is women founded and/or owned.',
+  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/WomanFounded-Label_ldxtys.png')
 
 puts 'completed'
