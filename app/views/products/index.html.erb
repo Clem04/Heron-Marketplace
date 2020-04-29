@@ -1,6 +1,8 @@
-<h1>Products</h1>
-<% @products.each do |p| %>
-  <%= p.name %>
-  <%= p.price %>
-  <%= p.merchant.name %>
+
+<% @products.each do |sub_category_products| %>
+    <% sub_category_products.each do |product|   %>
+      <p><%= product.name %></p>
+      <p><%= product.price %></p>
+      <p><%= product.merchant.name %></p>
+    <% end %>
 <% end %>

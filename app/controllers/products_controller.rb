@@ -3,6 +3,7 @@ class ProductsController < ApplicationController
     @category = Category.find(params[:category_id])
     @products = @category.sub_categories.map do |sub_category|
       sub_category.products
-    end.uniq
+    end
+    raise
   end
 end
