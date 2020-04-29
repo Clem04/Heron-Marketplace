@@ -6,7 +6,7 @@
     </ol>
   </div>
   <div class="header">
-    <h1>Products</h1>
+    <h1><%= @category.name %></h1>
   </div>
   <div class="refine-results">
     <div id="sort"><p>Sort by:</p></div>
@@ -14,7 +14,15 @@
   </div>
   <div class="list">
     <div class="filters">
-      <p>categories</p>
+      <h5>Category</h5>
+      <ul>
+      <% @category.sub_categories.each do |sub_category| %>
+      <div class="filter">
+        <li><%= sub_category.name %></li>
+        <li><%= sub_category.products.count %></li>
+      </div>
+      <% end %>
+      </ul>
     </div>
     <div class="product-list">
       <% @products.each do |sub_category_products| %>
@@ -48,11 +56,9 @@
 </div>
 
 <!-- category name -->
-<h4><%= @category.name %></h4>
+<h4></h4>
 <!-- list of the sub categories -->
-<% @category.sub_categories.each do |sub_category| %>
-  <p><%= sub_category.name %></p>
-<% end %>
+
 
 
 
