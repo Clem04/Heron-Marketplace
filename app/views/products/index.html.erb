@@ -7,8 +7,10 @@
 <% end %>
 <% @products.each do |sub_category_products| %>
     <% sub_category_products.each do |product|   %>
-      <p><%= product.name %></p>
-      <p><%= product.price %></p>
-      <p><%= product.merchant.name %></p>
+      <%= link_to category_product_path(product) do %>
+        <p><%= product.name %></p>
+        <p><%= product.price %></p>
+        <p><%= product.merchant.name %></p>
+      <% end %>
     <% end %>
 <% end %>
