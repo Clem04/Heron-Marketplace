@@ -4,6 +4,5 @@ class ProductsController < ApplicationController
     @products = @category.sub_categories.map do |sub_category|
       sub_category.products
     end
-    raise
   end
 end
