@@ -1,11 +1,13 @@
+// display product card as grid
 .product-details-card{
-  display: flex;
-  justify-content:space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 24px;
   width: 100%;
+  margin-bottom: 24px;
 }
-.product-details{
-  flex-grow: 1;
-}
+
+// product info: name-merchant-sku
 .product-details-header{
   display:flex;
   width: 50%;
@@ -30,11 +32,14 @@
   }
 }
 
+// section with product variation
 .product-variations{
   p{
     font-family: $poppins;
   }
 }
+
+// product colors filter
 .product-colors{
   margin-bottom: 16px;
   p{
@@ -54,9 +59,22 @@
   height: 60px;
   border-radius: 50%;
 }
+
+// product price
 .product-price{
   p{
   font-weight: 400;
   font-size: 18px;
+  }
+}
+
+// product description
+.product-description{
+  h3{
+    font-size: 1.30rem;
+  }
+  p{
+    font-family: $poppins;
+    font-weight: 100;
   }
 }
