@@ -29,20 +29,27 @@
         <a href=""><%= @product.merchant.name %></a>
         <h1><%= @product.name %></h1>
         <p>SKU NO: SKU3792</p>
+        <div class="product-variations">
+          <div class="product-colors">
+            <p>Colors:</p>
+            <div class="colors">
+              <div class="color" style="background-color: #FFD9E7 "></div>
+              <div class="color" style="background-color: #FFE2AB "></div>
+              <div class="color" style="background-color: #A9DAEA "></div>
+              <div class="color" style="background-color: #C1A3CF "></div>
+            </div>
+          </div>
+          <div class="product-price">
+            <p>Price: <%= @product.price %>$</p>
+          </div>
+          <button type="button" class="add-cart-btn">ADD TO CART</button>
+        </div>
       </div>
       <div class="icon-btn">
         <a href="#"><%= image_tag 'love-list-icon'%></a>
       </div>
     </div>
-    <div class="product-variations">
-      <div class="product-colors">
-        <p>Colors:</p>
-      </div>
-      <div class="product-price">
-        <p>Price: <%= @product.price %>$</p>
-      </div>
-      <button type="button" class="add-cart-btn">Add to cart</button>
-    </div>
+
   </div>
 </div>
 

@@ -36,7 +36,27 @@
   }
 }
 .product-colors{
+  margin-bottom: 16px;
   p{
     text-decoration: underline;
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+.colors{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 30%;
+  grid-gap: 8px;
+}
+.color{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.product-price{
+  p{
+  font-weight: 400;
+  font-size: 18px;
   }
 }
