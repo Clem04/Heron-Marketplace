@@ -623,7 +623,7 @@ chocovanilla_cake = Product.create!(name: 'Chocovanilla Cake',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 30.95,
-  merchant_id: rustic_grocery, sub_category_id: bread_and_bakery.id,
+  merchant_id: rustic_grocery.id, sub_category_id: bread_and_bakery.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197568/Heron-Market/Products/Food/Chocovanilla-Cake_cj43uv.jpg')
 reusable_bag = Product.create!(name: 'Brown Reusable Bag',
   description: 'Elit labore dolore voluptate
@@ -632,7 +632,7 @@ reusable_bag = Product.create!(name: 'Brown Reusable Bag',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 5.99,
-  merchant_id: rustic_grocery, sub_category_id: organic_goods.id,
+  merchant_id: rustic_grocery.id, sub_category_id: organic_goods.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197447/Heron-Market/Products/Food/Reusable-Bag_vqvjwd.jpg')
 coffee = Product.create!(name: 'Dark Coffe Beans',
   description: 'Elit labore dolore voluptate
@@ -641,7 +641,7 @@ coffee = Product.create!(name: 'Dark Coffe Beans',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 25.90,
-  merchant_id: rustic_grocery, sub_category_id: beverages.id,
+  merchant_id: rustic_grocery.id, sub_category_id: beverages.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197543/Heron-Market/Products/Food/coffee_akhhag.jpg')
 cookies_snack = Product.create!(name: 'Apple Cookies',
   description: 'Elit labore dolore voluptate
@@ -659,7 +659,7 @@ cupcake = Product.create!(name: 'Straberry & Vanilla Cupcake',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 18.99,
-  merchant_id: rustic_grocery, sub_category_id: bread_and_bakery.id,
+  merchant_id: rustic_grocery.id, sub_category_id: bread_and_bakery.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197549/Heron-Market/Products/Food/cupcake_j5fbeh.jpg')
 eart_juice = Product.create!(name: 'Earthy Juice',
   description: 'Elit labore dolore voluptate
@@ -668,7 +668,7 @@ eart_juice = Product.create!(name: 'Earthy Juice',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 9.97,
-  merchant_id: rustic_grocery, sub_category_id: beverages.id,
+  merchant_id: rustic_grocery.id, sub_category_id: beverages.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197542/Heron-Market/Products/Food/Earth-Juice_n40mln.jpg')
 habit_drink = Product.create!(name: 'Habit Healthy Juice',
   description: 'Elit labore dolore voluptate
@@ -677,7 +677,7 @@ habit_drink = Product.create!(name: 'Habit Healthy Juice',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 8.67,
-  merchant_id: rustic_grocery, sub_category_id: beverages.id,
+  merchant_id: rustic_grocery.id, sub_category_id: beverages.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197540/Heron-Market/Products/Food/Habit-Drinks_lzhkgw.jpg')
 maccaron = Product.create!(name: 'Sweet French Maccaron',
   description: 'Elit labore dolore voluptate
@@ -686,7 +686,7 @@ maccaron = Product.create!(name: 'Sweet French Maccaron',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 14.99,
-  merchant_id: rustic_grocery, sub_category_id: bread_and_bakery.id,
+  merchant_id: rustic_grocery.id, sub_category_id: bread_and_bakery.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197489/Heron-Market/Products/Food/Maccaron_mbuplk.jpg')
 mixed_granola = Product.create!(name: 'Mixed Granola',
   description: 'Elit labore dolore voluptate
@@ -695,7 +695,7 @@ mixed_granola = Product.create!(name: 'Mixed Granola',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 7.99,
-  merchant_id: rustic_grocery, sub_category_id: snacks_cookies.id,
+  merchant_id: rustic_grocery.id, sub_category_id: snacks_cookies.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197465/Heron-Market/Products/Food/mixed-granola_pfmxdj.jpg')
 organic_oil = Product.create!(name: 'Zen Organic Oil',
   description: 'Elit labore dolore voluptate
@@ -704,7 +704,7 @@ organic_oil = Product.create!(name: 'Zen Organic Oil',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 10.98,
-  merchant_id: rustic_grocery, sub_category_id: organic_goods.id,
+  merchant_id: rustic_grocery.id, sub_category_id: organic_goods.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197501/Heron-Market/Products/Food/Organic_Oil_kalw6t.jpg')
 popcorn = Product.create!(name: 'Buttery Popcorn',
   description: 'Elit labore dolore voluptate
@@ -713,7 +713,7 @@ popcorn = Product.create!(name: 'Buttery Popcorn',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 6.90,
-  merchant_id: rustic_grocery, sub_category_id: snacks_cookies.id,
+  merchant_id: rustic_grocery.id, sub_category_id: snacks_cookies.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197444/Heron-Market/Products/Food/popcorn_qbb81a.jpg')
 pressed_juice = Product.create!(name: 'Fruity Pressed Juice',
   description: 'Elit labore dolore voluptate
@@ -722,7 +722,7 @@ pressed_juice = Product.create!(name: 'Fruity Pressed Juice',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 7.90,
-  merchant_id: rustic_grocery, sub_category_id: beverages.id,
+  merchant_id: rustic_grocery.id, sub_category_id: beverages.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197497/Heron-Market/Products/Food/Pressed_Juice_fqt2ij.jpg')
 milk_bottle = Product.create!(name: 'Cow Milk',
   description: 'Elit labore dolore voluptate
@@ -731,7 +731,7 @@ milk_bottle = Product.create!(name: 'Cow Milk',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 6.90,
-  merchant_id: rustic_grocery, sub_category_id: dairy_and_eggs.id,
+  merchant_id: rustic_grocery.id, sub_category_id: dairy_and_eggs.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197477/Heron-Market/Products/Food/Milk-Bottle_r10nvu.jpg')
 brocoli = Product.create!(name: 'Brocoli',
   description: 'Elit labore dolore voluptate
@@ -740,7 +740,7 @@ brocoli = Product.create!(name: 'Brocoli',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 3.99,
-  merchant_id: rustic_grocery, sub_category_id: vegetables.id,
+  merchant_id: rustic_grocery.id, sub_category_id: vegetables.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197580/Heron-Market/Products/Food/brocoli_d0s3ke.jpg')
 cheese = Product.create!(name: 'Creamy Cheese',
   description: 'Elit labore dolore voluptate
@@ -749,7 +749,7 @@ cheese = Product.create!(name: 'Creamy Cheese',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 11.69,
-  merchant_id: rustic_grocery, sub_category_id: dairy_and_eggs.id,
+  merchant_id: rustic_grocery.id, sub_category_id: dairy_and_eggs.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197575/Heron-Market/Products/Food/cheese_vkjnqv.jpg')
 mushroom = Product.create!(name: 'Wild Mushrooms',
   description: 'Elit labore dolore voluptate
@@ -758,7 +758,7 @@ mushroom = Product.create!(name: 'Wild Mushrooms',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 3.99,
-  merchant_id: rustic_grocery, sub_category_id: vegetables.id,
+  merchant_id: rustic_grocery.id, sub_category_id: vegetables.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197469/Heron-Market/Products/Food/mushrooms_nxoar1.jpg')
 eggs = Product.create!(name: 'Wild Eggs',
   description: 'Elit labore dolore voluptate
@@ -767,7 +767,7 @@ eggs = Product.create!(name: 'Wild Eggs',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 3.99,
-  merchant_id: rustic_grocery, sub_category_id: dairy_and_eggs.id,
+  merchant_id: rustic_grocery.id, sub_category_id: dairy_and_eggs.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197555/Heron-Market/Products/Food/eggs_auoxy3.jpg')
 grapes = Product.create!(name: 'Red Grapes',
   description: 'Elit labore dolore voluptate
@@ -776,7 +776,7 @@ grapes = Product.create!(name: 'Red Grapes',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 4.99,
-  merchant_id: rustic_grocery, sub_category_id: fruits.id,
+  merchant_id: rustic_grocery.id, sub_category_id: fruits.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197535/Heron-Market/Products/Food/grapes_tuzmwl.jpg')
 noodles = Product.create!(name: 'Spaghetti Noodles',
   description: 'Elit labore dolore voluptate
@@ -785,7 +785,7 @@ noodles = Product.create!(name: 'Spaghetti Noodles',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 3.90,
-  merchant_id: rustic_grocery, sub_category_id: bread_and_bakery,
+  merchant_id: rustic_grocery.id, sub_category_id: bread_and_bakery.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197504/Heron-Market/Products/Food/noodles_q0k1hy.jpg')
 pineapple = Product.create!(name: 'Pineapple',
   description: 'Elit labore dolore voluptate
@@ -794,7 +794,7 @@ pineapple = Product.create!(name: 'Pineapple',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 6.90,
-  merchant_id: rustic_grocery, sub_category_id: fruits.id,
+  merchant_id: rustic_grocery.id, sub_category_id: fruits.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197494/Heron-Market/Products/Food/pineapple_kn2o9z.jpg')
 salmon = Product.create!(name: 'Wild Salmon',
   description: 'Elit labore dolore voluptate
@@ -803,7 +803,7 @@ salmon = Product.create!(name: 'Wild Salmon',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 14.90,
-  merchant_id: rustic_grocery, sub_category_id: meat_and_fish.id,
+  merchant_id: rustic_grocery.id, sub_category_id: meat_and_fish.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197456/Heron-Market/Products/Food/salmon_omrjqm.jpg')
 steak = Product.create!(name: 'Juicy Steak',
   description: 'Elit labore dolore voluptate
@@ -812,7 +812,7 @@ steak = Product.create!(name: 'Juicy Steak',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 17.68,
-  merchant_id: rustic_grocery, sub_category_id: meat_and_fish.id,
+  merchant_id: rustic_grocery.id, sub_category_id: meat_and_fish.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197450/Heron-Market/Products/Food/steak_bedj8k.jpg')
 
 
@@ -844,7 +844,7 @@ basket = Product.create!(name: 'Bath Basket',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 22.90,
-  merchant_id: wild_bungalow, sub_category_id: storage.id,
+  merchant_id: wild_bungalow.id, sub_category_id: storage.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257838/Heron-Market/Products/homedecor/Basket_izrdyx.jpg')
 bed_lamp = Product.create!(name: 'Bed Lamp', description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
@@ -852,7 +852,7 @@ bed_lamp = Product.create!(name: 'Bed Lamp', description: 'Elit labore dolore vo
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 55.00,
-  merchant_id: wild_bungalow, sub_category_id: home_decor_sales.id,
+  merchant_id: wild_bungalow.id, sub_category_id: home_decor_sales.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257826/Heron-Market/Products/homedecor/Bed-lamp_tu9dda.jpg')
 black_frame = Product.create!(name: 'Black Frame',
   description: 'Elit labore dolore voluptate
@@ -861,7 +861,7 @@ black_frame = Product.create!(name: 'Black Frame',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 16.90,
-  merchant_id: wild_bungalow, sub_category_id: wall_decor.id,
+  merchant_id: wild_bungalow.id, sub_category_id: wall_decor.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257826/Heron-Market/Products/homedecor/black-frame_evkzaz.jpg')
 black_serveware = Product.create!(name: 'Black Serveware Set',
   description: 'Elit labore dolore voluptate
@@ -870,7 +870,7 @@ black_serveware = Product.create!(name: 'Black Serveware Set',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 110.00,
-  merchant_id: wild_bungalow, sub_category_id: serveware.id,
+  merchant_id: wild_bungalow.id, sub_category_id: serveware.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257805/Heron-Market/Products/homedecor/Black-servewareset_cmgupp.jpg')
 clear_vases = Product.create!(name: 'Clear Vases',
   description: 'Elit labore dolore voluptate
@@ -879,7 +879,7 @@ clear_vases = Product.create!(name: 'Clear Vases',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 25.50,
-  merchant_id: wild_bungalow, sub_category_id: plants_and_vases.id,
+  merchant_id: wild_bungalow.id, sub_category_id: plants_and_vases.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257812/Heron-Market/Products/homedecor/Clear-Vases_djjnao.jpg')
 coffee_mug = Product.create!(name: 'Rustic Coffee Mug',
   description: 'Elit labore dolore voluptate
@@ -888,7 +888,7 @@ coffee_mug = Product.create!(name: 'Rustic Coffee Mug',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 20.00,
-  merchant_id: wild_bungalow, sub_category_id: glassware_and_mugs.id,
+  merchant_id: wild_bungalow.id, sub_category_id: glassware_and_mugs.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257827/Heron-Market/Products/homedecor/coffee-mug_zewcsh.jpg')
 coffe_table_book = Product.create!(name: 'Minimalist Coffe Table Book',
   description: 'Elit labore dolore voluptate
@@ -897,7 +897,7 @@ coffe_table_book = Product.create!(name: 'Minimalist Coffe Table Book',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 77.00,
-  merchant_id: wild_bungalow, sub_category_id: home_accessories.id,
+  merchant_id: wild_bungalow.id, sub_category_id: home_accessories.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257812/Heron-Market/Products/homedecor/Coffe-table-Books_kei4yg.jpg')
 decorative_chair = Product.create!(name: 'Soft Decorative Chair',
   description: 'Elit labore dolore voluptate
@@ -906,7 +906,7 @@ decorative_chair = Product.create!(name: 'Soft Decorative Chair',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 165.50,
-  merchant_id: wild_bungalow, sub_category_id: home_decor_sales.id,
+  merchant_id: wild_bungalow.id, sub_category_id: home_decor_sales.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257813/Heron-Market/Products/homedecor/Decorative-Chair_cor3uw.jpg')
 gold_frame = Product.create!(name: 'Gold Picture Frame',
   description: 'Elit labore dolore voluptate
@@ -915,7 +915,7 @@ gold_frame = Product.create!(name: 'Gold Picture Frame',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 16.90,
-  merchant_id: wild_bungalow, sub_category_id: wall_decor.id,
+  merchant_id: wild_bungalow.id, sub_category_id: wall_decor.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257828/Heron-Market/Products/homedecor/Gold-Frame_h0jeex.jpg')
 houseplant = Product.create!(name: 'House Plant',
   description: 'Elit labore dolore voluptate
@@ -924,7 +924,7 @@ houseplant = Product.create!(name: 'House Plant',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 28.00,
-  merchant_id: wild_bungalow, sub_category_id: plants_and_vases.id)
+  merchant_id: wild_bungalow.id, sub_category_id: plants_and_vases.id)
 key_holder = Product.create!(name: 'Car Key Holder',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
@@ -932,7 +932,7 @@ key_holder = Product.create!(name: 'Car Key Holder',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 18.50,
-  merchant_id: wild_bungalow, sub_category_id: home_accessories.id,
+  merchant_id: wild_bungalow.id, sub_category_id: home_accessories.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257798/Heron-Market/Products/homedecor/key-holder_fxltmb.jpg')
 modern_globe = Product.create!(name: 'Modern Globe',
   description: 'Elit labore dolore voluptate
@@ -941,7 +941,7 @@ modern_globe = Product.create!(name: 'Modern Globe',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 23.50,
-  merchant_id: wild_bungalow, sub_category_id: home_accessories.id,
+  merchant_id: wild_bungalow.id, sub_category_id: home_accessories.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257796/Heron-Market/Products/homedecor/Modern-White-Globe_aamkon.jpg')
 mortier = Product.create!(name: 'Mortier',
   description: 'Elit labore dolore voluptate
@@ -950,7 +950,7 @@ mortier = Product.create!(name: 'Mortier',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 16.50,
-  merchant_id: wild_bungalow, sub_category_id: cultery_and_ustensiles.id,
+  merchant_id: wild_bungalow.id, sub_category_id: cultery_and_ustensiles.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257791/Heron-Market/Products/homedecor/mortier_l7suqf.jpg')
 oversize_wallart = Product.create!(name: 'Oversized Black and White Art',
   description: 'Elit labore dolore voluptate
@@ -959,7 +959,7 @@ oversize_wallart = Product.create!(name: 'Oversized Black and White Art',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 250.90,
-  merchant_id: wild_bungalow, sub_category_id: wall_decor.id,
+  merchant_id: wild_bungalow.id, sub_category_id: wall_decor.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257803/Heron-Market/Products/homedecor/Oversize-WallArt_whjcrw.jpg')
 plant = Product.create!(name: 'Green Plant',
   description: 'Elit labore dolore voluptate
@@ -968,7 +968,7 @@ plant = Product.create!(name: 'Green Plant',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 20.90,
-  merchant_id: wild_bungalow, sub_category_id: home_decor_sales.id,
+  merchant_id: wild_bungalow.id, sub_category_id: home_decor_sales.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257792/Heron-Market/Products/homedecor/Plant_ed17wy.jpg')
 round_cup = Product.create!(name: 'Round Coffee Cup',
   description: 'Elit labore dolore voluptate
@@ -977,7 +977,7 @@ round_cup = Product.create!(name: 'Round Coffee Cup',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 18.90,
-  merchant_id: wild_bungalow, sub_category_id: glassware_and_mugs.id,
+  merchant_id: wild_bungalow.id, sub_category_id: glassware_and_mugs.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257788/Heron-Market/Products/homedecor/Round-White-Cup_trccbl.jpg')
 serveware_set = Product.create!(name: 'Golden Serveware Set',
   description: 'Elit labore dolore voluptate
@@ -986,7 +986,7 @@ serveware_set = Product.create!(name: 'Golden Serveware Set',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 45.50,
-  merchant_id: wild_bungalow, sub_category_id: serveware.id,
+  merchant_id: wild_bungalow.id, sub_category_id: serveware.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257800/Heron-Market/Products/homedecor/serveware-set_vxu90t.jpg')
 sheer_brown_vase = Product.create!(name: 'Sheer Brown Vase',
   description: 'Elit labore dolore voluptate
@@ -995,7 +995,7 @@ sheer_brown_vase = Product.create!(name: 'Sheer Brown Vase',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 60.50,
-  merchant_id: wild_bungalow, sub_category_id: plants_and_vases.id,
+  merchant_id: wild_bungalow.id, sub_category_id: plants_and_vases.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257788/Heron-Market/Products/homedecor/Sheer-Brown-Vase_yxx3ve.jpg')
 towels_bathroom = Product.create!(name: 'Bathroom Towels',
   description: 'Elit labore dolore voluptate
@@ -1004,7 +1004,7 @@ towels_bathroom = Product.create!(name: 'Bathroom Towels',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 35.00,
-  merchant_id: wild_bungalow, sub_category_id: towels.id,
+  merchant_id: wild_bungalow.id, sub_category_id: towels.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257773/Heron-Market/Products/homedecor/towels-batroom_c9z94u.jpg')
 ustensiles_gw = Product.create!(name: 'White Golden Ustensiles',
   description: 'Elit labore dolore voluptate
@@ -1013,7 +1013,7 @@ ustensiles_gw = Product.create!(name: 'White Golden Ustensiles',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 18.60,
-  merchant_id: wild_bungalow, sub_category_id: cultery_and_ustensiles.id,
+  merchant_id: wild_bungalow.id, sub_category_id: cultery_and_ustensiles.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257767/Heron-Market/Products/homedecor/ustensiles-gw_jndr2k.jpg')
 vine_plant = Product.create!(name: 'Vine Plants',
   description: 'Elit labore dolore voluptate
@@ -1022,7 +1022,7 @@ vine_plant = Product.create!(name: 'Vine Plants',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 26.00,
-  merchant_id: wild_bungalow, sub_category_id: home_accessories.id,
+  merchant_id: wild_bungalow.id, sub_category_id: home_accessories.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257763/Heron-Market/Products/homedecor/Vine-Plant_mzzvry.jpg')
 wine_glass = Product.create!(name: 'Wine Glass',
   description: 'Elit labore dolore voluptate
@@ -1031,7 +1031,7 @@ wine_glass = Product.create!(name: 'Wine Glass',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 18.95,
-  merchant_id: wild_bungalow, sub_category_id: glassware_and_mugs.id,
+  merchant_id: wild_bungalow.id, sub_category_id: glassware_and_mugs.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257779/Heron-Market/Products/homedecor/wine-glass_o1oqvc.jpg')
 yellow_grey_pillow = Product.create!(name: 'Yellow Grey Pillows',
   description: 'Elit labore dolore voluptate
@@ -1040,7 +1040,7 @@ yellow_grey_pillow = Product.create!(name: 'Yellow Grey Pillows',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 28.90,
-  merchant_id: wild_bungalow, sub_category_id: throws_and_blankets.id,
+  merchant_id: wild_bungalow.id, sub_category_id: throws_and_blankets.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257758/Heron-Market/Products/homedecor/Yellow-Grey-Pillow_dfwowj.jpg')
 yellow_pillow = Product.create!(name: 'Decorative Yellow Pillows',
   description: 'Elit labore dolore voluptate
@@ -1049,7 +1049,7 @@ yellow_pillow = Product.create!(name: 'Decorative Yellow Pillows',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 28.90,
-  merchant_id: wild_bungalow, sub_category_id: throws_and_blankets.id,
+  merchant_id: wild_bungalow.id, sub_category_id: throws_and_blankets.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257802/Heron-Market/Products/homedecor/yellow-pillow_geocxw.jpg')
 blanket = Product.create!(name: 'Fluffy Blanket',
   description: 'Elit labore dolore voluptate
@@ -1058,7 +1058,7 @@ blanket = Product.create!(name: 'Fluffy Blanket',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 48.90,
-  merchant_id: wild_bungalow, sub_category_id: throws_and_blankets.id,
+  merchant_id: wild_bungalow.id, sub_category_id: throws_and_blankets.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257774/Heron-Market/Products/homedecor/Throws_rxga4w.jpg')
 
 
