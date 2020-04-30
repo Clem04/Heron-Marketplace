@@ -598,7 +598,7 @@ rustic_grocery = Merchant.create!(name: 'Rustic Grocery',
 
 
 # Products - Food
-bread_loaf = Product.creat!(name: 'Sweet Bread Loaf',
+bread_loaf = Product.create!(name: 'Sweet Bread Loaf',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
