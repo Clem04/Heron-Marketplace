@@ -11,8 +11,8 @@
   <div class="refine-results">
     <div id="sort"><p>Sort by:</p></div>
     <div class="search-bar">
-      <div id="search-icon" style="background-image: url(<%= image_path 'search-icon' %>)""></div>
-      <input type="search" id="search-input" placeholder='Search'>
+      <div id="search-icon" style="background-image: url(<%= image_path 'search-icon' %>)"></div>
+      <input type="search" id="search-input" placeholder="Search">
     </div>
   </div>
   <div class="list">
@@ -48,7 +48,9 @@
                 <%= link_to category_product_path(@category, product) do %>
                   <h4><%= product.name %></h4>
                 <% end %>
-                <p><%= product.merchant.name %></p>
+                <%= link_to merchant_path(product.merchant) do %>
+                  <p><%= product.merchant.name %></p>
+                <% end %>
               </div>
             </div>
         <% end %>
