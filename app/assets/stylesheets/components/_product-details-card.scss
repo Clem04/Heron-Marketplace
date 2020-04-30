@@ -5,12 +5,19 @@
   grid-gap: 24px;
   width: 100%;
   margin-bottom: 24px;
+  padding-bottom: 24px;
+}
+
+.product-details{
+  height: 100%;
 }
 
 // product info: name-merchant-sku
 .product-details-header{
   display:flex;
   justify-content: space-evenly;
+  height: 100%;
+  align-items: baseline;
   h1{
     color: black;
     font-size: 32px;
@@ -30,9 +37,19 @@
     }
   }
 }
+.product-details-infos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
 
 // section with product variation
 .product-variations{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   p{
     font-family: $poppins;
   }
@@ -54,8 +71,8 @@
   grid-gap: 8px;
 }
 .color{
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
 }
 

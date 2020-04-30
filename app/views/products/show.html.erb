@@ -20,12 +20,12 @@
           <img src="<%= @product.photo_1 %>" alt="">
         </div>
       </div>
-      <a class="carousel-control-prev" href="#product-carousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <a class="carousel-prev" href="#product-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"><%= image_tag 'right-arrow-icon' %></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#product-carousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <a class="carousel-next" href="#product-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"><%= image_tag 'right-arrow-icon' %></span>
         <span class="sr-only">Next</span>
       </a>
     </div>
@@ -33,9 +33,11 @@
       <div class="product-details-header">
         <div class="product-details-infos">
           <!-- merchantname, product name and sku  -->
-          <a href=""><%= @product.merchant.name %></a>
-          <h1><%= @product.name %></h1>
-          <p>SKU NO: SKU3792</p>
+          <div>
+            <a href=""><%= @product.merchant.name %></a>
+            <h1><%= @product.name %></h1>
+            <p>SKU NO: SKU3792</p>
+          </div>
           <div class="product-variations">
             <div class="product-colors">
               <p>Colors:</p>
