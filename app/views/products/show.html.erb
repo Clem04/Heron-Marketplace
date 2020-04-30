@@ -1,22 +1,87 @@
-<!-- product name -->
-<p><%= @product.name %></p>
-<!-- product picture -->
-<p><%= @product.photo_1 %></p>
-<!-- product sub category -->
-<p><%= @product.sub_category.name %></p>
-<!-- product category -->
-<p><%= @product.sub_category.category.name %></p>
-<!-- price -->
-<p><%= @product.price %></p>
-<!-- nb of points it would bring to buy one -->
-<p><%= @product.score %></p>
-<!-- product description -->
-<p><%= @product.description %></p>
-<!-- product features -->
-<!-- product merchant -->
-<%= link_to merchant_path(@product.merchant) do %>
-  <p><%= @product.merchant.name %></p>
-<% end %>
-<!-- comment that clem wrote -->
-<p><%= @product.merchant.comment %></p>
-<!-- add to cart -->
+<div class="content">
+  <div>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="#"><%= @product.sub_category.category.name %></a></li>
+        <li class="breadcrumb-item active" aria-current="page"><%= @product.name %></li>
+      </ol>
+  </div>
+  <div class="product-details-card">
+    <!-- product picture carousel -->
+    <div id="product-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active carousel-product-img">
+          <img src="<%= @product.photo_1 %>" alt="">
+        </div>
+        <div class="carousel-item carousel-product-img">
+          <img src="<%= @product.photo_2 %>" alt="">
+        </div>
+        <div class="carousel-item carousel-product-img">
+          <img src="<%= @product.photo_3 %>" alt="">
+        </div>
+      </div>
+      <a class="carousel-prev" href="#product-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"><%= image_tag 'right-arrow-icon' %></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-next" href="#product-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"><%= image_tag 'right-arrow-icon' %></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div class="product-details">
+      <div class="product-details-header">
+        <div class="product-details-infos">
+          <!-- merchantname, product name and sku  -->
+          <div>
+            <a href="./merchants/show.html.erb"><%= @product.merchant.name %></a>
+            <h1><%= @product.name %></h1>
+            <p>SKU NO: SKU3792</p>
+          </div>
+          <div class="product-variations">
+            <div class="product-colors">
+              <p>Colors:</p>
+              <div class="colors">
+                <div class="color" style="background-color: #FFD9E7 "></div>
+                <div class="color" style="background-color: #FFE2AB "></div>
+                <div class="color" style="background-color: #A9DAEA "></div>
+                <div class="color" style="background-color: #C1A3CF "></div>
+              </div>
+            </div>
+            <div class="product-price">
+              <p>Price: <%= @product.price %>$</p>
+            </div>
+            <button type="button" class="add-cart-btn">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="icon-btn">
+          <a href="#"><%= image_tag 'love-list-icon'%></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="product-description">
+    <h3>Description:</h3>
+    <p><%= @product.description %></p>
+  </div>
+
+  <!-- comment that clem wrote -->
+  <div class="product-comment">
+    <div class="blue-square"></div>
+    <div class="comment">
+      <div id="opening-icon"><%= image_tag 'quote-icon' %></div>
+        <p><%= @product.merchant.comment %></p>
+      <div id="closing-icon"><%= image_tag 'quote-icon' %></div>
+      <div id="founder">
+        <div id="line"></div>
+        <p>Clémence Founder</p>
+      </div>
+    </div>
+  </div>
+  <!-- add to cart -->
+
+
+  <!-- nb of points it would bring to buy one -->
+  <p><%= @product.score %></p>
+</div>

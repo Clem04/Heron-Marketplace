@@ -1,0 +1,96 @@
+// display product card as grid
+.product-details-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 24px;
+  width: 100%;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+}
+
+.product-details{
+  height: 100%;
+}
+
+// product info: name-merchant-sku
+.product-details-header{
+  display:flex;
+  justify-content: space-evenly;
+  height: 100%;
+  align-items: baseline;
+  h1{
+    color: black;
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+  a{
+    color: black;
+  }
+  p{
+    font-family: $poppins;
+    font-weight: 100;
+    font-size: 12px;
+  }
+  .icon-btn{
+    img {
+    width: 24px;
+    }
+  }
+}
+.product-details-infos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+// section with product variation
+.product-variations{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  p{
+    font-family: $poppins;
+  }
+}
+
+// product colors filter
+.product-colors{
+  margin-bottom: 16px;
+  p{
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+.colors{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 30%;
+  grid-gap: 8px;
+}
+.color{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+// product price
+.product-price{
+  p{
+  font-weight: 400;
+  font-size: 18px;
+  }
+}
+
+// product description
+.product-description{
+  h3{
+    font-size: 1.30rem;
+  }
+  p{
+    font-family: $poppins;
+    font-weight: 100;
+  }
+}
