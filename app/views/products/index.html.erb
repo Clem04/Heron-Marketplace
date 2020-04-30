@@ -48,7 +48,9 @@
                 <%= link_to category_product_path(@category, product) do %>
                   <h4><%= product.name %></h4>
                 <% end %>
-                <p><%= product.merchant.name %></p>
+                <%= link_to merchant_path(product.merchant) do %>
+                  <p><%= product.merchant.name %></p>
+                <% end %>
               </div>
             </div>
         <% end %>

@@ -14,7 +14,9 @@
 <p><%= @product.description %></p>
 <!-- product features -->
 <!-- product merchant -->
-<p><%= @product.merchant.name %></p>
+<%= link_to merchant_path(@product.merchant) do %>
+  <p><%= @product.merchant.name %></p>
+<% end %>
 <!-- comment that clem wrote -->
 <p><%= @product.merchant.comment %></p>
 <!-- add to cart -->
