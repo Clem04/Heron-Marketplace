@@ -1,5 +1,29 @@
 .refine-results{
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-bottom: 10px;
+  align-items: baseline;
+}
+#sort{
+  text-align: right;
+  width: 25.5%;
+  text-decoration: underline;
+}
+
+#search-icon{
+  height: 20px;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 31px;
+  position: relative;
+  right: 87px;
+  filter: invert(83%) sepia(0%) saturate(0%) hue-rotate(127deg) brightness(100%) contrast(97%);
+}
+#search-input{
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 8px;
+  padding-left: 34px;
 }
