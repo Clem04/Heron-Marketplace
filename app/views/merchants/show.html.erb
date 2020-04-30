@@ -1,21 +1,26 @@
+<!-- merchant picture -->
+<%= @merchant.picture_1 %>
+<%= @merchant.picture_2 %>
+<%= @merchant.picture_3 %>
 <!-- merchant name -->
-
 <p><%= @merchant.name %></p>
-<!-- merchant description -->
-<p><%= @merchant.description %></p>
 <!-- merchant location -->
 <p><%= @merchant.location %></p>
-<!-- merchant public_email -->
-<p><%= @merchant.public_email %></p>
+<!-- merchant description -->
+<h4>About</h4>
+<p><%= @merchant.description %></p>
+<!-- TODO merchant labels -->
+
 <!-- merchant social-media -->
 <p><%= @merchant.facebook %></p>
 <p><%= @merchant.instagram %></p>
-<!-- clem comment -->
-<p><%= @merchant.comment %></p>
+<!-- merchant public_email -->
+<p><%= @merchant.public_email %></p>
 <!-- merchant website -->
 <p><%= @merchant.website %></p>
-<!-- merchant picture -->
-<p><%= @merchant.picture_1 %></p>
+
+<!-- clem comment -->
+<p><%= @merchant.comment %></p>
 <!-- merchant products -->
 <h4>Products</h4>
 <% @merchant.products.each do |product| %>
