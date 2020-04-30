@@ -1,50 +1,65 @@
-<!-- product picture carousel -->
-<div id="product-carousel" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active carousel-product-img">
-      <img src="<%= @product.photo_1 %>" alt="">
+
+<div class="product-details-card">
+  <!-- product picture carousel -->
+  <div id="product-carousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active carousel-product-img">
+        <img src="<%= @product.photo_1 %>" alt="">
+      </div>
+      <div class="carousel-item carousel-product-img">
+        <img src="<%= @product.photo_1 %>" alt="">
+      </div>
+      <div class="carousel-item carousel-product-img">
+        <img src="<%= @product.photo_1 %>" alt="">
+      </div>
     </div>
-    <div class="carousel-item carousel-product-img">
-      <img src="<%= @product.photo_1 %>" alt="">
+    <a class="carousel-control-prev" href="#product-carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#product-carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="product-details">
+    <div class="product-details-header">
+      <div class="product-details-infos">
+        <!-- merchantname, product name and sku  -->
+        <a href=""><%= @product.merchant.name %></a>
+        <h1><%= @product.name %></h1>
+        <p>SKU NO: SKU3792</p>
+      </div>
+      <div class="icon-btn">
+        <a href="#"><%= image_tag 'love-list-icon'%></a>
+      </div>
     </div>
-    <div class="carousel-item carousel-product-img">
-      <img src="<%= @product.photo_1 %>" alt="">
+    <div class="product-variations">
+      <div class="product-colors">
+        <p>Colors:</p>
+      </div>
+      <div class="product-price">
+        <p>Price: <%= @product.price %>$</p>
+      </div>
+      <button type="button" class="add-cart-btn">Add to cart</button>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#product-carousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#product-carousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
 
 
 
 
-
-
-
-
-
-<!-- <p><%= @product.photo_1 %></p> -->
-<!-- product name -->
-<p><%= @product.name %></p>
-<!-- product sub category -->
-<p><%= @product.sub_category.name %></p>
 <!-- product category -->
 <p><%= @product.sub_category.category.name %></p>
 <!-- price -->
-<p><%= @product.price %></p>
+
 <!-- nb of points it would bring to buy one -->
 <p><%= @product.score %></p>
 <!-- product description -->
 <p><%= @product.description %></p>
 <!-- product features -->
 <!-- product merchant -->
-<p><%= @product.merchant.name %></p>
+
 <!-- comment that clem wrote -->
 <p><%= @product.merchant.comment %></p>
 <!-- add to cart -->
