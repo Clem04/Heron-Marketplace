@@ -66,8 +66,13 @@
 
   <!-- comment that clem wrote -->
   <div class="product-comment">
-    <p><%= @product.merchant.comment %></p>
-    <p id="founder">Clémence Founder</p>
+    <div class="blue-square"></div>
+    <div class="comment">
+      <div id="opening-icon"><%= image_tag 'quote-icon' %></div>
+        <p><%= @product.merchant.comment %></p>
+      <div id="closing-icon"><%= image_tag 'quote-icon' %></div>
+      <p id="founder">Clémence Founder</p>
+    </div>
   </div>
   <!-- add to cart -->
 

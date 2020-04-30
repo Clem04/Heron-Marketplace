@@ -1,8 +1,50 @@
 // admin comment about merchant
 .product-comment{
+  // display: flex;
+  // justify-content: space-between;
+}
+.blue-square{
+  background: #D7ECF1;
+  width: 280px;
+  height: 180px;
+}
+.comment{
+  background: $light-gray;
   text-align: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  width: 700px;
+  position: relative;
+  bottom: 120px;
+  left: 90px;
+  p{
+    margin-bottom: 0;
+  }
 }
 #founder{
   border-top: 1px solid $gray;
+  width: 50%;
+  font-family: $poppins;
 }
+#opening-icon{
+  width: 100%;
+  display: flex;
+  margin-bottom: 8px;
+  img{
+    width: 20px;
+    transform: rotate(180deg);
+  }
+}
+#closing-icon{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+  img{
+    width: 20px;
+  }
+}
+
