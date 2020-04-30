@@ -239,7 +239,7 @@ pink_silhettos = Product.create!(name: 'Pink Silhetto',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 250.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: shoes.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189638/Heron-Market/Products/Fashion/Pink_Silhetto_mjmt1u.png')
-panama_hat = Product.create!(name: Panama Hat,
+panama_hat = Product.create!(name: 'Panama Hat',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
@@ -256,7 +256,7 @@ jean_short = Product.create!(name: 'Jean Short',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 50.99,
   merchant_id: boutique_sleek_chic.id, sub_category_id: bottoms.id)
-red_shoes = Product.create!(name: Red Shoes,
+red_shoes = Product.create!(name: 'Red Shoes',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
@@ -371,7 +371,7 @@ light_brown_clutch = Product.create!(name: 'Mini Light Brown Clutch',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 330.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: fashion_accessories.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189648/Heron-Market/Products/Fashion/Light-Brown-Clutch_v0femp.jpg')
-marble_earrings = Product.create!(name: 'Marble Earrings'
+marble_earrings = Product.create!(name: 'Marble Earrings',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
@@ -473,7 +473,7 @@ eyeshadow = Product.create!(name: 'Classic Nude Shadows',
   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
-  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', name: 45.95,
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 45.95,
   merchant_id: bare_beauty.id, sub_category_id: makeup.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257697/Heron-Market/Products/beautywellness/Eyeshadow_uqpwkb.jpg')
 soy_candle = Product.create!(name: 'Jasmin Soy Candle',
@@ -518,7 +518,7 @@ lipstick = Product.create!(name: 'Pinky Chicky Lipstick',
   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
-  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', description: 65.00,
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 65.00,
   merchant_id: bare_beauty.id, sub_category_id: makeup.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257668/Heron-Market/Products/beautywellness/lipstick_zlkrhj.jpg')
 shampoo = Product.create!(name: 'Apothecary87 Shampoo',
@@ -961,7 +961,7 @@ oversize_wallart = Product.create!(name: 'Oversized Black and White Art',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 250.90,
   merchant_id: wild_bungalow, sub_category_id: wall_decor.id,
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257803/Heron-Market/Products/homedecor/Oversize-WallArt_whjcrw.jpg')
-plant = = Product.create!(name: 'Green Plant',
+plant = Product.create!(name: 'Green Plant',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
