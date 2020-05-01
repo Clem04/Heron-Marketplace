@@ -1,12 +1,32 @@
 <div class="content">
+
+<div class="merchant-header">
+  <div class="merchant-header-left">
+    <div class="blue-rectangle"></div>
+    <div class="main-photo">
+      <!-- merchant name -->
+      <h1><%= @merchant.name %></h1>
+       <!-- merchant location -->
+        <p><%= @merchant.location %></p>
+    </div>
+
+  </div>
+
+  <div class="merchant-header-right">
+    <div class="merchant-gallery">
+      <div class="merchant-duo-photos"></div>
+      <img src="" alt="">
+    </div>
+  </div>
+</div>
+
+
   <!-- merchant picture -->
   <%= image_tag @merchant.picture_1 %>
   <%= image_tag @merchant.picture_2 %>
   <%= image_tag @merchant.picture_3 %>
-  <!-- merchant name -->
-  <p><%= @merchant.name %></p>
-  <!-- merchant location -->
-  <p><%= @merchant.location %></p>
+
+
 
 
 
@@ -18,7 +38,6 @@
         <p><%= @merchant.description %></p>
     </div>
     <div class="merchant-labels">
-      <div class="label">Vegan</div>
       <div class="label">Plastic</div>
       <div class="label">Green</div>
     </div>
