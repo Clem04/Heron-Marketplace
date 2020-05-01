@@ -1,0 +1,31 @@
+.merchant-details{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.merchant-links{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height:64%;
+  text-align: center;
+  align-self: center;
+  font-size: 13px;
+  a{
+    color: black;
+  }
+  p{
+    margin-bottom: 0;
+  }
+}
+.social-links{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 24%;
+  align-self: center;
+  img{
+    width: 23px;
+    margin-left:16px;
+  }
+}

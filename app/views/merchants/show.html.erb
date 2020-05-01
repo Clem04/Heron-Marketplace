@@ -1,51 +1,87 @@
-<!-- merchant picture -->
-<%= @merchant.picture_1 %>
-<%= @merchant.picture_2 %>
-<%= @merchant.picture_3 %>
-<!-- merchant name -->
-<p><%= @merchant.name %></p>
-<!-- merchant location -->
-<p><%= @merchant.location %></p>
-<!-- merchant description -->
-<h4>About</h4>
-<p><%= @merchant.description %></p>
-<!-- TODO merchant labels -->
+<div class="content">
+  <!-- merchant picture -->
+  <%= image_tag @merchant.picture_1 %>
+  <%= image_tag @merchant.picture_2 %>
+  <%= image_tag @merchant.picture_3 %>
+  <!-- merchant name -->
+  <p><%= @merchant.name %></p>
+  <!-- merchant location -->
+  <p><%= @merchant.location %></p>
 
-<!-- merchant social-media -->
-<p><%= @merchant.facebook %></p>
-<p><%= @merchant.instagram %></p>
-<!-- merchant public_email -->
-<p><%= @merchant.public_email %></p>
-<!-- merchant website -->
-<p><%= @merchant.website %></p>
 
-<!-- clem comment -->
-<p><%= @merchant.comment %></p>
-<!-- merchant products -->
-<h4>Products</h4>
-<% @merchant.products.each do |product| %>
-  <div class="product-card">
-    <div class="product-img" style ="background-image: url(<%= product.photo_1 %>)">
-      <div class="price">
-        <p><%= product.price %>$</p>
-      </div>
-      <div class="product-icons">
-        <div class="icon-btn">
-          <a href="#"><%= image_tag 'love-list-icon'%></a>
-        </div>
-        <div class="icon-btn">
-          <a href="#"><%= image_tag 'shopping-bag-icon' %></a>
-        </div>
-      </div>
+
+
+  <div class="merchant-details">
+    <div class="merchant-infos">
+        <!-- merchant description -->
+        <h4>About</h4>
+        <p><%= @merchant.description %></p>
     </div>
-    <div class="product-infos">
-      <%= link_to category_product_path(product.sub_category.category, product) do %>
-        <h4><%= product.name %></h4>
-      <% end %>
-      <%= link_to merchant_path(product.merchant) do %>
-        <p><%= @merchant.name %></p>
-      <% end %>
+    <div class="merchant-labels">
+      <div class="label">Vegan</div>
+      <div class="label">Plastic</div>
+      <div class="label">Green</div>
+    </div>
+    <div class="merchant-links">
+      <!-- merchant social-media -->
+      <div class="social-links">
+        <a href="<%= @merchant.facebook %>"><%= image_tag 'facebook-icon' %></a>
+        <a href="<%= @merchant.instagram %>"><%= image_tag 'instagram-icon' %></a>
+      </div>
+      <div class="email">
+         <!-- merchant public_email -->
+        <a href="mailto:<%= @merchant.public_email %>"><%= @merchant.public_email %></a>
+      </div>
+        <a href="<%= @merchant.website %>">Visit Website</a>
     </div>
   </div>
-<% end %>
 
+
+
+  <!-- TODO merchant labels -->
+
+
+
+
+  <!-- merchant website -->
+  <p></p>
+
+  <!-- clem comment -->
+  <div class="merchant-comment">
+    <div id="opening-icon"><%= image_tag 'quote-icon' %></div>
+        <p><%= @merchant.comment %></p>
+    <div id="closing-icon"><%= image_tag 'quote-icon' %></div>
+  </div>
+
+
+
+  <!-- merchant products -->
+  <h4>Products</h4>
+  <div class="product-list">
+    <% @merchant.products.each do |product| %>
+      <div class="product-card">
+        <div class="product-img" style ="background-image: url(<%= product.photo_1 %>)">
+          <div class="price">
+            <p><%= product.price %>$</p>
+          </div>
+          <div class="product-icons">
+            <div class="icon-btn">
+              <a href="#"><%= image_tag 'love-list-icon'%></a>
+            </div>
+            <div class="icon-btn">
+              <a href="#"><%= image_tag 'shopping-bag-icon' %></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-infos">
+          <%= link_to category_product_path(product.sub_category.category, product) do %>
+            <h4><%= product.name %></h4>
+          <% end %>
+          <%= link_to merchant_path(product.merchant) do %>
+            <p><%= @merchant.name %></p>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
