@@ -31,17 +31,17 @@ underwears = SubCategory.create!(name: 'Underwears', category: fashion)
 shoes = SubCategory.create!(name: 'Shoes', category: fashion)
 jewelleries = SubCategory.create!(name: 'Jewelleries', category: fashion)
 bags = SubCategory.create!(name: 'Bags', category: fashion)
-fashion_accessories = SubCategory.create!(name: 'Scarves and Belts', category: fashion)
+fashion_accessories = SubCategory.create!(name: 'Scarves & Belts', category: fashion)
 fashion_sales = SubCategory.create!(name: 'Sales', category: fashion)
 
 
-beauty_and_wellness = Category.create!(name: 'Beauty and Wellness')
+beauty_and_wellness = Category.create!(name: 'Beauty & Wellness')
 # SubCategories - BeautyAndWellness
 makeup = SubCategory.create!(name: 'Makeup', category: beauty_and_wellness)
 skin_care = SubCategory.create!(name: 'Skin Care', category: beauty_and_wellness)
 hair_care = SubCategory.create!(name: 'Hair Care', category: beauty_and_wellness)
 body_care = SubCategory.create!(name: 'Body Care', category: beauty_and_wellness)
-candles_and_essential_oils = SubCategory.create!(name: 'Candle and Essential Oils', category: beauty_and_wellness)
+candles_and_essential_oils = SubCategory.create!(name: 'Candle & Essential Oils', category: beauty_and_wellness)
 accessories_tools = SubCategory.create!(name: 'Accessories', category: beauty_and_wellness)
 bundles = SubCategory.create!(name: 'Bundles', category: beauty_and_wellness)
 beauty_sales = SubCategory.create!(name: 'sales', category: beauty_and_wellness)
@@ -51,25 +51,25 @@ food = Category.create!(name: 'Food')
 # SubCategories - Food
 vegetables = SubCategory.create!(name: 'Vegetables', category: food)
 fruits = SubCategory.create!(name: 'Fruits', category: food)
-meat_and_fish = SubCategory.create!(name: 'Meat and Fish', category: food)
-dairy_and_eggs = SubCategory.create!(name: 'Dairy and Eggs', category: food)
-bread_and_bakery = SubCategory.create!(name: 'Bread and Bakery', category: food)
+meat_and_fish = SubCategory.create!(name: 'Meat & Fish', category: food)
+dairy_and_eggs = SubCategory.create!(name: 'Dairy & Eggs', category: food)
+bread_and_bakery = SubCategory.create!(name: 'Bread & Bakery', category: food)
 organic_goods = SubCategory.create!(name: 'Organic Food', category: food)
 beverages = SubCategory.create!(name: 'Beverages', category: food)
-snacks_cookies = SubCategory.create!(name: 'Snacks and Cookies', category: food)
+snacks_cookies = SubCategory.create!(name: 'Snacks & Cookies', category: food)
 food_sales = SubCategory.create!(name: 'Sales', category: food)
 
 
 home_decor = Category.create!(name: 'Home Decor')
 # SubCategories - HomeDecor
 wall_decor = SubCategory.create!(name: 'Wall Decor', category: home_decor)
-throws_and_blankets = SubCategory.create!(name: 'Throws and Blankets', category: home_decor)
-plants_and_vases = SubCategory.create!(name: 'Planters and Vases', category: home_decor)
+throws_and_blankets = SubCategory.create!(name: 'Throws & Blankets', category: home_decor)
+plants_and_vases = SubCategory.create!(name: 'Planters & Vases', category: home_decor)
 home_accessories = SubCategory.create!(name: 'Home Accessories', category: home_decor)
-plates_and_bowls = SubCategory.create!(name: 'Plates and Bowls', category: home_decor)
-glassware_and_mugs = SubCategory.create!(name: 'Glassware and Mugs', category: home_decor)
+plates_and_bowls = SubCategory.create!(name: 'Plates & Bowls', category: home_decor)
+glassware_and_mugs = SubCategory.create!(name: 'Glassware & Mugs', category: home_decor)
 serveware = SubCategory.create!(name: 'Serveware', category: home_decor)
-cultery_and_ustensiles = SubCategory.create!(name: 'Cultery and Ustensiles', category: home_decor)
+cultery_and_ustensiles = SubCategory.create!(name: 'Cultery & Ustensiles', category: home_decor)
 towels = SubCategory.create!(name: 'Towels', category: home_decor)
 storage = SubCategory.create!(name: 'Storage', category: home_decor)
 eco_friendly = SubCategory.create!(name: 'Eco-Friendly', category: home_decor)
@@ -180,7 +180,7 @@ sweater_pink = Product.create!(name: 'Pink Sweater',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 67.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id,
-  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588098951/Heron-Market/Products/pink-sweater_m8pyvw.jpg')
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588098951/Heron-Market/Products/Fashion/pink-sweater_m8pyvw.jpg')
 over_the_knee_boots = Product.create!(name: 'Suede Over-the-Knee Boots',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
