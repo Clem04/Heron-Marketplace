@@ -72,17 +72,6 @@ ActiveRecord::Schema.define(version: 2020_05_02_202013) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "post_merchants", force: :cascade do |t|
-    t.bigint "merchant_id"
-    t.bigint "category_id"
-    t.bigint "label_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["category_id"], name: "index_post_merchants_on_category_id"
-    t.index ["label_id"], name: "index_post_merchants_on_label_id"
-    t.index ["merchant_id"], name: "index_post_merchants_on_merchant_id"
-  end
-
   create_table "posts", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -135,9 +124,6 @@ ActiveRecord::Schema.define(version: 2020_05_02_202013) do
 
   add_foreign_key "order_items", "orders"
   add_foreign_key "order_items", "products"
-  add_foreign_key "post_merchants", "categories"
-  add_foreign_key "post_merchants", "labels"
-  add_foreign_key "post_merchants", "merchants"
   add_foreign_key "products", "merchants"
   add_foreign_key "products", "sub_categories"
   add_foreign_key "sub_categories", "categories"
