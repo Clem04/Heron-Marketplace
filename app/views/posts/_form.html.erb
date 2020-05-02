@@ -4,7 +4,19 @@
       <h1>Merchant Application</h1>
       <h6>Heron Market pride itself in offering products and promoting brands whose value align with ours.
       If one of the following apply to you, you are more than welcome to apply and <strong>let's connect!</strong></h6>
-
+      <%= simple_form_for(@post) do |f| %>
+        <div class="row">
+          <div class="col-xs-6">
+            <p>First Name</p>
+            <%= f.input :first_name, placehoder: "First Name" %>
+          </div>
+          <p>Last Name</p>
+          <div class="col-xs-6">
+            <%= f.input :last_name, placehoder: "Last Name" %>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
+s
