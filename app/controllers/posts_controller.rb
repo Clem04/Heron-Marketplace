@@ -16,7 +16,7 @@ class PostsController < ApplicationController
 
   def post_params
     params.require(:post).permit(:first_name, :last_name, :email, :location,
-      :category, :label_ids, :website, :description, :instagram,
+      :category, :label_id, :website, :description, :instagram,
       :facebook, :photos)
   end
 end
