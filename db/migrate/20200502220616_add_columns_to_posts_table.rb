@@ -8,8 +8,5 @@ class AddColumnsToPostsTable < ActiveRecord::Migration[5.2]
     add_column :posts, :website, :string
     add_column :posts, :instagram, :string
     add_column :posts, :facebook, :string
-    add_reference :posts, :photo, :integer
-    add_reference :posts, :post_label, :integer
-    add_reference :posts, :category, :integer
   end
 end
