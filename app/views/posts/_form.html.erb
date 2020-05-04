@@ -1,22 +1,49 @@
-<div class="container">
-  <div class="row">
+<div class="content merchant-container">
+  <div class="row merchant-form">
     <div class="col-ws-12 col-sm-6 col-sm-offset-3">
       <h1>Merchant Application</h1>
       <h6>Heron Market pride itself in offering products and promoting brands whose value align with ours.
       If one of the following apply to you, you are more than welcome to apply and <strong>let's connect!</strong></h6>
       <%= simple_form_for(@post) do |f| %>
         <div class="row">
-          <div class="col-xs-6">
-            <p>First Name</p>
+          <div class="col-sm-6">
             <%= f.input :first_name, placehoder: "First Name" %>
           </div>
-          <p>Last Name</p>
-          <div class="col-xs-6">
+          <div class="col-sm-6">
             <%= f.input :last_name, placehoder: "Last Name" %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <%= f.input :email, placehoder: "Email" %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <%= f.input :location, placehoder: "Location" %>
+          </div>
+          <div class="col-sm-6">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <%= f.input :website, placehoder: "Website" %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <%= f.input :instagram, placehoder: "Instagram" %>
+          </div>
+          <div class="col-sm-6">
+            <%= f.input :facebook, placehoder: "facebook" %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <%= f.input :description, placehoder: "Describe your business", size: "50x6" %>
           </div>
         </div>
       <% end %>
     </div>
   </div>
 </div>
-s
