@@ -35,7 +35,7 @@
         </div>
         <div class="row">
           <div class="col-sm-12">
-            <%= f.association :labels, as: :check_boxes, collection: Label.all %>
+            <%= f.association :labels, as: :check_boxes, collection: Label.all, wrapper: :vertical_collection_inline %>
           </div>
         </div>
         <div class="row">
@@ -48,7 +48,7 @@
         </div>
         <div class="row">
           <div class="col-sm-12">
-            <%= f.input :description, label: "Describe your business", size: "83x6" %>
+            <%= f.input :description, label: "Describe your business" %>
           </div>
         </div>
         <div class="row">
