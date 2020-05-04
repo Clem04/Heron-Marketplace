@@ -1,0 +1,32 @@
+.merchant-header{
+  height: 450px;
+  display: flex;
+}
+.merchant-header-left{
+}
+.blue-rectangle{
+  background: #D7ECF1;
+  height: 100%;
+  width: 70%;
+}
+.main-photo{
+  background-size: cover;
+  background-position: center;
+  height: 88%;
+  position: relative;
+  bottom: 422px;
+  left: 82px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  align-items: center;
+}
+.header-content{
+  position: relative;
+  left: 120px;
+  p{
+    color: $light-gray;
+  }
+}
