@@ -8,6 +8,7 @@
       <li><a href="#">Beauté</a></li>
       <li><a href="#">Décoration</a></li>
       <li><a href="#">Mode</a></li>
+      <li><%= link_to "Log out", destroy_user_session_path, method: "delete" %></li>
     </ul>
     <ul class="icon-menu">
       <li class="icon"><a href="#"><%= image_tag 'user-icon.svg' %></a></li>

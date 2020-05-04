@@ -1,0 +1,13 @@
+.user-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2{
+    margin-bottom: 20px;
+  }
+}
+
+#new_user{
+  width: 60%;
+}
