@@ -4,7 +4,7 @@ class MerchantMailerPreview < ActionMailer::Preview
   # Preview this email at http://localhost:3000/rails/mailers/merchant_mailer/thank_you
   def thank_you
     merchant = Merchant.last
-    MerchantMailer.with(merchant: merchant).thank_you
+    MerchantMailer.thank_you(merchant)
   end
 
   # Preview this email at http://localhost:3000/rails/mailers/merchant_mailer/request
