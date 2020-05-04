@@ -10,9 +10,7 @@
         <!-- merchant location -->
         <p><%= @merchant.location %></p>
       </div>
-
     </div>
-
   </div>
 
   <div class="merchant-header-right">
@@ -26,16 +24,10 @@
   </div>
 </div>
 
-
   <!-- merchant picture -->
   <%#= image_tag @merchant.picture_1 %>
   <%#= image_tag @merchant.picture_2 %>
   <%#= image_tag @merchant.picture_3 %>
-
-
-
-
-
 
   <div class="merchant-details">
     <div class="merchant-infos">
@@ -61,16 +53,6 @@
     </div>
   </div>
 
-
-
-  <!-- TODO merchant labels -->
-
-
-
-
-  <!-- merchant website -->
-  <p></p>
-
   <!-- clem comment -->
   <div class="merchant-comment">
     <div id="opening-icon"><%= image_tag 'quote-icon' %></div>
@@ -79,11 +61,13 @@
   </div>
 
 
-
   <!-- merchant products -->
-  <h4>Products</h4>
-  <div class="product-list">
-    <% @merchant.products.each do |product| %>
+  <div class="product-list-header">
+    <h4>Products</h4>
+    <a href="">View all <%= image_tag 'right-arrow-icon' %></a>
+  </div>
+  <div class="merchant-product-list">
+    <% @merchant.products[0..3].each do |product| %>
       <div class="product-card">
         <div class="product-img" style ="background-image: url(<%= product.photo_1 %>)">
           <div class="price">
