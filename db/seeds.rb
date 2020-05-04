@@ -23,6 +23,13 @@ ines = User.create!(first_name: 'ines', last_name: 'Belghiti',
   address: '5333 Casgrain Ave #102, Montreal, Quebec H2T 1X3', points: '300')
 
 # Categories
+labels = %w(Organic MadeInCanada FairTrade CrueltyFree Vegan ParabenFree
+GreenAndClean RecycledMaterial Transparency Ethical WomenFounded)
+labels.each do |label|
+  Label.create!(name: label)
+end
+
+
 fashion = Category.create!(name: 'Fashion')
 # SubCategories - Fashion
 tops = SubCategory.create!(name: 'Tops', category: fashion)
