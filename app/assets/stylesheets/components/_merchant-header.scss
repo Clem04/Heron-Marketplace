@@ -3,8 +3,7 @@
   display: flex;
   margin-bottom: 100px
 }
-.merchant-header-left{
-}
+
 .blue-rectangle{
   background: #D7ECF1;
   height: 100%;
@@ -30,7 +29,7 @@
   z-index: 999;
   width: 116%;
   p{
-    color: $light-gray;
+    color: white;
   }
 }
 .merchant-gallery{
@@ -58,6 +57,12 @@
   margin-bottom: 20px;
 }
 .picture-2{
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 150px;
+}
+.picture-3{
   background-size: cover;
   background-position: center;
   height: 250px;
