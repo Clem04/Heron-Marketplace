@@ -1,5 +1,35 @@
+//list for product index : filter - products
 .list{
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-gap: 16px;
+}
+
+// product list on product index page
+.product-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+//product list header in merchant show page
+.product-list-header{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  a{
+    color: black;
+  }
+  img{
+    width: 20px;
+  }
+}
+
+//list of product in merchant show page
+.merchant-product-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 8px;
+  width: 100%;
+  margin-bottom: 20px;
 }

@@ -1,51 +1,96 @@
-<!-- merchant picture -->
-<%= @merchant.picture_1 %>
-<%= @merchant.picture_2 %>
-<%= @merchant.picture_3 %>
-<!-- merchant name -->
-<p><%= @merchant.name %></p>
-<!-- merchant location -->
-<p><%= @merchant.location %></p>
-<!-- merchant description -->
-<h4>About</h4>
-<p><%= @merchant.description %></p>
-<!-- TODO merchant labels -->
+<div class="content">
 
-<!-- merchant social-media -->
-<p><%= @merchant.facebook %></p>
-<p><%= @merchant.instagram %></p>
-<!-- merchant public_email -->
-<p><%= @merchant.public_email %></p>
-<!-- merchant website -->
-<p><%= @merchant.website %></p>
-
-<!-- clem comment -->
-<p><%= @merchant.comment %></p>
-<!-- merchant products -->
-<h4>Products</h4>
-<% @merchant.products.each do |product| %>
-  <div class="product-card">
-    <div class="product-img" style ="background-image: url(<%= product.photo_1 %>)">
-      <div class="price">
-        <p><%= product.price %>$</p>
+<div class="merchant-header">
+  <div class="merchant-header-left">
+    <div class="blue-rectangle"></div>
+    <div class="main-photo" style="background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),url(https://images.unsplash.com/photo-1545007805-a44ee83438fa)">
+      <div class="header-content">
+         <!-- merchant name -->
+        <h1><%= @merchant.name %></h1>
+        <!-- merchant location -->
+        <p><%= @merchant.location %></p>
       </div>
-      <div class="product-icons">
-        <div class="icon-btn">
-          <a href="#"><%= image_tag 'love-list-icon'%></a>
-        </div>
-        <div class="icon-btn">
-          <a href="#"><%= image_tag 'shopping-bag-icon' %></a>
-        </div>
-      </div>
-    </div>
-    <div class="product-infos">
-      <%= link_to category_product_path(product.sub_category.category, product) do %>
-        <h4><%= product.name %></h4>
-      <% end %>
-      <%= link_to merchant_path(product.merchant) do %>
-        <p><%= @merchant.name %></p>
-      <% end %>
     </div>
   </div>
-<% end %>
 
+  <div class="merchant-header-right">
+    <div class="merchant-gallery">
+      <div class="merchant-duo-photos">
+        <div class="picture-1" style="background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),url(https://images.unsplash.com/photo-1573612664822-d7d347da7b80)"></div>
+        <div class="picture-2" style="background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),url(https://images.unsplash.com/photo-1564227502985-91742d806cff)"></div>
+      </div>
+        <div class="picture-3" style="background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),url(https://images.unsplash.com/photo-1531540823824-7d09de6461c8)"></div>
+    </div>
+  </div>
+</div>
+
+  <!-- merchant picture -->
+  <%#= image_tag @merchant.picture_1 %>
+  <%#= image_tag @merchant.picture_2 %>
+  <%#= image_tag @merchant.picture_3 %>
+
+  <div class="merchant-details">
+    <div class="merchant-infos">
+        <!-- merchant description -->
+        <h4>About</h4>
+        <p><%= @merchant.description %></p>
+    </div>
+    <div class="merchant-labels">
+      <div class="label">Plastic</div>
+      <div class="label">Green</div>
+    </div>
+    <div class="merchant-links">
+      <!-- merchant social-media -->
+      <div class="social-links">
+        <a href="<%= @merchant.facebook %>"><%= image_tag 'facebook-icon' %></a>
+        <a href="<%= @merchant.instagram %>"><%= image_tag 'instagram-icon' %></a>
+      </div>
+      <div class="email">
+         <!-- merchant public_email -->
+        <a href="mailto:<%= @merchant.public_email %>"><%= @merchant.public_email %></a>
+      </div>
+        <a href="<%= @merchant.website %>">Visit Website</a>
+    </div>
+  </div>
+
+  <!-- clem comment -->
+  <div class="merchant-comment">
+    <div id="opening-icon"><%= image_tag 'quote-icon' %></div>
+        <p><%= @merchant.comment %></p>
+    <div id="closing-icon"><%= image_tag 'quote-icon' %></div>
+  </div>
+
+
+  <!-- merchant products -->
+  <div class="product-list-header">
+    <h4>Products</h4>
+    <a href="">View all <%= image_tag 'right-arrow-icon' %></a>
+  </div>
+  <div class="merchant-product-list">
+    <% @merchant.products[0..3].each do |product| %>
+      <div class="product-card">
+        <div class="product-img" style ="background-image: url(<%= product.photo_1 %>)">
+          <div class="price">
+            <p><%= product.price %>$</p>
+          </div>
+          <div class="product-icons">
+            <div class="icon-btn">
+              <a href="#"><%= image_tag 'love-list-icon'%></a>
+            </div>
+            <div class="icon-btn">
+              <a href="#"><%= image_tag 'shopping-bag-icon' %></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-infos">
+          <%= link_to category_product_path(product.sub_category.category, product) do %>
+            <h4><%= product.name %></h4>
+          <% end %>
+          <%= link_to merchant_path(product.merchant) do %>
+            <p><%= @merchant.name %></p>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

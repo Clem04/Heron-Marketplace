@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_29_183439) do
+ActiveRecord::Schema.define(version: 2020_05_04_182530) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2020_04_29_183439) do
     t.string "icon"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
   end
 
   create_table "labels_products", id: false, force: :cascade do |t|
@@ -70,6 +71,33 @@ ActiveRecord::Schema.define(version: 2020_04_29_183439) do
     t.string "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "photos", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "post_labels", force: :cascade do |t|
+    t.bigint "post_id"
+    t.bigint "label_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["label_id"], name: "index_post_labels_on_label_id"
+    t.index ["post_id"], name: "index_post_labels_on_post_id"
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.string "location"
+    t.text "description"
+    t.string "website"
+    t.string "instagram"
+    t.string "facebook"
   end
 
   create_table "products", force: :cascade do |t|
@@ -119,6 +147,8 @@ ActiveRecord::Schema.define(version: 2020_04_29_183439) do
 
   add_foreign_key "order_items", "orders"
   add_foreign_key "order_items", "products"
+  add_foreign_key "post_labels", "labels"
+  add_foreign_key "post_labels", "posts"
   add_foreign_key "products", "merchants"
   add_foreign_key "products", "sub_categories"
   add_foreign_key "sub_categories", "categories"

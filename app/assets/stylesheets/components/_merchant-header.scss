@@ -1,0 +1,70 @@
+.merchant-header{
+  height: 450px;
+  display: flex;
+  margin-bottom: 100px
+}
+
+.blue-rectangle{
+  background: #D7ECF1;
+  height: 100%;
+  width: 70%;
+}
+.main-photo{
+  background-size: cover;
+  background-position: center;
+  height: 88%;
+  position: relative;
+  bottom: 422px;
+  left: 82px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  align-items: center;
+}
+.header-content{
+  position: relative;
+  left: 120px;
+  z-index: 999;
+  width: 116%;
+  p{
+    color: white;
+  }
+}
+.merchant-gallery{
+  display: flex;
+  width: 147%;
+  justify-content: space-between;
+  align-items: center;
+  img{
+    height: 250px;
+    width: 150px
+  }
+}
+.merchant-duo-photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  left: 120px;
+}
+.picture-1{
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 150px;
+  margin-bottom: 20px;
+}
+.picture-2{
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 150px;
+}
+.picture-3{
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 150px;
+}

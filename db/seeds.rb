@@ -23,6 +23,7 @@ ines = User.create!(first_name: 'ines', last_name: 'Belghiti',
   address: '5333 Casgrain Ave #102, Montreal, Quebec H2T 1X3', points: '300')
 
 # Categories
+
 fashion = Category.create!(name: 'Fashion')
 # SubCategories - Fashion
 tops = SubCategory.create!(name: 'Tops', category: fashion)
@@ -1063,38 +1064,38 @@ blanket = Product.create!(name: 'Fluffy Blanket',
 
 
 # Labels
-organic = Label.create!(description: 'This brand uses/offers organic fabrics,
+organic = Label.create!(name: "Organic Products", description: 'This brand uses/offers organic fabrics,
   ingredients and/or comply with standards of organic farming.',
   icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/Organic_-_Label_nqbzbh.png')
-made_in_canada = Label.create!(description: 'At least 70 percent of this brand
+made_in_canada = Label.create!(name: "Made in Canada", description: 'At least 70 percent of this brand
   merchandise is produced in Canada.',
   icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/MadeInCanada-Label_thqrob.png')
-fair_trade = Label.create!(description: 'This brand helps artisans in developing
+fair_trade = Label.create!(name: "Fair Trade", description: 'This brand helps artisans in developing
   countries achieve good trading and improves social and environmental standards.',
   icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/FairTrade-Label_atozrh.png')
-cruelty_free = Label.create!(description: 'This brand does not manufacture or
+cruelty_free = Label.create!(name: "Cruelty Free", description: 'This brand does not manufacture or
   offer products made by methods that involve experimentation on animals.',
   icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/CrueltyFree-Label_bodsdp.png')
-vegan = Label.create!(description: 'This brand does not produce products that
+vegan = Label.create!(name: "Vegan", description: 'This brand does not produce products that
   comes from animals or goods containing animal products.',
   icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/Vegan-Label_w0oss7.png')
-paraben_free = Label.create!(description: 'This brand offers and/or produces
+paraben_free = Label.create!(name: "Paraben Free", description: 'This brand offers and/or produces
   paraben free products',
   icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/ParabenFree-Label_hphsok.png')
-green_and_clean = Label.create!(description: 'This brand offers and/or produces products with
+green_and_clean = Label.create!(name: "Green and Clean", description: 'This brand offers and/or produces products with
   environmentally friendly ingredients and their procedures are designed to
   preserve human health and environmental quality.',
   icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/GreenAndClean-Label_hulnkv.png')
-recycle_material = Label.create!(description: 'This brand offers and/or manufures
+recycle_material = Label.create!(name: "Recycle Material", description: 'This brand offers and/or manufures
   products made of recycled materials(s)',
   icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/RecycleMaterial-Label_uhbgga.png')
-transparent = Label.create!(description: 'This brand is transparent about its
+transparent = Label.create!(name: "Transparency", description: 'This brand is transparent about its
   business activities.',
   icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/Transparency-Label_dnlgmt.png')
-ethical = Label.create!(description: 'This brand follows ethical pratices regarding
+ethical = Label.create!(name: "Ethical", description: 'This brand follows ethical pratices regarding
   their workplace and production activities.',
   icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/Ethical-Label_kbypfh.png')
-women_founded = Label.create!(description: 'This brands is women founded and/or owned.',
+women_founded = Label.create!(name: "Women Founded", description: 'This brands is women founded and/or owned.',
   icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/WomanFounded-Label_ldxtys.png')
 
 puts 'completed'
