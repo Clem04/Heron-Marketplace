@@ -7,7 +7,7 @@ class MerchantMailer < ApplicationMailer
   #
   def thank_you
     @merchant = params[:merchant]
-    mail(to: @merchant.email, subject: 'Thank for your application to Heron Market')
+    mail(to: @merchant.email, subject: 'Thank you for your application to Heron Market')
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
