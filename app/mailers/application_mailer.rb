@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'your-email@example.com'
+  default from: 'iphona.paiement@gmail.com'
   layout 'mailer'
 end

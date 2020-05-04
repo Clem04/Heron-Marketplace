@@ -105,7 +105,7 @@ high_rise_jeans_367 = Product.create!(name: 'High Rise Jeans 367',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 79.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: bottoms.id,
-  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588099235/Heron-Market/Products/High-Rise-Jeans_nfax9y.jpg')
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588099235/Heron-Market/Products/Fashion/High-Rise-Jeans_nfax9y.jpg')
 black_backpack = Product.create!(name: 'Black Backpack',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
@@ -161,9 +161,9 @@ satin_blouse = Product.create!(name: 'Satin Blouse',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 89.99,
   merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id,
-  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175183/Heron-Market/Products/Satin-Blouse-Front_ud14op.jpg',
-  photo_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175171/Heron-Market/Products/Satin-Blouse-Details-Front_hrnoc9.jpg',
-  photo_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175177/Heron-Market/Products/Satin-Blouse-Back_bpbqxb.jpg')
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175183/Heron-Market/Products/Fashion/Satin-Blouse-Front_ud14op.jpg',
+  photo_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175171/Heron-Market/Products/Fashion/Satin-Blouse-Details-Front_hrnoc9.jpg',
+  photo_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175177/Heron-Market/Products/Fashion/Satin-Blouse-Back_bpbqxb.jpg')
 mid_rise_jeans = Product.create!(name: 'Mid-Rise Jeans 367',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
@@ -172,7 +172,7 @@ mid_rise_jeans = Product.create!(name: 'Mid-Rise Jeans 367',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 75.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: bottoms.id,
-  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588098951/Heron-Market/Products/Mid-Rise-Jeans367_n4eict.jpg')
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588098951/Heron-Market/Products/Fashion/Mid-Rise-Jeans367_n4eict.jpg')
 sweater_pink = Product.create!(name: 'Pink Sweater',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
@@ -925,7 +925,8 @@ houseplant = Product.create!(name: 'House Plant',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 28.00,
-  merchant_id: wild_bungalow.id, sub_category_id: plants_and_vases.id)
+  merchant_id: wild_bungalow.id, sub_category_id: plants_and_vases.id,
+  photo_1: "https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257803/Heron-Market/Products/homedecor/houseplant-on-stool_njkjih.jpg")
 key_holder = Product.create!(name: 'Car Key Holder',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute

@@ -5,7 +5,7 @@ class MerchantMailer < ApplicationMailer
   #
   #   en.merchant_mailer.thank_you.subject
   #
-  def thank_you
+  def thank_you(merchant)
     @merchant = params[:merchant]
     mail(to: @merchant.email, subject: 'Thank you for your application to Heron Market')
   end
