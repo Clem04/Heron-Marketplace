@@ -28,8 +28,7 @@
       </ul>
     </div>
     <div class="product-list">
-      <% @products.each do |sub_category_products| %>
-        <% sub_category_products.each do |product|   %>
+      <% @products.each do |product| %>
             <div class="product-card">
               <div class="product-img" style ="background-image: url(<%= product.photo_1 %>)">
                 <div class="price">
@@ -53,7 +52,6 @@
                 <% end %>
               </div>
             </div>
-        <% end %>
       <% end %>
     </div>
   </div>
