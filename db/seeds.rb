@@ -1099,7 +1099,4 @@ women_founded = Label.create!(name: "Women Founded", description: 'This brands i
   icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/WomanFounded-Label_ldxtys.png')
 
 # Label Products
-
-organic_for_high_rise_jeans_367 = LabelsProducts.create(label: organic , product: high_rise_jeans_367)
-
 puts 'completed'
