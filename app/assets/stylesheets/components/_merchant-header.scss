@@ -1,6 +1,7 @@
 .merchant-header{
   height: 450px;
   display: flex;
+  margin-bottom: 100px
 }
 .merchant-header-left{
 }
@@ -26,7 +27,39 @@
 .header-content{
   position: relative;
   left: 120px;
+  z-index: 999;
+  width: 116%;
   p{
     color: $light-gray;
   }
+}
+.merchant-gallery{
+  display: flex;
+  width: 147%;
+  justify-content: space-between;
+  align-items: center;
+  img{
+    height: 250px;
+    width: 150px
+  }
+}
+.merchant-duo-photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  left: 120px;
+}
+.picture-1{
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 150px;
+  margin-bottom: 20px;
+}
+.picture-2{
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 150px;
 }
