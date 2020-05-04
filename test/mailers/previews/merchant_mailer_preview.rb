@@ -8,8 +8,9 @@ class MerchantMailerPreview < ActionMailer::Preview
   end
 
   # Preview this email at http://localhost:3000/rails/mailers/merchant_mailer/request
-  def request
-    MerchantMailer.request
+  def merchant_request
+    post = Post.first
+    MerchantMailer.merchant_request(post)
   end
 
 end

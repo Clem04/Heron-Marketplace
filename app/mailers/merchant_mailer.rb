@@ -15,9 +15,8 @@ class MerchantMailer < ApplicationMailer
   #
   #   en.merchant_mailer.request.subject
   #
-  def request
-    @greeting = "Hi"
-
-    mail to: "to@example.org"
+  def merchant_request(post)
+    @post = post
+    mail(to: 'iphona.paiement@gmail.com', subject: 'Merchant New Request')
   end
 end
