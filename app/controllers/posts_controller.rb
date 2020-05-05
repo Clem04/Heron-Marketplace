@@ -6,6 +6,9 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.save
+      mail = MerchantMailer.with(merchant: @merchant).thank_you
+      mail = MerchantMailer.with(post: @post).merchant_request
+      mail.deliver_now
       redirect_to post_path(@post)
     else
       render :new
