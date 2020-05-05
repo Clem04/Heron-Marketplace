@@ -927,11 +927,7 @@ houseplant = Product.create!(name: 'House Plant',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 28.00,
   merchant_id: wild_bungalow.id, sub_category_id: plants_and_vases.id,
-<<<<<<< HEAD
-  photo_1: "https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257803/Heron-Market/Products/homedecor/houseplant-on-stool_njkjih.jpg")
-=======
   photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257803/Heron-Market/Products/homedecor/houseplant-on-stool_njkjih.jpg')
->>>>>>> a7fed2b0ef61941d10706cb895569b5d13358e58
 key_holder = Product.create!(name: 'Car Key Holder',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
