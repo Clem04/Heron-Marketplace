@@ -17,6 +17,7 @@ gem 'uglifier'
 gem 'webpacker'
 
 # Gemfile
+gem 'letter_opener', group: :development
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.12.0'
 
