@@ -114,7 +114,7 @@ black_backpack = Product.create!(name: 'Black Backpack',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 50.99,
   merchant_id: boutique_sleek_chic.id, sub_category_id: bags.id,
-  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175277/Heron-Market/Products/Black-Backpack_qnkoe5.jpg')
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175277/Heron-Market/Products/Fashion/Black-Backpack_qnkoe5.jpg')
 red_dress = Product.create!(name: 'Red Dress',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
@@ -123,9 +123,9 @@ red_dress = Product.create!(name: 'Red Dress',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 120.99,
   merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id,
-  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175245/Heron-Market/Products/Dress-Red-Front_znsbup.jpg',
-  photo_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175269/Heron-Market/Products/Dress-Red-Back_jf1hrm.jpg',
-  photo_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175271/Heron-Market/Products/Dress-Red-Details-Back_fww2ud.jpg')
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175245/Heron-Market/Products/Fashion/Dress-Red-Front_znsbup.jpg',
+  photo_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175269/Heron-Market/Products/Fashion/Dress-Red-Back_jf1hrm.jpg',
+  photo_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175271/Heron-Market/Products/Fashion/Dress-Red-Details-Back_fww2ud.jpg')
 pink_heels = Product.create!(name: 'Pink Heels',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
@@ -134,7 +134,7 @@ pink_heels = Product.create!(name: 'Pink Heels',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 118.99,
   merchant_id: boutique_sleek_chic.id, sub_category_id: shoes.id,
-  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175271/Heron-Market/Products/Pink-Heels_xwtoy9.jpg')
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175271/Heron-Market/Products/Fashion/Pink-Heels_xwtoy9.jpg')
 scarf_blue = Product.create!(name: 'Blue Scarf',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
@@ -143,7 +143,7 @@ scarf_blue = Product.create!(name: 'Blue Scarf',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 25.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: fashion_accessories.id,
-  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175267/Heron-Market/Products/Scarf-Blue_eoastr.jpg')
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175267/Heron-Market/Products/Fashion/Scarf-Blue_eoastr.jpg')
 scarf_red = Product.create!(name: 'Red Scarf',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
@@ -152,7 +152,7 @@ scarf_red = Product.create!(name: 'Red Scarf',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 25.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: fashion_accessories.id,
-  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175207/Heron-Market/Products/Scarf-Red_pisovv.jpg')
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175207/Heron-Market/Products/Fashion/Scarf-Red_pisovv.jpg')
 satin_blouse = Product.create!(name: 'Satin Blouse',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
@@ -190,7 +190,7 @@ over_the_knee_boots = Product.create!(name: 'Suede Over-the-Knee Boots',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 110.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: shoes.id,
-  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175207/Heron-Market/Products/Over-The-Knee-Boots_dms3zy.jpg')
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175207/Heron-Market/Products/Fashion/Over-The-Knee-Boots_dms3zy.jpg')
 pastel_blazer = Product.create!(name: 'Pastel Blazer',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
@@ -256,7 +256,8 @@ jean_short = Product.create!(name: 'Jean Short',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 50.99,
-  merchant_id: boutique_sleek_chic.id, sub_category_id: bottoms.id)
+  merchant_id: boutique_sleek_chic.id, sub_category_id: bottoms.id,
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189673/Heron-Market/Products/Fashion/Jean-Short-Outfit_tfhcsr.jpg')
 red_shoes = Product.create!(name: 'Red Shoes',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
@@ -926,7 +927,11 @@ houseplant = Product.create!(name: 'House Plant',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 28.00,
   merchant_id: wild_bungalow.id, sub_category_id: plants_and_vases.id,
+<<<<<<< HEAD
   photo_1: "https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257803/Heron-Market/Products/homedecor/houseplant-on-stool_njkjih.jpg")
+=======
+  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257803/Heron-Market/Products/homedecor/houseplant-on-stool_njkjih.jpg')
+>>>>>>> a7fed2b0ef61941d10706cb895569b5d13358e58
 key_holder = Product.create!(name: 'Car Key Holder',
   description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
@@ -1099,4 +1104,5 @@ ethical = Label.create!(name: "Ethical", description: 'This brand follows ethica
 women_founded = Label.create!(name: "Women Founded", description: 'This brands is women founded and/or owned.',
   icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/WomanFounded-Label_ldxtys.png')
 
+# Label Products
 puts 'completed'
