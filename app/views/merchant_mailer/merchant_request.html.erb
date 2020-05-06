@@ -5,7 +5,11 @@
   <li><%= @post.last_name %></li>
   <li><%= @post.email %></li>
   <li><%= @post.location %></li>
-  <li><%= @post.category_id %></li>
+  <li><%= @post.category.name %></li>
+  <li><% @post.labels.each do |label| %>
+    <%= label.name %>,
+  <% end %>
+  </li>
   <li><%= @post.website %></li>
   <li><%= @post.instagram %></li>
   <li><%= @post.facebook %></li>
