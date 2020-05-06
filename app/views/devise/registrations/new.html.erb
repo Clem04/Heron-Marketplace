@@ -1,23 +1,19 @@
 <div class="content">
   <ul class="tab-group">
-    <li class="tab active"><a href="#signup">Sign Up</a></li>
-    <li class="tab"><a href="#login">Log In</a></li>
+    <li id="signup-tab" class="tab active">Sign Up</li>
+    <li id="login-tab" class="tab">Log In</li>
   </ul>
 
     <div class="tab-content">
-      <div id="signup">
+      <div id="signup" class="user-forms">
         <%= render 'devise/registrations/new' %>
       </div>
 
-      <div id="login" class="hidden">
+      <div id="login" class="user-forms hidden">
         <%= render 'devise/sessions/new' %>
       </div>
     </div>
 </div>
-
-
-
-
 
 
 
