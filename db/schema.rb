@@ -10,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 2020_05_06_203124) do
+ActiveRecord::Schema.define(version: 2020_05_06_210006) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -104,6 +103,8 @@ ActiveRecord::Schema.define(version: 2020_05_06_203124) do
     t.string "website"
     t.string "instagram"
     t.string "facebook"
+    t.bigint "category_id"
+    t.index ["category_id"], name: "index_posts_on_category_id"
   end
 
   create_table "products", force: :cascade do |t|
@@ -157,6 +158,7 @@ ActiveRecord::Schema.define(version: 2020_05_06_203124) do
   add_foreign_key "order_items", "products"
   add_foreign_key "post_labels", "labels"
   add_foreign_key "post_labels", "posts"
+  add_foreign_key "posts", "categories"
   add_foreign_key "products", "merchants"
   add_foreign_key "products", "sub_categories"
   add_foreign_key "sub_categories", "categories"
