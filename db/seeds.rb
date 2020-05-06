@@ -1101,4 +1101,6 @@ women_founded = Label.create!(name: "Women Founded", description: 'This brands i
   icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/WomanFounded-Label_ldxtys.png')
 
 # Label Products
+high_rise_jeans_367.labels = [made_in_canada, vegan, ethical]
+high_rise_jeans_367.save!
 puts 'completed'
