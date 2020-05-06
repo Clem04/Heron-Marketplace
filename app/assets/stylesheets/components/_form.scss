@@ -1,0 +1,53 @@
+.connexion-forms{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:50px;
+}
+
+.tab-group{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 0;
+  text-align: center;
+  width: 50%;
+  li{
+    align-self:center;
+  }
+}
+
+.tab{
+  border-bottom: 4px solid black;
+  width: 50%;
+  opacity: 0.3;
+  margin-left: 8px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+.active{
+  opacity: 1;
+}
+
+.hidden{
+  display:none!important;
+}
+
+.tab-content{
+  width: 70%;
+  h2{
+    text-align: center;
+    font-size: 24px;
+  }
+}
+.user-forms{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+form{
+  width: 80%;
+}
