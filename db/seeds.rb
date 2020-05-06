@@ -1108,6 +1108,5 @@ Product.all.each do |product|
   product.labels = label.sample(3)
   product.save!
 end
-# high_rise_jeans_367.labels = [made_in_canada, vegan, ethical]
-# high_rise_jeans_367.save!
+
 puts 'completed'
