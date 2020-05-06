@@ -1,27 +1,23 @@
-<h2>Sign up</h2>
+<div class="content">
+  <div class="connexion-forms">
+    <ul class="tab-group">
+      <li id="signup-tab" class="tab active">Sign Up</li>
+      <li id="login-tab" class="tab">Log In</li>
+    </ul>
 
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= f.error_notification %>
+      <div class="tab-content">
+        <div id="signup" class="user-forms">
+          <%= render 'devise/registrations/new' %>
+        </div>
 
-  <div class="form-inputs">
-    <%= f.input :first_name %>
-    <%= f.input :last_name %>
-    <%= f.input :email,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "email" }%>
-    <%= f.input :password,
-                required: true,
-                hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                input_html: { autocomplete: "new-password" } %>
-    <%= f.input :password_confirmation,
-                required: true,
-                input_html: { autocomplete: "new-password" } %>
+        <div id="login" class="user-forms hidden">
+          <%= render 'devise/sessions/new' %>
+        </div>
+      </div>
   </div>
+</div>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Create Account" %>
-  </div>
-<% end %>
 
-<%= render "devise/shared/links" %>
+
+
+
