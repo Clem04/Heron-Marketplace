@@ -2,11 +2,13 @@ puts 'seeding'
 
 #Clear Database
 User.destroy_all
-Merchant.destroy_all
+LabelProduct.destroy_all
 Product.destroy_all
+Merchant.destroy_all
 Label.destroy_all
 Category.destroy_all
 SubCategory.destroy_all
+
 
 # User
 clem = User.create!(first_name: 'Clem', last_name: 'Paiement',
@@ -1101,4 +1103,10 @@ women_founded = Label.create!(name: "Women Founded", description: 'This brands i
   icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/WomanFounded-Label_ldxtys.png')
 
 # Label Products
+label = [organic, made_in_canada, fair_trade, cruelty_free, vegan, paraben_free, green_and_clean, recycle_material, transparent, ethical, women_founded]
+Product.all.each do |product|
+  product.labels = label.sample(3)
+  product.save!
+end
+
 puts 'completed'

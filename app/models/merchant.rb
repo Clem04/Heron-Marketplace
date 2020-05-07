@@ -1,5 +1,5 @@
 class Merchant < ApplicationRecord
-  has_many :products, dependent: :destroy
-  has_many :labels, through: :products
+  has_many :products
+  has_many :labels, -> { distinct }, through: :products
   has_many :category, through: :products
 end
