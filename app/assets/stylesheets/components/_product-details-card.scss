@@ -99,6 +99,7 @@
 @media (max-width: 540px) {
   .product-details-card {
     grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
   }
 
   .product-details-header {
