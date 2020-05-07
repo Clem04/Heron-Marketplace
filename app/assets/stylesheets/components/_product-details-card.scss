@@ -94,3 +94,29 @@
     font-weight: 100;
   }
 }
+
+/* For a screen < 540px, this CSS will be read */
+@media (max-width: 540px) {
+  .product-details-card {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .product-details-header {
+    margin-top: 10px;
+  }
+
+  .product-details-infos{
+    h7 {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 26px;
+    }
+  }
+
+  .product-variations {
+    justify-content: normal;
+  }
+}
+

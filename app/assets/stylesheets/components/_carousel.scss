@@ -36,3 +36,11 @@
     transform: rotate(180deg);
   }
 }
+
+/* For a screen < 540px, this CSS will be read */
+@media (max-width: 540px) {
+   .product-carousel {
+    justify-self: center;
+  }
+}
+
