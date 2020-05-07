@@ -3,7 +3,6 @@ const openNav = () => {
  const nav = document.getElementById("myNav");
 
  menu.addEventListener('click', e =>{
-  nav.classList.remove('hidden')
   nav.style.width = "100%";
  })
 }

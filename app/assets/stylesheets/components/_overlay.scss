@@ -1,4 +1,6 @@
 .overlay {
+  display: flex;
+  justify-content: space-between;
   height: 100%;
   width: 0;
   position: fixed;
@@ -8,9 +10,6 @@
   background-color: rgb(255,255,255);
   overflow-x: hidden;
   transition: 0.5s;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 12px;
 }
 
 .overlay-content {
@@ -33,6 +32,7 @@
 .overlay-left{
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
   .logo{
     margin: 6px 0;
   }
@@ -52,6 +52,7 @@
 
 .overlay .closebtn {
   width: 40px;
+  margin-right: 12px;
   img{
     background-color:$light-blue;
     padding: 6px;

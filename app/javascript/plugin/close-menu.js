@@ -3,7 +3,6 @@ const closeNav = () => {
  const nav = document.getElementById("myNav");
 
  close.addEventListener('click', e =>{
-  nav.classList.add('hidden')
   nav.style.width = "0%";
  })
 }
