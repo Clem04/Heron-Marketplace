@@ -11,3 +11,10 @@
 .breadcrumb-item.active {
   color: $gray;
 }
+
+/* For a screen < 540px, this CSS will be read */
+@media (max-width: 540px) {
+  .breadcrumb {
+    font-size: 0.875rem;
+  }
+}
