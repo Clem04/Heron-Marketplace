@@ -17,12 +17,27 @@
   justify-content: center;
 }
 
+.hidden-confirmation {
+  display:none!important;
+}
+
 svg {
   width: 300px;
   display: block;
   margin: 40px auto 0;
 }
 
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 
 p {
   text-align: center;
