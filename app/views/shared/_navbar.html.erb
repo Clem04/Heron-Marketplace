@@ -1,4 +1,37 @@
 <div class="nav-bar">
+  <div class="burger-menu">
+    <ul>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="burgermenu">
+          <%= image_tag 'open-menu.svg' %>
+        </a>
+        <div id="myNav" class="overlay">
+          <div class="overlay-content">
+            <div class="overlay-left">
+              <div class="logo">
+                <a href="#"><%= image_tag 'heron-logo.png' %></a>
+              </div>
+              <div class="overlay-menu">
+                <p>Produits</p>
+                <ul>
+                  <li><a href="#">Alimentation</a></li>
+                  <li><a href="#">Beauté</a></li>
+                  <li><a href="#">Décoration</a></li>
+                  <li><a href="#">Mode</a></li>
+                </ul>
+                <p><a href="#">Boutiques</a></p>
+                <p><a href="#">Mon compte</a></p>
+                <p><a href="#">Contact</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="closebtn">
+            <a href="#"><%= image_tag 'close.svg' %></a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
   <div class="logo">
     <a href="#"><%= image_tag 'heron-logo.png' %></a>
   </div>
@@ -13,8 +46,15 @@
     <ul class="icon-menu">
       <li class="icon"><a href="#"><%= image_tag 'user-icon.svg' %></a></li>
       <li class="icon"><a href="#"><%= image_tag 'love-list-icon.svg' %></a></li>
-      <li class="icon"><a href="#"><%= image_tag 'shopping-bag-icon.svg' %></a></li>
+      <li class="icon" id="shopping-bag"><a href="#"><%= image_tag 'shopping-bag-icon.svg' %></a></li>
       <li><a href="#">EN</a></li>
     </ul>
   </div>
+  <div class="mobile-icon-menu">
+    <ul class="icon-menu">
+      <li class="icon" id="shopping-bag"><a href="#"><%= image_tag 'shopping-bag-icon.svg' %></a></li>
+    </ul>
+  </div>
 </div>
+
+<!-- role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" -->

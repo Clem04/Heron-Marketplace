@@ -20,7 +20,6 @@ const menu_toggle = () => {
       signup_connect_form.classList.add('hidden');
       login_connect_form.classList.remove('hidden');
     });
-
 }
 
 
