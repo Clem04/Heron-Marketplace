@@ -68,3 +68,34 @@
   height: 250px;
   width: 150px;
 }
+
+/* For a screen < 540px, this CSS will be read */
+@media (max-width: 540px) {
+  .merchant-header{
+  margin-bottom: 0;
+  }
+
+  .blue-rectangle{
+    display: none;
+  }
+
+  .main-photo{
+    padding-left: 30px;
+    padding: 30px;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    flex-direction: unset;
+  }
+
+  .merchant-header-right{
+    display: none;
+  }
+
+  .header-content{
+    left: 0;
+    h1{
+      font-size: 2.0rem;
+    }
+  }
+}

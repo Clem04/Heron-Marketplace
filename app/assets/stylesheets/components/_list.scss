@@ -34,6 +34,20 @@
   margin-bottom: 20px;
 }
 
+
+/* For a screen < 540px, this CSS will be read */
+@media (max-width: 540px) {
+  .product-list-header{
+    margin: 20px;
+    width: 92%;
+  }
+  .merchant-product-list{
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
 /* For a screen < 960px, this CSS will be read */
 @media (max-width: 1087px) {
   .list{
@@ -60,3 +74,4 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
