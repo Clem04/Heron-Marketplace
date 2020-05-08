@@ -26,9 +26,6 @@
     cursor: pointer;
   }
 }
-.active{
-  opacity: 1;
-}
 
 .hidden{
   display:none!important;
@@ -48,7 +45,7 @@
   justify-content: space-around;
 }
 
-form{
+.form{
   width: 80%;
 }
 
