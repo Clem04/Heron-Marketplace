@@ -1,3 +1,31 @@
 .content{
   margin: 40px 175px;
 }
+/* For a screen < 960px, this CSS will be read */
+@media (max-width: 960px) {
+  .content{
+  margin: 40px 10px;
+  }
+}
+
+/* For a screen < 720px, this CSS will be read */
+@media (max-width: 720px) {
+  .content{
+  margin: 40px 10px;
+  }
+}
+
+/* For a screen < 540px, this CSS will be read */
+@media (max-width: 540px) {
+  .content{
+  margin: 40px 10px;
+  }
+}
+
+
+
+
+
+
+
+

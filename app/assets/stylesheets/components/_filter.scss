@@ -18,3 +18,20 @@
     align-items: center;
   }
 }
+
+/* For a screen < 960px, this CSS will be read */
+@media (max-width: 960px) {
+
+}
+
+/* For a screen < 720px, this CSS will be read */
+@media (max-width: 720px) {
+  .filters{
+    display: none;
+  }
+}
+
+/* For a screen < 540px, this CSS will be read */
+@media (max-width: 540px) {
+
+}

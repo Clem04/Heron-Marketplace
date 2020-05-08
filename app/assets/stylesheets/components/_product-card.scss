@@ -35,3 +35,32 @@
     color: #939393;
   }
 }
+
+/* For a screen < 960px, this CSS will be read */
+@media (max-width: 960px) {
+
+}
+
+/* For a screen < 720px, this CSS will be read */
+@media (max-width: 720px) {
+  .product-img{
+  height: 180px;
+  width: 100%;
+  }
+  .price{
+    font-size: 1rem;
+  }
+  .product-infos{
+    h4{
+      font-size: 1.02rem;
+    }
+    p{
+      font-size: 1rem;
+    }
+  }
+}
+
+/* For a screen < 540px, this CSS will be read */
+@media (max-width: 540px) {
+
+}
