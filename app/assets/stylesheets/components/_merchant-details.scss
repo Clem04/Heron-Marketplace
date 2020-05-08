@@ -50,7 +50,9 @@
 /* For a screen < 540px, this CSS will be read */
 @media (max-width: 540px) {
   .merchant-details{
-    grid-template-rows: 1fr 1fr 1fr;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: none;
   }
 
