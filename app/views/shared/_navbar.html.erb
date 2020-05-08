@@ -41,7 +41,7 @@
       <% end %>
     </ul>
     <ul class="icon-menu">
-      <li class="icon"><a href="#"><%= image_tag 'user-icon.svg' %></a></li>
+      <li class="icon" id="connect-user"><a href="#"><%= image_tag 'user-icon.svg' %></a></li>
       <li class="icon"><a href="#"><%= image_tag 'love-list-icon.svg' %></a></li>
       <li class="icon" id="shopping-bag"><a href="#"><%= image_tag 'shopping-bag-icon.svg' %></a></li>
       <li><a href="#">FR</a></li>
@@ -53,5 +53,13 @@
     </ul>
   </div>
 </div>
-
-<!-- role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" -->
+<div id="user-menu">
+  <% if user_signed_in? %>
+    <%= link_to 'Log out', destroy_user_session_path, method: 'DELETE', class: 'hidden' %>
+  <% else %>
+  <ul>
+    <li><%= link_to 'Log in',  new_user_session_path, class: 'hidden'%></li>
+    <li><%= link_to 'Sign up', new_user_registration_path, class: 'hidden'%></li>
+  </ul>
+  <% end %>
+</div>
