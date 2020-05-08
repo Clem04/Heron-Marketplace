@@ -1,20 +1,18 @@
-<h2>Log in</h2>
+<div class="content">
+  <div class="connexion-forms">
+    <ul class="tab-group">
+      <li id="signup-tab" class="tab">Sign Up</li>
+      <li id="login-tab" class="tab active">Log In</li>
+    </ul>
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :email,
-                required: false,
-                autofocus: true,
-                input_html: { autocomplete: "email" } %>
-    <%= f.input :password,
-                required: false,
-                input_html: { autocomplete: "current-password" } %>
-    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+      <div class="tab-content">
+        <div id="login" class="user-forms">
+          <%= render 'devise/sessions/new' %>
+        </div>
+        <div id="signup" class="user-forms hidden">
+          <%= render 'devise/registrations/new' %>
+        </div>
+      </div>
   </div>
+</div>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
