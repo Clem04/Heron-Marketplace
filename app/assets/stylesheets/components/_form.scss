@@ -27,6 +27,10 @@
   }
 }
 
+.active{
+  opacity: 1;
+}
+
 .hidden{
   display:none!important;
 }
@@ -45,7 +49,7 @@
   justify-content: space-around;
 }
 
-.form{
+#new_user{
   width: 80%;
 }
 
@@ -55,7 +59,7 @@
     margin:50px 0;
   }
   .tab-content{
-    width: 100%;
+    width: 80%;
   }
 }
 

@@ -1,8 +1,9 @@
 <div class="content">
   <div>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item" aria-current="page"><a href="#"><%= @product.sub_category.category.name %></a></li>
+
+        <li class="breadcrumb-item"><%= link_to 'Home', root_path %></li>
+        <li class="breadcrumb-item" aria-current="page"><%= link_to @category.name, category_products_path(@category) %></a></li>
         <li class="breadcrumb-item active" aria-current="page"><%= @product.name %></li>
       </ol>
   </div>

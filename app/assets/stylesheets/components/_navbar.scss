@@ -42,6 +42,21 @@
     width: 16px;
   }
 }
+//login and sign up menu
+#user-menu{
+  position: relative;
+  text-align: right;
+  right: 100px;
+  top: -10px;
+  a{
+    color: $gray;
+    opacity: 0.7;
+    font-family: $poppins;
+    &:hover{
+      opacity:1;
+    }
+  }
+}
 //mobile menu
 .burger-menu{
   display:none;
@@ -57,6 +72,7 @@
 .mobile-icon-menu{
   display: none;
 }
+
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
