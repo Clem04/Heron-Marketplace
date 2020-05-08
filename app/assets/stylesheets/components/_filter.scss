@@ -20,8 +20,10 @@
 }
 
 /* For a screen < 960px, this CSS will be read */
-@media (max-width: 960px) {
-
+@media (max-width: 1087px) {
+  .filters{
+    display: none;
+  }
 }
 
 /* For a screen < 720px, this CSS will be read */
@@ -33,5 +35,7 @@
 
 /* For a screen < 540px, this CSS will be read */
 @media (max-width: 540px) {
-
+  .filters{
+    display: none;
+  }
 }

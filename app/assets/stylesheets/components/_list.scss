@@ -35,8 +35,10 @@
 }
 
 /* For a screen < 960px, this CSS will be read */
-@media (max-width: 960px) {
-
+@media (max-width: 1087px) {
+  .list{
+    grid-template-columns: 1fr;
+  }
 }
 
 /* For a screen < 720px, this CSS will be read */
@@ -51,5 +53,10 @@
 
 /* For a screen < 540px, this CSS will be read */
 @media (max-width: 540px) {
-
+  .list{
+    grid-template-columns: 1fr;
+  }
+  .product-list{
+    grid-template-columns: 1fr 1fr;
+  }
 }
