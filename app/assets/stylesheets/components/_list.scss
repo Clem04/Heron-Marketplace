@@ -33,3 +33,30 @@
   width: 100%;
   margin-bottom: 20px;
 }
+
+/* For a screen < 960px, this CSS will be read */
+@media (max-width: 1087px) {
+  .list{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For a screen < 720px, this CSS will be read */
+@media (max-width: 720px) {
+  .list{
+    grid-template-columns: 1fr;
+  }
+  .product-list{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* For a screen < 540px, this CSS will be read */
+@media (max-width: 540px) {
+  .list{
+    grid-template-columns: 1fr;
+  }
+  .product-list{
+    grid-template-columns: 1fr 1fr;
+  }
+}

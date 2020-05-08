@@ -1,8 +1,8 @@
 <div class="content">
   <div>
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Library</li>
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><%= @category.name %></li>
     </ol>
   </div>
   <div class="header">
@@ -14,6 +14,7 @@
       <div id="search-icon" style="background-image: url(<%= image_path 'search-icon' %>)"></div>
       <input type="search" id="search-input" placeholder="Search">
     </div>
+    <div id="filter-icon"> <%= image_tag 'filter-icon.svg' %></div>
   </div>
   <div class="list">
     <div class="filters">

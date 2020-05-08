@@ -58,3 +58,41 @@
   }
 }
 
+/* For a screen < 540px, this CSS will be read */
+@media (max-width: 540px) {
+  .blue-square{
+    display: none;
+  }
+
+  .comment{
+    background: #D7ECF1;
+    text-align: start;
+    top: 0px;
+    right: 0px;
+  }
+
+  #opening-icon img{
+    position: relative;
+    right: 10%;
+    width: 24px;
+  }
+
+  #closing-icon img{
+    position: relative;
+    left: 5%;
+    width: 24px;
+  }
+
+  #founder{
+    width: 100%;
+    p{
+      text-align: start;
+    }
+  }
+
+  #line {
+    width: 25%;
+  }
+}
+
+

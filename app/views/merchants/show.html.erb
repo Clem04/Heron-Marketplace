@@ -36,8 +36,9 @@
         <p><%= @merchant.description %></p>
     </div>
     <div class="merchant-labels">
-      <div class="label">Plastic</div>
-      <div class="label">Green</div>
+      <% @merchant.labels.each do |label|  %>
+        <img src="<%= label.icon %>" alt="">
+      <% end %>
     </div>
     <div class="merchant-links">
       <!-- merchant social-media -->

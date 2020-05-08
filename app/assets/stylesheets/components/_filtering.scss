@@ -27,3 +27,38 @@
   padding: 8px;
   padding-left: 34px;
 }
+#filter-icon{
+  display:none;
+}
+/* For a screen < 960px, this CSS will be read */
+@media (max-width: 1087px) {
+    #sort{
+    display:none;
+  }
+  #filter-icon{
+    display:block;
+    width: 30px;
+  }
+}
+
+/* For a screen < 720px, this CSS will be read */
+@media (max-width: 720px) {
+  #sort{
+    display:none;
+  }
+  #filter-icon{
+    display:block;
+    width: 30px;
+  }
+}
+
+/* For a screen < 540px, this CSS will be read */
+@media (max-width: 540px) {
+    #sort{
+    display:none;
+  }
+  #filter-icon{
+    display:block;
+    width: 30px;
+  }
+}
