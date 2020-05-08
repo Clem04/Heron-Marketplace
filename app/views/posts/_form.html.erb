@@ -1,62 +1,64 @@
-<div class="content merchant-container">
-  <div class="row merchant-form">
-    <div class="col-xs-12 col-sm-9 col-sm-offset-3">
-      <h1>Merchant Application</h1>
-      <h6>Heron Market pride itself in offering products and promoting brands whose value align with ours.
-      If one of the following apply to you, you are more than welcome to apply and <strong>let's connect!</strong></h6>
-      <%= simple_form_for(@post) do |f| %>
-        <div class="row">
-          <div class="col-sm-6">
-            <%= f.input :first_name, placehoder: "First Name" %>
-          </div>
-          <div class="col-sm-6">
-            <%= f.input :last_name, placehoder: "Last Name" %>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <%= f.input :email %>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <%= f.input :location %>
-          </div>
-          <div class="col-sm-6">
-            <%= f.input :category_id, label: "Category", collection: Category.all %>
-          </div>
-          <div class="col-sm-6">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <%= f.input :website %>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <%= f.association :labels, as: :check_boxes, collection: Label.all, wrapper: :vertical_collection_inline %>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <%= f.input :instagram %>
-          </div>
-          <div class="col-sm-6">
-            <%= f.input :facebook %>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <%= f.input :description, label: "Describe your business" %>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <%= f.submit "APPLY", class: "add-cart-btn" %>
-          </div>
-        </div>
-      <% end %>
-    </div>
+<div class="row">
+  <div class="col-sm-12 merchant-form-message">
+    <h1>Merchant Application</h1>
+    <h6>Heron Market pride itself in offering products and promoting brands
+      whose value align with ours. If one of the following apply to you,
+      you are more than welcome to apply and <strong>
+      let's connect!</strong>
+    </h6>
   </div>
 </div>
+<%= simple_form_for(@post) do |f| %>
+<div class="row">
+  <div class="col-sm-6">
+    <%= f.input :first_name, placehoder: "First Name" %>
+  </div>
+  <div class="col-sm-6">
+    <%= f.input :last_name, placehoder: "Last Name" %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <%= f.input :email %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <%= f.input :location %>
+  </div>
+  <div class="col-sm-6">
+    <%= f.input :category_id, label: "Category", collection: Category.all %>
+  </div>
+  <div class="col-sm-6">
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <%= f.input :website %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <%= f.association :labels, as: :check_boxes, collection: Label.all, wrapper: :vertical_collection_inline %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <%= f.input :instagram %>
+  </div>
+  <div class="col-sm-6">
+    <%= f.input :facebook %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <%= f.input :description, label: "Describe your business" %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <%= f.submit "APPLY", class: "add-cart-btn apply-btn" %>
+  </div>
+</div>
+<% end %>
+
