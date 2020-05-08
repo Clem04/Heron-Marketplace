@@ -51,3 +51,34 @@
 form{
   width: 80%;
 }
+
+/* For a screen < 960px, this CSS will be read */
+@media (max-width: 960px) {
+    .connexion-forms{
+    margin:50px 0;
+  }
+  .tab-content{
+    width: 100%;
+  }
+}
+
+/* For a screen < 720px, this CSS will be read */
+@media (max-width: 720px) {
+  .connexion-forms{
+    margin:50px 0;
+  }
+  .tab-content{
+    width: 100%;
+  }
+}
+
+/* For a screen < 540px, this CSS will be read */
+@media (max-width: 540px) {
+  .connexion-forms{
+    margin:50px 0;
+  }
+  .tab-content{
+    width: 100%;
+  }
+}
+

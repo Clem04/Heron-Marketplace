@@ -9,3 +9,6 @@ closeNav();
 if(window.location.pathname === '/users/sign_up'){
   menu_toggle();
 };
+if(window.location.pathname === '/users/sign_in'){
+  menu_toggle();
+};
