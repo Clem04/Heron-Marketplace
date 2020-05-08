@@ -15,7 +15,6 @@ class PostsController < ApplicationController
       mail.deliver_now
       mail_request = MerchantMailer.merchant_request(@post)
       mail_request.deliver_now
-      redirect_to new_post_path(@post)
     else
       render :new
     end
