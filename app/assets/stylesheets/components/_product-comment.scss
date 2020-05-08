@@ -60,6 +60,10 @@
 
 /* For a screen < 540px, this CSS will be read */
 @media (max-width: 540px) {
+  .product-comment{
+    width: 100vw;
+  }
+
   .blue-square{
     display: none;
   }
@@ -68,7 +72,7 @@
     background: #D7ECF1;
     text-align: start;
     top: 0px;
-    right: 0px;
+    right: 10px;
   }
 
   #opening-icon img{
