@@ -1,5 +1,5 @@
-<div class="row">
-  <div class="col-sm-12 merchant-form-message">
+<div>
+  <div class="merchant-form-message">
     <h1>Merchant Application</h1>
     <h6>Heron Market pride itself in offering products and promoting brands
       whose value align with ours. If one of the following apply to you,
@@ -9,54 +9,58 @@
   </div>
 </div>
 <%= simple_form_for(@post) do |f| %>
-<div class="row">
-  <div class="col-sm-6">
+<div class="double-input">
+  <div class="merchant-form-input">
     <%= f.input :first_name, placehoder: "First Name" %>
   </div>
-  <div class="col-sm-6">
+  <div class="form-spacing"></div>
+  <div class="merchant-form-input">
     <%= f.input :last_name, placehoder: "Last Name" %>
   </div>
 </div>
-<div class="row">
-  <div class="col-sm-12">
+<div>
+  <div>
     <%= f.input :email %>
   </div>
 </div>
-<div class="row">
-  <div class="col-sm-6">
+<div class="double-input">
+  <div class="merchant-form-input">
     <%= f.input :location %>
   </div>
-  <div class="col-sm-6">
+  <div class="form-spacing"></div>
+  <div class="merchant-form-input">
     <%= f.input :category_id, label: "Category", collection: Category.all %>
   </div>
-  <div class="col-sm-6">
+  <div>
   </div>
 </div>
-<div class="row">
-  <div class="col-sm-12">
+<div>
+  <div>
     <%= f.input :website %>
   </div>
 </div>
-<div class="row">
-  <div class="col-sm-12">
+<div>
+  <div>
     <%= f.association :labels, as: :check_boxes, collection: Label.all, wrapper: :vertical_collection_inline %>
   </div>
 </div>
-<div class="row">
-  <div class="col-sm-6">
+<div class="double-input">
+  <div class="merchant-form-input">
     <%= f.input :instagram %>
   </div>
-  <div class="col-sm-6">
+  <div class="form-spacing"></div>
+
+  <div class="merchant-form-input">
     <%= f.input :facebook %>
   </div>
 </div>
-<div class="row">
-  <div class="col-sm-12">
+<div>
+  <div>
     <%= f.input :description, label: "Describe your business" %>
   </div>
 </div>
-<div class="row">
-  <div class="col-sm-12">
+<div>
+  <div>
     <%= f.submit "APPLY", class: "add-cart-btn apply-btn" %>
   </div>
 </div>
