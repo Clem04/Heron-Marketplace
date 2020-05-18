@@ -23,6 +23,9 @@ nour = User.create!(first_name: 'Nour', last_name: 'Souid',
 ines = User.create!(first_name: 'ines', last_name: 'Belghiti',
   email: 'ines@heronmarket.ca', password: '123456',
   address: '5333 Casgrain Ave #102, Montreal, Quebec H2T 1X3', points: '300')
+katell = User.create!(first_name: 'Katell', last_name: 'Goaër',
+  email: 'katell@heronmarket.ca', password: '123456',
+  address: '5333 Casgrain Ave #102, Montreal, Quebec H2T 1X3', points: '300')
 
 # Categories
 
