@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :merchants
+  devise_for :merchants, controllers: { registrations: "merchants/registrations", sessions: "merchants/sessions"  }
   devise_for :admins, controllers: { registrations: "admins/registrations", sessions: "admins/sessions"  }
   devise_for :users
   root to: 'pages#home'
