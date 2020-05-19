@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     resources :products, only: [:index, :show]
   end
 
+  resources :products, only: [:new, :create]
   resources :posts, only: [:new, :create]
 
   get '/merchants/:id', to: 'merchants#show', as: 'merchant'
