@@ -11,7 +11,10 @@
     <!-- product picture carousel -->
     <div id="product-carousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active carousel-product-img">
+        <% @product.photos.each do |photo| %>
+          <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+        <% end %>
+<!--         <div class="carousel-item active carousel-product-img">
           <img src="<%= @product.photo_1 %>" alt="">
         </div>
         <div class="carousel-item carousel-product-img">
@@ -19,7 +22,7 @@
         </div>
         <div class="carousel-item carousel-product-img">
           <img src="<%= @product.photo_3 %>" alt="">
-        </div>
+        </div> -->
       </div>
       <a class="carousel-prev" href="#product-carousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"><%= image_tag 'right-arrow-icon' %></span>

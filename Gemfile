@@ -20,6 +20,8 @@ gem 'webpacker'
 gem 'letter_opener', group: :development
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.12.0'
+gem 'devise_invitable', '~> 2.0.0'
+
 
 group :development do
   gem 'web-console', '>= 3.3.0'
