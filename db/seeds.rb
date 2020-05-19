@@ -1,6 +1,7 @@
 puts 'seeding'
 
 #Clear Database
+Admin.destroy_all
 User.destroy_all
 LabelProduct.destroy_all
 Product.destroy_all
@@ -9,6 +10,8 @@ Label.destroy_all
 Category.destroy_all
 SubCategory.destroy_all
 
+#Admins
+stephane = Admin.create!(email: 'stephane@lewagon.ca', password: 'abcdefg')
 
 # User
 clem = User.create!(first_name: 'Clem', last_name: 'Paiement',
@@ -84,7 +87,7 @@ home_decor_sales = SubCategory.create!(name: 'Sales', category: home_decor)
 
 # Merchant - Fashion
 boutique_sleek_chic = Merchant.create!(name: 'Boutique sleek Chic',
-  description: 'Excepteur duis deserunt qui tempor velit veniam eu cupidatat
+  password: '232323', email: 'admin@boutiquesleekchic.ca', description: 'Excepteur duis deserunt qui tempor velit veniam eu cupidatat
   irure consectetur occaecat duis. In duis consectetur occaecat tempor minim
   consectetur sint ', location: 'Montreal, Qc Canada',
   public_email: 'info@boutiquesleekchic.com', facebook: 'www.facebook.com',
@@ -429,7 +432,7 @@ gold_necklace = Product.create!(name: 'Dainty Gold Necklace',
 
 # Merchant - Beauty and Wellness
 bare_beauty = Merchant.create!(name: 'Bare Beauty',
-  description: 'Excepteur duis deserunt qui tempor velit veniam eu cupidatat
+  password: '232323', email: 'admin@barebeauty.ca', description: 'Excepteur duis deserunt qui tempor velit veniam eu cupidatat
   irure consectetur occaecat duis. In duis consectetur occaecat tempor minim
   consectetur sint ', location: 'Montreal, Qc Canada',
   public_email: 'info@boutiquesleekchic.com', facebook: 'www.facebook.com',
@@ -587,7 +590,7 @@ face_sculpte = Product.create!(name: 'Quartz Luxury Face Sculpt',
 
 # Merchant - Food
 rustic_grocery = Merchant.create!(name: 'Rustic Grocery',
-  description: 'Excepteur duis deserunt qui tempor velit veniam eu cupidatat
+  password: '232323', email: 'admin@rusticgrocery.ca', description: 'Excepteur duis deserunt qui tempor velit veniam eu cupidatat
   irure consectetur occaecat duis. In duis consectetur occaecat tempor minim
   consectetur sint ', location: 'Montreal, Qc Canada',
   public_email: 'info@boutiquesleekchic.com', facebook: 'www.facebook.com',
@@ -825,7 +828,7 @@ steak = Product.create!(name: 'Juicy Steak',
 
 # Merchant - Home Decor
 wild_bungalow = Merchant.create!(name: 'Wild Bungalow',
-  description: 'Excepteur duis deserunt qui tempor velit veniam eu cupidatat
+  password: '232323', email: 'admin@wildbungalow.ca', description: 'Excepteur duis deserunt qui tempor velit veniam eu cupidatat
   irure consectetur occaecat duis. In duis consectetur occaecat tempor minim
   consectetur sint ', location: 'Montreal, Qc Canada',
   public_email: 'info@boutiquesleekchic.com', facebook: 'www.facebook.com',
