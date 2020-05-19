@@ -3,9 +3,10 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   resources :categories, only: [] do
-    resources :products, only: [:index, :show, :new, :create]
+    resources :products, only: [:index, :show]
   end
 
+  resources :products, only: [:new, :create]
   resources :posts, only: [:new, :create]
 
   get '/merchants/:id', to: 'merchants#show', as: 'merchant'

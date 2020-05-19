@@ -1,6 +1,6 @@
 <%= simple_form_for(@product) do |f| %>
   <%= f.input :photo_1, as: :file%>
-  <%= f.input :sub_category_id, label: 'Sub Category', , collection: SubCategory.all %>
+  <%= f.input :sub_category_id, as: :radio_buttons, collection: SubCategory.all %>
   <%= f.input :name %>
   <%= f.input :description %>
   <%= f.input :price %>

@@ -17,10 +17,10 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
-    @product.merchant = current_user
-
+    @product.merchant = Merchant.first
     if @product.save
-      redirect_to product_path(@product)
+      category = @product.sub_category.category
+      redirect_to category_product_path(category, @product)
     else
       render :new
     end
