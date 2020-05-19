@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :admins, controllers: { sessions: 'admins/sessions' }
-  devise_for :users, controllers: { sessions: 'users/sessions' }
+  devise_for :merchants
+  devise_for :admins, controllers: { registrations: "admins/registrations", sessions: "admins/sessions"  }
+  devise_for :users
   root to: 'pages#home'
 
   resources :categories, only: [] do
