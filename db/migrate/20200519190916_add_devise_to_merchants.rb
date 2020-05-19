@@ -1,22 +1,22 @@
 # frozen_string_literal: true
 
 class AddDeviseToMerchants < ActiveRecord::Migration[5.2]
-  def self.up
-    create_table :merchants do |t|
+  def change
+    change_table :merchants do |t|
       ## Database authenticatable
-      t.string :name
-      t.string :public_email
-      t.string :location
-      t.text :description
-      t.string :comment
-      t.string :facebook
-      t.string :instagram
-      t.string :website
-      t.string :picture_1
-      t.string :picture_2
-      t.string :picture_3
-      t.string :picture_4
-      t.string :email,              null: false, default: ""
+      t.change :name, :string
+      t.change :public_email, :string
+      t.change :location, :string
+      t.change :description, :text
+      t.change :comment, :string
+      t.change :facebook, :string
+      t.change :instagram, :string
+      t.change :website, :string
+      t.change :picture_1, :string
+      t.change :picture_2, :string
+      t.change :picture_3, :string
+      t.change :picture_4, :string
+      t.change :email, :string, null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
       ## Recoverable
@@ -53,11 +53,5 @@ class AddDeviseToMerchants < ActiveRecord::Migration[5.2]
     add_index :merchants, :reset_password_token, unique: true
     # add_index :merchants, :confirmation_token,   unique: true
     # add_index :merchants, :unlock_token,         unique: true
-  end
-
-  def self.down
-    # By default, we don't want to make any assumption about how to roll back a migration when your
-    # model already existed. Please edit below which fields you would like to remove in this migration.
-    raise ActiveRecord::IrreversibleMigration
   end
 end
