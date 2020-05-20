@@ -31,7 +31,7 @@
     <div class="product-list">
       <% @products.each do |product| %>
             <div class="product-card">
-              <div class="product-img" style ="background-image: url(<%= product.photo_1 %>)">
+              <div class="product-img" style ="background-image: url(<%= product.photos[0] %>)">
                 <div class="price">
                   <p><%= product.price %>$</p>
                 </div>
