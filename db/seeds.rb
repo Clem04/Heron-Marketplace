@@ -136,10 +136,14 @@ red_dress = Product.create!(name: 'Red Dress',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 120.99,
-  merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id,
-  photo_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175245/Heron-Market/Products/Fashion/Dress-Red-Front_znsbup.jpg',
-  photo_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175269/Heron-Market/Products/Fashion/Dress-Red-Back_jf1hrm.jpg',
-  photo_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175271/Heron-Market/Products/Fashion/Dress-Red-Details-Back_fww2ud.jpg')
+  merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id)
+
+  red_dress_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175245/Heron-Market/Products/Fashion/Dress-Red-Front_znsbup.jpg')
+  red_dress_photo_2 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175269/Heron-Market/Products/Fashion/Dress-Red-Back_jf1hrm.jpg')
+  red_dress_photo_3 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175271/Heron-Market/Products/Fashion/Dress-Red-Details-Back_fww2ud.jpg')
+  red_dress.photos.attach(io: red_dress_photo_1, filename: 'Dress-Red-Front_znsbup.jpg', content_type: 'image/jpg')
+  red_dress.photos.attach(io: red_dress_photo_2, filename: 'Dress-Red-Back_jf1hrm.jpg', content_type: 'image/jpg')
+  red_dress.photos.attach(io: red_dress_photo_3, filename: 'Dress-Red-Details-Back_fww2ud.jpg', content_type: 'image/jpg')
 
 pink_heels = Product.create!(name: 'Pink Heels',
   description: 'Elit labore dolore voluptate
