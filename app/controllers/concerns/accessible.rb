@@ -8,6 +8,7 @@
 #   def check_user
 #     if current_admin
 #       flash.clear
+#       raise
 #       # if you have rails_admin. You can redirect anywhere really
 #       # redirect_to(rails_admin.dashboard_path) and return
 #       redirect_to(authenticated_admin_root_path) and return

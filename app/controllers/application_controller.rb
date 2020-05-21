@@ -1,4 +1,3 @@
 class ApplicationController < ActionController::Base
-  before_action :authenticate_user!, only: :home
-
+  before_action :ensure_user!, only: :home
 end
