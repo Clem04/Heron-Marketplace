@@ -4,4 +4,5 @@ class Product < ApplicationRecord
   has_one :category, through: :sub_category
   has_many :label_products
   has_many :labels, through: :label_products
+  has_many_attached :photos
 end
