@@ -17,7 +17,7 @@ class AddDeviseToMerchants < ActiveRecord::Migration[5.2]
       t.change :picture_3, :string
       t.change :picture_4, :string
       t.change :email, :string, null: false, default: ""
-      t.string :encrypted_password, null: false, default: ""
+      t.change :encrypted_password, null: false, default: ""
 
       ## Recoverable
       t.string   :reset_password_token

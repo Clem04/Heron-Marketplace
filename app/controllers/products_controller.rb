@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+  before_action :authenticate_merchant!, only: [:new, :create]
   def index
     @category = Category.find(params[:category_id])
     @products = @category.products.map do |product|
@@ -17,7 +18,7 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
-    @product.merchant = Merchant.first
+    @product.merchant = current_merchant
     if @product.save
       category = @product.sub_category.category
       redirect_to category_product_path(category, @product)
