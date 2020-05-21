@@ -1035,7 +1035,7 @@ pineapple = Product.create!(name: 'Pineapple',
   merchant_id: rustic_grocery.id, sub_category_id: fruits.id)
 
   pineapple_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197494/Heron-Market/Products/Food/pineapple_kn2o9z.jpg')
-  pineapple.photos.attach(io: noodles_photo_1, filename: 'pineapple_kn2o9z.jpg', content_type: 'image/jpg')
+  pineapple.photos.attach(io: pineapple_photo_1, filename: 'pineapple_kn2o9z.jpg', content_type: 'image/jpg')
 
 salmon = Product.create!(name: 'Wild Salmon',
   description: 'Elit labore dolore voluptate
@@ -1118,17 +1118,17 @@ black_frame = Product.create!(name: 'Black Frame',
   black_frame_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257826/Heron-Market/Products/homedecor/black-frame_evkzaz.jpg')
   black_frame.photos.attach(io: black_frame_photo_1, filename: 'black-frame_evkzaz.jpg', content_type: 'image/jpg')
 
-black_serveware = Product.create!(name: 'Black Serveware Set',
-  description: 'Elit labore dolore voluptate
-  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
-  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
-  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
-  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
-  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 110.00,
-  merchant_id: wild_bungalow.id, sub_category_id: serveware.id)
+# black_serveware = Product.create!(name: 'Black Serveware Set',
+#   description: 'Elit labore dolore voluptate
+#   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+#   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+#   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+#   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+#   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 110.00,
+#   merchant_id: wild_bungalow.id, sub_category_id: serveware.id)
 
-  black_serveware_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257805/Heron-Market/Products/homedecor/Black-servewareset_cmgupp.jpg')
-  black_serveware.photos.attach(io: black_serveware_photo_1, filename: 'Black-servewareset_cmgupp.jpg', content_type: 'image/jpg')
+#   black_serveware_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257805/Heron-Market/Products/homedecor/Black-servewareset_cmgupp.jpg')
+#   black_serveware.photos.attach(io: black_serveware_photo_1, filename: 'Black-servewareset_cmgupp.jpg', content_type: 'image/jpg')
 
 clear_vases = Product.create!(name: 'Clear Vases',
   description: 'Elit labore dolore voluptate
@@ -1226,17 +1226,17 @@ modern_globe = Product.create!(name: 'Modern Globe',
   modern_globe_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257796/Heron-Market/Products/homedecor/Modern-White-Globe_aamkon.jpg')
   modern_globe.photos.attach(io: modern_globe_photo_1, filename: 'Modern-White-Globe_aamkon.jpg', content_type: 'image/jpg')
 
-mortier = Product.create!(name: 'Mortier',
-  description: 'Elit labore dolore voluptate
-  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
-  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
-  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
-  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
-  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 16.50,
-  merchant_id: wild_bungalow.id, sub_category_id: cultery_and_ustensiles.id)
+# mortier = Product.create!(name: 'Mortier',
+#   description: 'Elit labore dolore voluptate
+#   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+#   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+#   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+#   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+#   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 16.50,
+#   merchant_id: wild_bungalow.id, sub_category_id: cultery_and_ustensiles.id)
 
-  mortier_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257791/Heron-Market/Products/homedecor/mortier_l7suqf.jpg')
-  mortier.photos.attach(io: mortier_photo_1, filename: 'mortier_l7suqf.jpg', content_type: 'image/jpg')
+#   mortier_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257791/Heron-Market/Products/homedecor/mortier_l7suqf.jpg')
+#   mortier.photos.attach(io: mortier_photo_1, filename: 'mortier_l7suqf.jpg', content_type: 'image/jpg')
 
 oversize_wallart = Product.create!(name: 'Oversized Black and White Art',
   description: 'Elit labore dolore voluptate
