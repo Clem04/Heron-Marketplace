@@ -54,8 +54,8 @@
   </div>
 </div>
 <div id="user-menu">
-  <% if user_signed_in? %>
     <%= link_to 'Log out', destroy_user_session_path, method: 'DELETE', class: 'hidden' %>
+  <% if user_signed_in? %>
   <% else %>
   <ul>
     <li><%= link_to 'Log in',  new_user_session_path, class: 'hidden'%></li>
