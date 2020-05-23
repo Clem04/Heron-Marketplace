@@ -1,11 +1,15 @@
 class ApplicationController < ActionController::Base
-  before_action :ensure_user!, only: :home
+  # before_action :ensure_user!, only: :home
 
   protect_from_forgery with: :exception
  
   before_action :configure_permitted_parameters, if: :devise_controller?
 
   protected
+  
+  def authenticate_inviter!
+      authenticate_admin!(force: true)
+  end
  
   def configure_permitted_parameters
     added_attrs = [:username, :email, :password, :password_confirmation, :remember_me]
