@@ -40,7 +40,9 @@
                     <a href="#"><%= image_tag 'love-list-icon'%></a>
                   </div>
                   <div class="icon-btn">
-                    <a href="#"><%= image_tag 'shopping-bag-icon' %></a>
+                    <%= link_to line_items_path(product_id: product), method: 'CREATE' do %>
+                      <%= image_tag 'shopping-bag-icon' %>
+                    <% end %>
                   </div>
                 </div>
               </div>
