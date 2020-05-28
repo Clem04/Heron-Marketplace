@@ -6,7 +6,7 @@
       Price: <%= line_item.product.price %>$<br>
       <br>
       Quantity: <%= line_item.quantity %><br>
-      <%= link_to line_item_path(line_item.id), method: "delete", data: { confirm: "Are you sure?" } do %>
+      <%= link_to line_item_path(line_item.id), method: "delete" do %>
         <i class="far fa-trash-alt"></i>
       <% end %>
     </li>

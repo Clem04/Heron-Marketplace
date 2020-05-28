@@ -43,9 +43,14 @@
     <ul class="icon-menu">
       <li class="icon" id="connect-user"><a href="#"><%= image_tag 'user-icon.svg' %></a></li>
       <li class="icon"><a href="#"><%= image_tag 'love-list-icon.svg' %></a></li>
-      <li class="icon" id="shopping-bag"><a href="#"><%= image_tag 'shopping-bag-icon.svg' %></a></li>
+      <li id="shopping-bag"><%= link_to cart_path(@cart), class: 'icon' do %>
+        <%= image_tag 'shopping-bag-icon.svg'%>
+        <% end %>
+      </li>
       <li><a href="#">FR</a></li>
     </ul>
+
+
   </div>
   <div class="mobile-icon-menu">
     <ul class="icon-menu">

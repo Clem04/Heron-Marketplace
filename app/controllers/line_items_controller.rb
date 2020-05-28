@@ -22,7 +22,8 @@ class LineItemsController < ApplicationController
     @line_item = @cart.add_product(product)
     if @line_item.save
       # This is where I should add 1 to cart icon and alert successfully added instead of redirecting to cart
-      redirect_to @line_item.cart
+      category = product.sub_category.category
+      redirect_to category_product_path(category, product)
     else
       render :new
     end
