@@ -60,7 +60,13 @@
             <div class="product-price">
               <p>Price: <%= @product.price %>$</p>
             </div>
-            <%= button_to 'ADD TO CART', line_items_path(product_id: @product), class: 'add-cart-btn' %>
+            <%= button_to 'ADD TO CART', line_items_path(product_id: @product), class: 'add-cart-btn add-to-cart' %>
+
+            <div class="hidden-add-to-cart-success" id="add-product-to-cart">
+              <p><i class="check-mark fas fa-check"></i></p>
+              <p>Successfully added to your cart</p>
+            </div>
+
           </div>
         </div>
         <div class="icon-btn">
