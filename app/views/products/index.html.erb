@@ -43,6 +43,12 @@
                     <%= link_to line_items_path(product_id: product), method: 'CREATE', class: 'add-to-cart' do %>
                       <%= image_tag 'shopping-bag-icon' %>
                     <% end %>
+
+                    <div class="hidden-add-to-cart-success" id="add-product-to-cart">
+                      <p><i class="check-mark fas fa-check"></i></p>
+                      <p>Successfully added to your cart</p>
+                    </div>
+
                   </div>
                 </div>
               </div>
