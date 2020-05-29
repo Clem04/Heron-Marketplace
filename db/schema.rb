@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_26_191847) do
+ActiveRecord::Schema.define(version: 2020_05_29_213429) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,22 @@ ActiveRecord::Schema.define(version: 2020_05_26_191847) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_admins_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
+  end
+
+  create_table "base_products", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.decimal "price"
+    t.integer "score"
+    t.string "currency"
+    t.string "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "merchant_id"
+    t.bigint "sub_category_id"
+    t.string "sku"
+    t.index ["merchant_id"], name: "index_base_products_on_merchant_id"
+    t.index ["sub_category_id"], name: "index_base_products_on_sub_category_id"
   end
 
   create_table "carts", force: :cascade do |t|
@@ -173,19 +189,18 @@ ActiveRecord::Schema.define(version: 2020_05_26_191847) do
     t.index ["category_id"], name: "index_posts_on_category_id"
   end
 
-  create_table "products", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
-    t.decimal "price"
-    t.integer "score"
-    t.string "currency"
-    t.string "status"
+  create_table "product_variants", force: :cascade do |t|
+    t.bigint "products_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "merchant_id"
-    t.bigint "sub_category_id"
-    t.index ["merchant_id"], name: "index_products_on_merchant_id"
-    t.index ["sub_category_id"], name: "index_products_on_sub_category_id"
+    t.index ["products_id"], name: "index_product_variants_on_products_id"
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.bigint "base_product_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["base_product_id"], name: "index_products_on_base_product_id"
   end
 
   create_table "sub_categories", force: :cascade do |t|
@@ -215,16 +230,16 @@ ActiveRecord::Schema.define(version: 2020_05_26_191847) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "base_products", "merchants"
+  add_foreign_key "base_products", "sub_categories"
+  add_foreign_key "label_products", "base_products", column: "product_id"
   add_foreign_key "label_products", "labels"
-  add_foreign_key "label_products", "products"
   add_foreign_key "line_items", "carts"
   add_foreign_key "line_items", "products"
+  add_foreign_key "order_items", "base_products", column: "product_id"
   add_foreign_key "order_items", "orders"
-  add_foreign_key "order_items", "products"
   add_foreign_key "post_labels", "labels"
   add_foreign_key "post_labels", "posts"
   add_foreign_key "posts", "categories"
-  add_foreign_key "products", "merchants"
-  add_foreign_key "products", "sub_categories"
   add_foreign_key "sub_categories", "categories"
 end
