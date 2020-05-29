@@ -8,6 +8,13 @@ class Product < ApplicationRecord
   has_many :labels, through: :label_products
   has_many :line_items
 
+  validates :sub_category_id, presence: true, inclusion: { in: SubCategory.all }
+  validates :labels, presence: true
+  validates :name, :description, :photos, :price, :sku, presence: true
+  validates :description, length: { minimum: 20 }
+  validates :price, :numericality => {:greater_than_or_equal_to => 0.01}
+
+
   private
 
   def not_refereced_by_any_line_item
