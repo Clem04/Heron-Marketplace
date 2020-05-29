@@ -1,0 +1,14 @@
+<ul>
+  <% @cart.line_items.each do |line_item| %>
+    <li>
+      <%= line_item.product.name %><br>
+      <%= line_item.product.merchant.name %><br>
+      Price: <%= line_item.product.price %>$<br>
+      <br>
+      Quantity: <%= line_item.quantity %><br>
+      <%= link_to line_item_path(line_item.id), method: "delete" do %>
+        <i class="far fa-trash-alt"></i>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
