@@ -7,6 +7,7 @@ class Product < ApplicationRecord
   has_many :label_products
   has_many :labels, through: :label_products
   has_many :line_items
+  has_many :product_variants
 
   validates :sub_category_id, presence: true, inclusion: { in: SubCategory.all }
   validates :labels, presence: true
