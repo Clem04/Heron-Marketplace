@@ -1,8 +1,10 @@
 <%= simple_form_for(@product) do |f| %>
   <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-  <%= f.input :sub_category_id, as: :radio_buttons, collection: SubCategory.all %>
+  <%= f.input :sub_category_id, collection: SubCategory.all %>
+  <%= f.input :labels %>
   <%= f.input :name %>
   <%= f.input :description %>
+  <%#= f.input :sku %>
   <%= f.input :price %>
   <%= f.submit 'Add product', class: ".add-cart-btn"%>
 <% end %>
