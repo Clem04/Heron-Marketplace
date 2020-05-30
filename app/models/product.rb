@@ -9,12 +9,11 @@ class Product < ApplicationRecord
   has_many :line_items
   has_many :product_variants
 
-  # validates :sub_category_id, presence: true, inclusion: { in: SubCategory.all }
-  # validates :labels, presence: true
-  # validates :name, :description, :photos, :price, presence: true
-  # validates :description, length: { minimum: 20 }
-  # validates :price, :numericality => {:greater_than_or_equal_to => 0.01}
-
+  validates :sub_category_id, presence: true, inclusion: { in: SubCategory.all }
+  validates :labels, presence: true
+  validates :name, :description, :photos, :price, presence: true
+  validates :description, length: { minimum: 20 }
+  validates :price, :numericality => {:greater_than_or_equal_to => 0.01}
 
   private
 
