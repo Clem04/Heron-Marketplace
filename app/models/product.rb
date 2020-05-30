@@ -8,10 +8,9 @@ class Product < ApplicationRecord
   has_many :labels, through: :label_products
   has_many :line_items
   has_many :product_variants
-  has_many :sizes, through: :product_variants
 
-  validates :sub_category_id, presence: true, inclusion: { in: SubCategory.all }
-  validates :labels, presence: true
+  validates :sub_category_id, presence: true
+  # validates :labels, presence: true
   validates :name, :description, :photos, :price, presence: true
   validates :description, length: { minimum: 20 }
   validates :price, :numericality => {:greater_than_or_equal_to => 0.01}
