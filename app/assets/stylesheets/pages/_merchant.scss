@@ -35,6 +35,14 @@
 .confirmation-message{
   text-align: center;
   align-items: center;
+  p {
+    text-align: center;
+    margin: 20px 0 60px;
+    font-size: 1.25em;
+    &.success {
+      color: #73AF55;
+    }
+  }
 }
 
 .hidden-confirmation {
@@ -59,14 +67,6 @@ svg {
   }
 }
 
-p {
-  text-align: center;
-  margin: 20px 0 60px;
-  font-size: 1.25em;
-  &.success {
-    color: #73AF55;
-  }
-}
 
 /* For a screen < 720px, this CSS will be read */
 @media (max-width: 1024px) {
