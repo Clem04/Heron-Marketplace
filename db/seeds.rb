@@ -87,6 +87,13 @@ eco_friendly = SubCategory.create!(name: 'Eco-Friendly', category: home_decor)
 home_decor_sales = SubCategory.create!(name: 'Sales', category: home_decor)
 
 
+# Sizes
+xsmall = Size.create!(description: 'XS')
+small = Size.create!(description: 'S')
+medium = Size.create!(description: 'M')
+large = Size.create!(description: 'L')
+xlarge = Size.create!(description: 'XL')
+
 # Merchant - Fashion
 boutique_sleek_chic = Merchant.create!(name: 'Boutique sleek Chic',
   password: '232323', email: 'admin@boutiquesleekchic.ca', description: 'Excepteur duis deserunt qui tempor velit veniam eu cupidatat

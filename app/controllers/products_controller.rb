@@ -20,6 +20,7 @@ class ProductsController < ApplicationController
     @product = Product.new(product_params)
     @product.merchant = current_merchant
     if @product.save
+      raise
       category = @product.sub_category.category
       redirect_to category_product_path(category, @product)
     else
