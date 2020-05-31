@@ -6,5 +6,8 @@
   <%= f.input :description %>
   <%#= f.input :sku %>
   <%= f.input :price %>
+  <%= f.simple_fields_for :product_variants do |u| %>
+    <%= u.input :size_ids, as: :check_boxes, collection: Size.all %>
+  <% end %>
   <%= f.submit 'Add product', class: ".add-cart-btn"%>
 <% end %>

@@ -93,6 +93,7 @@ small = Size.create!(description: 'S')
 medium = Size.create!(description: 'M')
 large = Size.create!(description: 'L')
 xlarge = Size.create!(description: 'XL')
+one_size = Size.create!(description: 'TU')
 
 # Merchant - Fashion
 boutique_sleek_chic = Merchant.create!(name: 'Boutique sleek Chic',

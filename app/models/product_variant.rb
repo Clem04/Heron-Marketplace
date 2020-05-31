@@ -1,4 +1,4 @@
 class ProductVariant < ApplicationRecord
-  belongs_to :products
+  belongs_to :product
   has_many :sizes
 end
