@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_30_010335) do
+ActiveRecord::Schema.define(version: 2020_06_01_153457) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -177,10 +177,9 @@ ActiveRecord::Schema.define(version: 2020_05_30_010335) do
     t.bigint "product_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "size_id"
     t.integer "stock_qty"
+    t.string "size"
     t.index ["product_id"], name: "index_product_variants_on_product_id"
-    t.index ["size_id"], name: "index_product_variants_on_size_id"
   end
 
   create_table "products", force: :cascade do |t|
@@ -196,12 +195,6 @@ ActiveRecord::Schema.define(version: 2020_05_30_010335) do
     t.bigint "sub_category_id"
     t.index ["merchant_id"], name: "index_products_on_merchant_id"
     t.index ["sub_category_id"], name: "index_products_on_sub_category_id"
-  end
-
-  create_table "sizes", force: :cascade do |t|
-    t.string "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "sub_categories", force: :cascade do |t|
@@ -241,7 +234,6 @@ ActiveRecord::Schema.define(version: 2020_05_30_010335) do
   add_foreign_key "post_labels", "posts"
   add_foreign_key "posts", "categories"
   add_foreign_key "product_variants", "products"
-  add_foreign_key "product_variants", "sizes"
   add_foreign_key "products", "merchants"
   add_foreign_key "products", "sub_categories"
   add_foreign_key "sub_categories", "categories"

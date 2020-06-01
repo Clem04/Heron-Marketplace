@@ -14,14 +14,17 @@ class ProductsController < ApplicationController
 
   def new
     @product = Product.new
-    @product.product_variants.build
   end
 
   def create
     @product = Product.new(product_params)
     @product.merchant = current_merchant
     if @product.save
-      raise
+      xsmall = ProductVariant.create(size: "XS", stock_qty: params[:product][:stock_XS], product_id: @product.id)
+      small = ProductVariant.create(size: "S", stock_qty: params[:product][:stock_S], product_id: @product.id)
+      medium = ProductVariant.create(size: "M", stock_qty: params[:product][:stock_M], product_id: @product.id)
+      large = ProductVariant.create(size: "L", stock_qty: params[:product][:stock_L], product_id: @product.id)
+      xlarge = ProductVariant.create(size: "XL", stock_qty: params[:product][:stock_XL], product_id: @product.id)
       category = @product.sub_category.category
       redirect_to category_product_path(category, @product)
     else
@@ -32,6 +35,6 @@ class ProductsController < ApplicationController
   private
 
   def product_params
-    params.require(:product).permit(:name, :description, :sub_category_id, :price, photos: [], label_ids: [], product_variants_attributes:[:size_ids])
+    params.require(:product).permit(:name, :description, :sub_category_id, :price, photos: [], label_ids: [])
   end
 end
