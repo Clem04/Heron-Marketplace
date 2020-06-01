@@ -7,13 +7,19 @@ class Product < ApplicationRecord
   has_many :label_products
   has_many :labels, through: :label_products
   has_many :line_items
+  has_many :product_variants
 
-  private
+  # validates :sub_category_id, presence: true
+  # validates :name, :description, :photos, :price, :labels, presence: true
+  # validates :description, length: { minimum: 20 }
+  # validates :price, :numericality => {:greater_than_or_equal_to => 0.01}
 
-  def not_refereced_by_any_line_item
-    unless line_items.empty?
-      errors.add(:base, "Line items present")
-      throw :abort
-    end
-  end
+  # private
+
+  # def not_refereced_by_any_line_item
+  #   unless line_items.empty?
+  #     errors.add(:base, "Line items present")
+  #     throw :abort
+  #   end
+  # end
 end
