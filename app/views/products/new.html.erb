@@ -4,7 +4,7 @@
   <%= f.input :label_ids, as: :check_boxes, collection: Label.all %>
   <%= f.input :name %>
   <%= f.input :description %>
-  <%#= f.input :sku %>
+  <%= f.input :sku %>
   <%= f.input :price %>
   <%= f.input :stock_XS, as: :integer, input_html: { value: nil }  %>
   <%= f.input :stock_S, as: :integer, input_html: { value: nil }  %>
