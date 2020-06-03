@@ -1,5 +1,6 @@
 <%= simple_form_for(@product) do |f| %>
   <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+  <%= f.input :category, input_html: { value: nil }, as: :check_boxes, collection: Category.all %>
   <%= f.input :sub_category_id, collection: SubCategory.all %>
   <%= f.input :label_ids, as: :check_boxes, collection: Label.all %>
   <%= f.input :name %>
