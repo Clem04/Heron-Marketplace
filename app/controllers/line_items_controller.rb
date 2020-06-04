@@ -18,8 +18,8 @@ class LineItemsController < ApplicationController
   # end
 
   def create
-    product = Product.find(params[:product_id])
-    @line_item = @cart.add_product(product)
+    product_variant = ProductVariant.find(params[:product_variant_id])
+    @line_item = @cart.add_product(product_variant)
   end
 
   def destroy
