@@ -1,8 +1,11 @@
 const previewImageOnFileSelect = () => {
-  const input = document.getElementById('photo-input');
+  const input = document.querySelectorAll('.photo-input');
+  console.log(input);
   if (input) {
-    input.addEventListener('change', () => {
-      displayPreview(input);
+    input.forEach((i) => {
+      i.addEventListener('change', () => {
+        displayPreview(i);
+      })
     })
   }
 }
@@ -11,17 +14,12 @@ const displayPreview = (input) => {
   if (input.files && input.files.length > 0) {
     const reader = new FileReader();
     reader.onload = (event) => {
-      // document.getElementById('photo-preview').src = event.currentTarget.result;
-      let img = document.createElement("IMG");
-      img.src = event.currentTarget.result;
-      img.width = '200';
-      // const form = document.querySelector('.add-product');
-      // img.classList.add('photo-preview');
-      input.appendChild(img);
-      console.log('yes');
+      document.querySelectorAll('.photo-preview').forEach((photo) => {
+        photo.src = event.currentTarget.result;
+      });
     }
-    reader.readAsDataURL(input.files[1])
-    // document.querySelector('.photo-preview').classList.remove('hidden');
+    reader.readAsDataURL(input.files[0])
+    document.querySelector('.photo-preview').classList.remove('hidden');
   }
 }
 

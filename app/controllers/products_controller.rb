@@ -19,6 +19,8 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     @product.merchant = current_merchant
+    @product.photos = [params[:product][:photo_1], params[:product][:photo_2]]
+    # raise
     if @product.save
       xsmall = ProductVariant.create(size: "XS", stock_qty: params[:product][:stock_XS], product_id: @product.id)
       small = ProductVariant.create(size: "S", stock_qty: params[:product][:stock_S], product_id: @product.id)
@@ -35,6 +37,6 @@ class ProductsController < ApplicationController
   private
 
   def product_params
-    params.require(:product).permit(:name, :description, :sub_category_id, :price, label_ids: [])
+    params.require(:product).permit(:name, :description, :sub_category_id, :price, :sku, label_ids: [])
   end
 end

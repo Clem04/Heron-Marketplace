@@ -1,10 +1,12 @@
 <%= simple_form_for(@product) do |f| %>
-  <%#= image_tag "", width: 200, class: "hidden", id: "photo-preview" %>
-  <%= f.input :photos, as: :file, input_html: { multiple: true, class: 'hidden', id: 'photo-input'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a photo' %>
+  <%= image_tag "", width: 200, class: "hidden photo-preview"%>
+  <%= f.input :photo_1, as: :file, input_html: { value: nil, class: 'hidden photo-input'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a photo' %>
+  <%= image_tag "", width: 200, class: "hidden photo-preview"%>
+  <%= f.input :photo_2, as: :file, input_html: { value: nil, class: 'hidden photo-input'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a photo' %>
   <div class='category-form-group'>
     <%= f.input :category, input_html: { value: nil }, as: :radio_buttons, collection: Category.all %>
   </div>
-  <%= f.input :label_ids, as: :check_boxes, collection: Label.all %>
+  <%= f.input :label_ids, as: :check_boxes, collection: Label.all, label: 'Label'%>
   <%= f.input :name %>
   <%= f.input :description %>
   <%= f.input :sku %>

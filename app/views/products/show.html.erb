@@ -45,7 +45,11 @@
               <h7><%= @product.merchant.name %></h7>
             <% end %>
             <h1><%= @product.name %></h1>
-            <p>SKU NO: SKU3792</p>
+              <% if @product.sku.nil? %>
+                <p>SKU NO: SKU3792</p>
+              <% else %>
+                <p>SKU NO: <%= @product.sku %></p>
+              <% end %>
           </div>
           <div class="product-variations">
             <div class="product-colors">
