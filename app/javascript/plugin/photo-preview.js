@@ -1,25 +1,20 @@
 const previewImageOnFileSelect = () => {
-  const input = document.querySelectorAll('.photo-input');
-  console.log(input);
+  const input = document.querySelector('.photo-input-1');
   if (input) {
-    input.forEach((i) => {
-      i.addEventListener('change', () => {
-        displayPreview(i);
-      })
+    input.addEventListener('change', () => {
+      displayPreview(input);
     })
   }
 }
 
 const displayPreview = (input) => {
-  if (input.files && input.files.length > 0) {
+  if (input.files && input.files[0]) {
     const reader = new FileReader();
     reader.onload = (event) => {
-      document.querySelectorAll('.photo-preview').forEach((photo) => {
-        photo.src = event.currentTarget.result;
-      });
+      document.querySelector('.photo-preview-1').src = event.currentTarget.result;
     }
     reader.readAsDataURL(input.files[0])
-    document.querySelector('.photo-preview').classList.remove('hidden');
+    document.querySelector('.photo-preview-1').classList.remove('hidden');
   }
 }
 

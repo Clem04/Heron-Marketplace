@@ -118,6 +118,7 @@ high_rise_jeans_367 = Product.create!(name: 'High Rise Jeans 367',
 
   high_rise_jeans_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588099235/Heron-Market/Products/Fashion/High-Rise-Jeans_nfax9y.jpg')
   high_rise_jeans_367.photos.attach(io: high_rise_jeans_photo_1, filename: 'High-Rise-Jeans_nfax9y.jpg', content_type: 'image/jpg')
+xsmall = ProductVariant.create(size: "XS", stock_qty: 3, product_id: high_rise_jeans_367)
 
 black_backpack = Product.create!(name: 'Black Backpack',
   description: 'Elit labore dolore voluptate
@@ -582,6 +583,8 @@ infuser_oil = Product.create!(name: 'Essential Oil Infuser',
   infuser_oil_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257714/Heron-Market/Products/beautywellness/Essential-Oils-Infuser_bq6auj.jpg')
   infuser_oil.photos.attach(io: infuser_oil_photo_1, filename: 'Essential-Oils-Infuser_bq6auj.jpg', content_type: 'image/jpg')
 
+  75ml = ProductVariant.create(size: "75ml", stock_qty: 3, product_id: infuser_oil)
+
 
 flask_induser = Product.create!(name: 'Flask Difuser',
   description: 'Elit labore dolore voluptate
@@ -784,6 +787,8 @@ bread_loaf = Product.create!(name: 'Sweet Bread Loaf',
 
   bread_loaf_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197581/Heron-Market/Products/Food/Bread-Loaf_olrezn.jpg')
   bread_loaf.photos.attach(io: bread_loaf_photo_1, filename: 'Bread-Loaf_olrezn.jpg', content_type: 'image/jpg')
+
+  bread_loaf_variant = ProductVariant.create(stock_qty: 100, product_id: bread_loaf)
 
 granola_bites = Product.create!(name: 'Sweet Granola Bar',
   description: 'Elit labore dolore voluptate

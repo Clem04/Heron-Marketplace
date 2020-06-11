@@ -1,8 +1,8 @@
 <%= simple_form_for(@product) do |f| %>
-  <%= image_tag "", width: 200, class: "hidden photo-preview"%>
-  <%= f.input :photo_1, as: :file, input_html: { value: nil, class: 'hidden photo-input'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a photo' %>
-  <%= image_tag "", width: 200, class: "hidden photo-preview"%>
-  <%= f.input :photo_2, as: :file, input_html: { value: nil, class: 'hidden photo-input'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a photo' %>
+  <%= image_tag "", width: 200, class: "hidden photo-preview-1"%>
+  <%= f.input :photo_1, as: :file, input_html: { value: nil, class: 'hidden photo-input-1'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a photo' %>
+  <%= image_tag "", width: 200, class: "hidden photo-preview-2"%>
+  <%= f.input :photo_2, as: :file, input_html: { value: nil, class: 'hidden photo-input-2'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a photo' %>
   <div class='category-form-group'>
     <%= f.input :category, input_html: { value: nil }, as: :radio_buttons, collection: Category.all %>
   </div>
