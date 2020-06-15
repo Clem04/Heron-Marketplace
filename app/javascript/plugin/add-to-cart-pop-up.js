@@ -1,4 +1,4 @@
-const addToCart = () => {
+const addToCartPopUp = () => {
   const cartIcons = document.querySelectorAll('.add-to-cart')
   cartIcons.forEach((icon) => {
     icon.addEventListener( 'click', (event) => {
@@ -12,4 +12,4 @@ const addToCart = () => {
   });
 };
 
-export { addToCart };
+export { addToCartPopUp };

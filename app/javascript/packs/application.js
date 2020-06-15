@@ -7,6 +7,9 @@ import { openUserNav } from "../plugin/user-menu";
 import { addToCart } from "../plugin/add-to-cart";
 import { formInput } from "../plugin/form-input";
 import { previewImageOnFileSelect } from "../plugin/photo-preview";
+import { addToCartPopUp } from "../plugin/add-to-cart-pop-up";
+import { addToCartIconUpdate } from "../plugin/add-to-cart-icon-update";
+
 
 openNav();
 closeNav();
@@ -14,6 +17,9 @@ openUserNav();
 addToCart();
 formInput();
 previewImageOnFileSelect();
+addToCartPopUp();
+addToCartIconUpdate();
+
 
 if(window.location.pathname === '/users/sign_up'){
   menu_toggle();
