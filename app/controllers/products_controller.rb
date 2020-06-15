@@ -29,6 +29,7 @@ class ProductsController < ApplicationController
       category = @product.sub_category.category
       redirect_to category_product_path(category, @product)
     else
+      # raise
       render :new
     end
   end

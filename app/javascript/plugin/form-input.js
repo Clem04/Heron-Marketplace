@@ -10,12 +10,12 @@ function handleClick(e) {
     const subCategories = `
       <div class="sub-categories-form">
         <div class="form-group select required product_sub_category_id"><label class="select required" for="product_sub_category_id">Sub category <abbr title="required"></abbr></label><select class="form-control select required" name="product[sub_category_id]" id="product_sub_category_id"><option value=""></option>
-          <option value="149">Tops</option>
-          <option value="150">Bottoms</option>
-          <option value="151">Underwears</option>
-          <option value="152">Shoes</option>
-          <option value="153">Jewelleries</option>
-          <option value="154">Bags</option>
+          <option value="1">Tops</option>
+          <option value="2">Bottoms</option>
+          <option value="3">Underwears</option>
+          <option value="4">Shoes</option>
+          <option value="5">Jewelleries</option>
+          <option value="6">Bags</option>
           <option value="155">Scarves &amp; Belts</option>
           <option value="156">Sales</option>
        </div>
