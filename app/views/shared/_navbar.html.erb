@@ -43,10 +43,21 @@
     <ul class="icon-menu">
       <li class="icon" id="connect-user"><a href="#"><%= image_tag 'user-icon.svg' %></a></li>
       <li class="icon"><a href="#"><%= image_tag 'love-list-icon.svg' %></a></li>
-      <li id="shopping-bag"><%= link_to cart_path(@cart), class: 'icon' do %>
-        <%= image_tag 'shopping-bag-icon.svg', class: 'shopping-bag-black' %>
-        <% end %>
-      </li>
+
+      <% if @cart.line_items.length == 0 %>
+        <li id="shopping-bag"><%= link_to cart_path(@cart), class: 'icon' do %>
+          <%= image_tag 'shopping-bag-icon-white.svg', class: 'bag-img'%>
+          <span class="num-item-in-cart no-display">0</span>
+          <% end %>
+        </li>
+      <% else %>
+        <li id="shopping-bag"><%= link_to cart_path(@cart), class: 'icon' do %>
+          <%= image_tag 'shopping-bag-icon-black.svg' %>
+          <span class="num-item-in-cart"><%= total_cart_items %></span>
+          <% end %>
+        </li>
+      <% end %>
+
       <li><a href="#">FR</a></li>
     </ul>
 
@@ -54,7 +65,18 @@
   </div>
   <div class="mobile-icon-menu">
     <ul class="icon-menu">
-      <li class="icon" id="shopping-bag"><a href="#"><%= image_tag 'shopping-bag-icon.svg' %></a></li>
+      <% if @cart.line_items.length == 0 %>
+        <li id="shopping-bag"><%= link_to cart_path(@cart), class: 'icon' do %>
+          <%= image_tag 'shopping-bag-icon-white.svg' %>
+          <% end %>
+        </li>
+      <% else %>
+        <li id="shopping-bag"><%= link_to cart_path(@cart), class: 'icon' do %>
+          <%= image_tag 'shopping-bag-icon-black.svg' %>
+          <span class="num-item-in-cart"><%= total_cart_items %></span>
+          <% end %>
+        </li>
+      <% end %>
     </ul>
   </div>
 </div>

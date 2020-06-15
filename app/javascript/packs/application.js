@@ -4,12 +4,14 @@ import { confirmation_message } from "../plugin/confirmation-merchant";
 import { openNav } from "../plugin/open-menu";
 import { closeNav } from "../plugin/close-menu";
 import { openUserNav } from "../plugin/user-menu";
-import { addToCart } from "../plugin/add-to-cart"
+import { addToCartPopUp } from "../plugin/add-to-cart-pop-up";
+import { addToCartIconUpdate } from "../plugin/add-to-cart-icon-update";
 
 openNav();
 closeNav();
 openUserNav();
-addToCart();
+addToCartPopUp();
+addToCartIconUpdate();
 
 if(window.location.pathname === '/users/sign_up'){
   menu_toggle();
