@@ -1,3 +1,7 @@
+<% if @cart.line_items.length == 0 %>
+  <p>Your cart is empty</p>
+<% end %>
+
 <ul>
   <% @cart.line_items.each do |line_item| %>
     <li>
