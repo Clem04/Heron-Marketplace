@@ -52,7 +52,7 @@
       <% else %>
         <li id="shopping-bag"><%= link_to cart_path(@cart), class: 'icon' do %>
           <%= image_tag 'shopping-bag-icon-black.svg' %>
-          <span class="num-item-in-cart"><%= @cart.line_items.length %></span>
+          <span class="num-item-in-cart"><%= total_cart_items %></span>
           <% end %>
         </li>
       <% end %>
@@ -72,7 +72,7 @@
       <% else %>
         <li id="shopping-bag"><%= link_to cart_path(@cart), class: 'icon' do %>
           <%= image_tag 'shopping-bag-icon-black.svg' %>
-          <span class="num-item-in-cart"><%= @cart.line_items.length %></span>
+          <span class="num-item-in-cart"><%= total_cart_items %></span>
           <% end %>
         </li>
       <% end %>
