@@ -583,7 +583,7 @@ infuser_oil = Product.create!(name: 'Essential Oil Infuser',
   infuser_oil_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257714/Heron-Market/Products/beautywellness/Essential-Oils-Infuser_bq6auj.jpg')
   infuser_oil.photos.attach(io: infuser_oil_photo_1, filename: 'Essential-Oils-Infuser_bq6auj.jpg', content_type: 'image/jpg')
 
-  75ml = ProductVariant.create(size: "75ml", stock_qty: 3, product_id: infuser_oil)
+  quantity_ml = ProductVariant.create(size: "75ml", stock_qty: 3, product_id: infuser_oil)
 
 
 flask_induser = Product.create!(name: 'Flask Difuser',
