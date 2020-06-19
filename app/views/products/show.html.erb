@@ -64,6 +64,7 @@
             <div class="product-price">
               <p>Price: <%= @product.price %>$</p>
             </div>
+
             <%= button_to 'ADD TO CART', line_items_path(product_variant_id: @product.product_variants[0]), class: 'add-cart-btn add-to-cart' %>
 
             <div class="hidden-add-to-cart-success" id="add-product-to-cart">
