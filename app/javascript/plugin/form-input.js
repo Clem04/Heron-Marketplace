@@ -80,10 +80,12 @@ function handleClick(e) {
 }
 
 const formInput = () => {
-  const categories = form.querySelectorAll('.form-check');
-  categories.forEach((category) => {
-    category.addEventListener('click', handleClick);
-  })
+  if (form) {
+    const categories = form.querySelectorAll('.form-check');
+    categories.forEach((category) => {
+      category.addEventListener('click', handleClick);
+    })
+  }
 }
 
 export { formInput };

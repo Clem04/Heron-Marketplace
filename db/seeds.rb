@@ -118,7 +118,7 @@ high_rise_jeans_367 = Product.create!(name: 'High Rise Jeans 367',
 
   high_rise_jeans_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588099235/Heron-Market/Products/Fashion/High-Rise-Jeans_nfax9y.jpg')
   high_rise_jeans_367.photos.attach(io: high_rise_jeans_photo_1, filename: 'High-Rise-Jeans_nfax9y.jpg', content_type: 'image/jpg')
-xsmall = ProductVariant.create(size: "XS", stock_qty: 3, product_id: high_rise_jeans_367)
+xsmall = ProductVariant.create(size: "XS", stock_qty: 3, product_id: high_rise_jeans_367.id)
 
 black_backpack = Product.create!(name: 'Black Backpack',
   description: 'Elit labore dolore voluptate
@@ -583,7 +583,7 @@ infuser_oil = Product.create!(name: 'Essential Oil Infuser',
   infuser_oil_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257714/Heron-Market/Products/beautywellness/Essential-Oils-Infuser_bq6auj.jpg')
   infuser_oil.photos.attach(io: infuser_oil_photo_1, filename: 'Essential-Oils-Infuser_bq6auj.jpg', content_type: 'image/jpg')
 
-  quantity_ml = ProductVariant.create(size: "75ml", stock_qty: 3, product_id: infuser_oil)
+  quantity_ml = ProductVariant.create(size: "75ml", stock_qty: 3, product_id: infuser_oil.id)
 
 
 flask_induser = Product.create!(name: 'Flask Difuser',
@@ -788,7 +788,7 @@ bread_loaf = Product.create!(name: 'Sweet Bread Loaf',
   bread_loaf_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197581/Heron-Market/Products/Food/Bread-Loaf_olrezn.jpg')
   bread_loaf.photos.attach(io: bread_loaf_photo_1, filename: 'Bread-Loaf_olrezn.jpg', content_type: 'image/jpg')
 
-  bread_loaf_variant = ProductVariant.create(stock_qty: 100, product_id: bread_loaf)
+  bread_loaf_variant = ProductVariant.create(stock_qty: 100, product_id: bread_loaf.id)
 
 granola_bites = Product.create!(name: 'Sweet Granola Bar',
   description: 'Elit labore dolore voluptate
@@ -1099,6 +1099,7 @@ basket = Product.create!(name: 'Bath Basket',
 
   basket_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257838/Heron-Market/Products/homedecor/Basket_izrdyx.jpg')
   basket.photos.attach(io: basket_photo_1, filename: 'Basket_izrdyx.jpg', content_type: 'image/jpg')
+    basket_variant = ProductVariant.create(stock_qty: 100, product_id: basket.id)
 
 bed_lamp = Product.create!(name: 'Bed Lamp', description: 'Elit labore dolore voluptate
   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
