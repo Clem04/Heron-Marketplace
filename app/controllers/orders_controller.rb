@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
 	def index
-		@order = Order.all
+		@orders = Order.all
 	end
 
 	def new
@@ -18,7 +18,7 @@ class OrdersController < ApplicationController
 
 	private
 
-	def oder_params
+	def order_params
 		params.require(:order).permit(:user_id, :points_used, :points_earned, 
 			:price_before_reduction, :final_price_before_taxes, :final_price_with_taxes, :status )
 	end
