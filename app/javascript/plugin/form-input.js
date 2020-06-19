@@ -9,15 +9,21 @@ function handleClick(e) {
   if (label.innerText === 'Fashion') {
     const subCategories = `
       <div class="sub-categories-form">
-        <div class="form-group select required product_sub_category_id"><label class="select required" for="product_sub_category_id">Sub category <abbr title="required"></abbr></label><select class="form-control select required" name="product[sub_category_id]" id="product_sub_category_id"><option value=""></option>
-          <option value="1">Tops</option>
+        <div class="form-group select required product_sub_category_id">
+        <label class="select required" for="product_sub_category_id">
+        Sub category <abbr title="required">
+        </abbr></label>
+        <select class="form-control select required" name="product[sub_category_id]" id="product_sub_category_id">
+        <option value=""></option>
+          <option value="<%= %>">Tops</option>
           <option value="2">Bottoms</option>
           <option value="3">Underwears</option>
           <option value="4">Shoes</option>
           <option value="5">Jewelleries</option>
           <option value="6">Bags</option>
-          <option value="155">Scarves &amp; Belts</option>
-          <option value="156">Sales</option>
+          <option value="7">Scarves &amp; Belts</option>
+          <option value="8">Sales</option>
+        </select>
        </div>
     `;
     form.insertAdjacentHTML('beforeend', subCategories);
@@ -26,14 +32,14 @@ function handleClick(e) {
     const subCategories = `
       <div class="sub-categories-form">
         <div class="form-group select required product_sub_category_id"><label class="select required" for="product_sub_category_id">Sub category <abbr title="required"></abbr></label><select class="form-control select required" name="product[sub_category_id]" id="product_sub_category_id"><option value=""></option>
-          <option value="157">Makeup</option>
-          <option value="158">Skin Care</option>
-          <option value="159">Hair Care</option>
-          <option value="160">Body Care</option>
-          <option value="161">Candle &amp; Essential Oils</option>
-          <option value="162">Accessories</option>
-          <option value="163">Bundles</option>
-          <option value="164">sales</option>
+          <option value="9">Makeup</option>
+          <option value="10">Skin Care</option>
+          <option value="11">Hair Care</option>
+          <option value="12">Body Care</option>
+          <option value="13">Candle &amp; Essential Oils</option>
+          <option value="14">Accessories</option>
+          <option value="15">Bundles</option>
+          <option value="16">sales</option>
       </div>
     `;
     form.insertAdjacentHTML('beforeend', subCategories);
@@ -43,15 +49,15 @@ function handleClick(e) {
     const subCategories = `
       <div class="sub-categories-form">
         <div class="form-group select required product_sub_category_id"><label class="select required" for="product_sub_category_id">Sub category <abbr title="required"></abbr></label><select class="form-control select required" name="product[sub_category_id]" id="product_sub_category_id"><option value=""></option>
-         <option value="165">Vegetables</option>
-         <option value="166">Fruits</option>
-         <option value="167">Meat &amp; Fish</option>
-         <option value="168">Dairy &amp; Eggs</option>
-         <option value="169">Bread &amp; Bakery</option>
-         <option value="170">Organic Food</option>
-         <option value="171">Beverages</option>
-         <option value="172">Snacks &amp; Cookies</option>
-         <option value="173">Sales</option>
+         <option value="17">Vegetables</option>
+         <option value="18">Fruits</option>
+         <option value="19">Meat &amp; Fish</option>
+         <option value="20">Dairy &amp; Eggs</option>
+         <option value="21">Bread &amp; Bakery</option>
+         <option value="22">Organic Food</option>
+         <option value="23">Beverages</option>
+         <option value="24">Snacks &amp; Cookies</option>
+         <option value="25">Sales</option>
       </div>
     `;
     form.insertAdjacentHTML('beforeend', subCategories);
@@ -72,7 +78,9 @@ function handleClick(e) {
         <option value="182">Towels</option>
         <option value="183">Storage</option>
         <option value="184">Eco-Friendly</option>
-        <option value="185">Sales</option></select></div>
+        <option value="185">Sales</option>
+        </select>
+        </div>
       </div>
     `;
     form.insertAdjacentHTML('beforeend', subCategories);
@@ -82,6 +90,7 @@ function handleClick(e) {
 const formInput = () => {
   const categories = form.querySelectorAll('.form-check');
   categories.forEach((category) => {
+    console.log(category.checked)
     category.addEventListener('click', handleClick);
   })
 }
