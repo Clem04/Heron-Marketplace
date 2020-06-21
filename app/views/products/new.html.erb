@@ -8,12 +8,18 @@
     </div>
     <div class='category-form-group'>
       <%= f.input :category, input_html: { value: nil }, as: :radio_buttons, collection: Category.all %>
+      <%= f.input :sub_category, collection: SubCategory.where(‘category_id = 1’), class: "hidden fashion-sub" %>
+      <%= f.input :sub_category, collection: SubCategory.where(‘category_id = 2’), class: "hidden beauty-sub"%>
+      <%= f.input :sub_category, collection: SubCategory.where(‘category_id = 3’), class: "hidden food-sub"%>
+      <%= f.input :sub_category, collection: SubCategory.where(‘category_id = 4’), class: "hidden home-sub"%>
     </div>
     <%= f.input :label_ids, as: :check_boxes, collection: Label.all, label: 'Label'%>
     <%= f.input :name %>
     <%= f.input :description %>
     <%= f.input :sku %>
     <%= f.input :price %>
+    <%= sizes = ['TU', 'Diffrent Sizes']  %>
+    <%= f.input :sizes, input_html: { value: nil }, as: :array%>
     <%= f.input :stock_XS, as: :integer, input_html: { value: nil }%>
     <%= f.input :stock_S, as: :integer, input_html: { value: nil }%>
     <%= f.input :stock_M, as: :integer, input_html: { value: nil }%>
