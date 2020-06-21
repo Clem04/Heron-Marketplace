@@ -8,6 +8,8 @@
     </div>
     <div class='category-form-group'>
       <%= f.input :category, input_html: { value: nil }, as: :radio_buttons, collection: Category.all %>
+    </div>
+    <div class="sub-categories-form">
       <%= f.input :sub_category, collection: SubCategory.where(‘category_id = 1’), class: "hidden fashion-sub" %>
       <%= f.input :sub_category, collection: SubCategory.where(‘category_id = 2’), class: "hidden beauty-sub"%>
       <%= f.input :sub_category, collection: SubCategory.where(‘category_id = 3’), class: "hidden food-sub"%>
