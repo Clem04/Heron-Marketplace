@@ -14,9 +14,10 @@
               <div class="overlay-menu">
                 <p>Produits</p>
                 <ul>
-                  <% categories.each do |category|%>
-                    <li><%= link_to category.name, category_products_path(category.id) %></li>
-                  <% end %>
+                  <li>Dashboard</li>
+                  <li>Inventory</li>
+                  <li>Orders</li>
+                  <li>Settings</li>
                 </ul>
                 <p><a href="#">Boutiques</a></p>
                 <p><a href="#">Mon compte</a></p>
@@ -36,9 +37,10 @@
   </div>
   <div class="main-menu">
     <ul class="categories-list">
-      <% categories.each do |category|%>
-        <li><%= link_to category.name, category_products_path(category.id) %></li>
-      <% end %>
+        <li>Dashboard</li>
+        <li>Inventory</li>
+        <li>Orders</li>
+        <li>Settings</li>
     </ul>
     <ul class="icon-menu">
       <li class="icon" id="connect-user"><a href="#"><%= image_tag 'user-icon.svg' %></a></li>
