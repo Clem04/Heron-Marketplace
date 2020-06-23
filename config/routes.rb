@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'merchant_dashboards/dashbaord'
   devise_for :merchants, controllers: { registrations: "merchants/registrations", sessions: "merchants/sessions"  }
   devise_for :admins, controllers: { registrations: "admins/registrations", sessions: "admins/sessions"  }
   devise_for :users
