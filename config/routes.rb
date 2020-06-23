@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get 'merchant_dashboards/dashbaord'
   devise_for :merchants, controllers: { registrations: "merchants/registrations", sessions: "merchants/sessions"  }
   devise_for :admins, controllers: { registrations: "admins/registrations", sessions: "admins/sessions"  }
   devise_for :users
   root to: 'pages#home'
+  get 'dashboard' to: 'pages#dashboard'
 
   resources :categories, only: [] do
     resources :products, only: [:index, :show]
@@ -13,7 +13,6 @@ Rails.application.routes.draw do
   resources :posts, only: [:new, :create]
   resources :line_items
   resources :carts
-  resources :dashboards, only: [:show]
 
   get '/merchants/:id', to: 'merchants#show', as: 'merchant'
   

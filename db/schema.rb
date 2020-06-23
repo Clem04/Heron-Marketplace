@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_23_022347) do
+ActiveRecord::Schema.define(version: 2020_06_23_154642) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,13 +57,6 @@ ActiveRecord::Schema.define(version: 2020_06_23_022347) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "dashboards", force: :cascade do |t|
-    t.bigint "merchant_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["merchant_id"], name: "index_dashboards_on_merchant_id"
   end
 
   create_table "label_products", force: :cascade do |t|
@@ -232,7 +225,6 @@ ActiveRecord::Schema.define(version: 2020_06_23_022347) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "dashboards", "merchants"
   add_foreign_key "label_products", "labels"
   add_foreign_key "label_products", "products"
   add_foreign_key "line_items", "carts"
