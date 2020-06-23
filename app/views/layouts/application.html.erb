@@ -10,7 +10,7 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <% if controller_name == "pages" %>
+    <% if controller_name == "pages" && action_name == "home" %>
       <%= render 'shared/navbar', :categories => Category.all %>
     <% elsif controller_name == "carts" %>
       <%= render 'shared/navbar', :categories => Category.all %>

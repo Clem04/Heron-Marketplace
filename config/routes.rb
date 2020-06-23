@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   devise_for :admins, controllers: { registrations: "admins/registrations", sessions: "admins/sessions"  }
   devise_for :users
   root to: 'pages#home'
-  get 'dashboard' to: 'pages#dashboard'
 
   resources :categories, only: [] do
     resources :products, only: [:index, :show]
@@ -15,6 +14,12 @@ Rails.application.routes.draw do
   resources :carts
 
   get '/merchants/:id', to: 'merchants#show', as: 'merchant'
+  
+
+  get '/dashboard', to: 'pages#dashboard', as: :merchant_root
+  namespace :merchant do
+    root to: 'pages#dashboard' # creates merchant dashboard root_path
+  end
   
   as :merchant do
     get 'signin' => 'devise/sessions#new'
