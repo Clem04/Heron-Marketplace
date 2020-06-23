@@ -10,11 +10,24 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <%= render 'shared/navbar', :categories => Category.all %>
+    <% if controller_name == "pages" && action_name == "home" %>
+      <%= render 'shared/navbar', :categories => Category.all %>
+    <% elsif controller_name == "carts" %>
+      <%= render 'shared/navbar', :categories => Category.all %>
+    <% elsif controller_name == "products" %>
+      <%= render 'shared/navbar', :categories => Category.all %>
+    <% elsif user_signed_in? %>
+      <%= render 'shared/navbar', :categories => Category.all %>
+    <% elsif !merchant_signed_in? %>
+      <%= render 'shared/navbar', :categories => Category.all %>
+    <% else %>
+      <%= render 'shared/navbar_merchant' %>
+    <% end %>
     <%= yield %>
     <%= render 'shared/flashes' %>
     <%= render 'shared/footer' %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
   </body>
 </html>
