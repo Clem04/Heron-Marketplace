@@ -1,4 +1,5 @@
 class MerchantDashboardsController < ApplicationController
-  def dashboard
+  def show
+  	
   end
 end

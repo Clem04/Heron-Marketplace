@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   resources :posts, only: [:new, :create]
   resources :line_items
   resources :carts
+  resources :dashboards
 
   get '/merchants/:id', to: 'merchants#show', as: 'merchant'
   
