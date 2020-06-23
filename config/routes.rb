@@ -16,6 +16,9 @@ Rails.application.routes.draw do
   get '/merchants/:id', to: 'merchants#show', as: 'merchant'
   
 
+  get '/inventory', to: 'pages#inventory', as: 'inventory'
+  get '/order', to: 'pages#order', as: 'order'
+  
   get '/dashboard', to: 'pages#dashboard', as: :merchant_root
   namespace :merchant do
     root to: 'pages#dashboard' # creates merchant dashboard root_path

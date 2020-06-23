@@ -21,7 +21,7 @@
     <% elsif !merchant_signed_in? %>
       <%= render 'shared/navbar', :categories => Category.all %>
     <% else %>
-      <%= render 'shared/navbar_admin' %>
+      <%= render 'shared/navbar_merchant' %>
     <% end %>
     <%= yield %>
     <%= render 'shared/flashes' %>
