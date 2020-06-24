@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_23_204345) do
+ActiveRecord::Schema.define(version: 2020_06_24_230052) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -82,8 +82,19 @@ ActiveRecord::Schema.define(version: 2020_06_23_204345) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "quantity", default: 1
+    t.bigint "merchant_order_id"
     t.index ["cart_id"], name: "index_line_items_on_cart_id"
+    t.index ["merchant_order_id"], name: "index_line_items_on_merchant_order_id"
     t.index ["product_id"], name: "index_line_items_on_product_id"
+  end
+
+  create_table "merchant_orders", force: :cascade do |t|
+    t.bigint "merchant_id"
+    t.bigint "cart_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["cart_id"], name: "index_merchant_orders_on_cart_id"
+    t.index ["merchant_id"], name: "index_merchant_orders_on_merchant_id"
   end
 
   create_table "merchants", force: :cascade do |t|
@@ -206,7 +217,10 @@ ActiveRecord::Schema.define(version: 2020_06_23_204345) do
   add_foreign_key "label_products", "labels"
   add_foreign_key "label_products", "products"
   add_foreign_key "line_items", "carts"
+  add_foreign_key "line_items", "merchant_orders"
   add_foreign_key "line_items", "products"
+  add_foreign_key "merchant_orders", "carts"
+  add_foreign_key "merchant_orders", "merchants"
   add_foreign_key "post_labels", "labels"
   add_foreign_key "post_labels", "posts"
   add_foreign_key "posts", "categories"
