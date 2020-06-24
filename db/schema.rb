@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_02_225726) do
+ActiveRecord::Schema.define(version: 2020_06_23_204345) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -122,28 +122,6 @@ ActiveRecord::Schema.define(version: 2020_06_02_225726) do
     t.index ["reset_password_token"], name: "index_merchants_on_reset_password_token", unique: true
   end
 
-  create_table "order_items", force: :cascade do |t|
-    t.bigint "product_id"
-    t.bigint "order_id"
-    t.integer "quantity"
-    t.decimal "points_earned"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["order_id"], name: "index_order_items_on_order_id"
-    t.index ["product_id"], name: "index_order_items_on_product_id"
-  end
-
-  create_table "orders", force: :cascade do |t|
-    t.decimal "points_used"
-    t.decimal "points_earned"
-    t.decimal "price_before_reduction"
-    t.decimal "final_price_before_taxes"
-    t.decimal "final_price_with_taxes"
-    t.string "status"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "photos", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -229,8 +207,6 @@ ActiveRecord::Schema.define(version: 2020_06_02_225726) do
   add_foreign_key "label_products", "products"
   add_foreign_key "line_items", "carts"
   add_foreign_key "line_items", "products"
-  add_foreign_key "order_items", "orders"
-  add_foreign_key "order_items", "products"
   add_foreign_key "post_labels", "labels"
   add_foreign_key "post_labels", "posts"
   add_foreign_key "posts", "categories"

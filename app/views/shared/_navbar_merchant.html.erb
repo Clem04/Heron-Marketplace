@@ -12,15 +12,13 @@
                 <a href="/"><%= image_tag 'heron-logo.png' %></a>
               </div>
               <div class="overlay-menu">
-                <p>Products</p>
+                <p>Management</p>
                 <ul>
-                  <% categories.each do |category|%>
-                    <li><%= link_to category.name, category_products_path(category.id) %></li>
-                  <% end %>
+                  <<li><a href="/dashboard">Dashboard</a></li>
+                  <li><a href="/inventory">Inventory</a></li>
+                  <li><a href="/order">Orders</a></li>                
                 </ul>
-                <p><a href="#">Boutiques</a></p>
-                <p><a href="#">My Account</a></p>
-                <p><a href="#">Contact</a></p>
+                <p><a href="#">Account</a></p>
               </div>
             </div>
           </div>
@@ -36,28 +34,12 @@
   </div>
   <div class="main-menu">
     <ul class="categories-list">
-      <% categories.each do |category|%>
-        <li><%= link_to category.name, category_products_path(category.id) %></li>
-      <% end %>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/inventory">Inventory</a></li>
+        <li><a href="/order">Orders</a></li>
     </ul>
     <ul class="icon-menu">
-      <li class="icon" id="connect-user"><a href="#"><%= image_tag 'user-icon.svg' %></a></li>
-      <li class="icon"><a href="#"><%= image_tag 'love-list-icon.svg' %></a></li>
-
-      <% if @cart.line_items.length == 0 %>
-        <li id="shopping-bag"><%= link_to cart_path(@cart), class: 'icon' do %>
-          <%= image_tag 'shopping-bag-icon-white.svg', class: 'bag-img'%>
-          <span class="num-item-in-cart no-display">0</span>
-          <% end %>
-        </li>
-      <% else %>
-        <li id="shopping-bag"><%= link_to cart_path(@cart), class: 'icon' do %>
-          <%= image_tag 'shopping-bag-icon-black.svg', class: 'bag-img' %>
-          <span class="num-item-in-cart"><%= total_cart_items %></span>
-          <% end %>
-        </li>
-      <% end %>
-
+      <li><a href="#">Account</a></li>
       <li><a href="#">EN</a></li>
     </ul>
 
@@ -83,7 +65,7 @@
 </div>
 <div id="user-menu">
     <%= link_to 'Log out', destroy_user_session_path, method: 'DELETE', class: 'hidden' %>
-  <% if user_signed_in? %>
+  <% if merchant_signed_in? %>
   <% else %>
   <ul>
     <li><%= link_to 'Log in',  new_user_session_path, class: 'hidden'%></li>
