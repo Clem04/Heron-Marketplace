@@ -223,6 +223,7 @@ ActiveRecord::Schema.define(version: 2020_06_25_184323) do
   add_foreign_key "line_items", "orders", column: "merchant_order_id"
   add_foreign_key "line_items", "products"
   add_foreign_key "orders", "merchants"
+  # add_foreign_key "line_items", "product_variants"
   add_foreign_key "post_labels", "labels"
   add_foreign_key "post_labels", "posts"
   add_foreign_key "posts", "categories"
