@@ -3,6 +3,7 @@
     <div class="photo-preview">
       <%= image_tag "", width: 200, height: 300, class: "hidden photo-preview-1"%>
       <%= f.input :photo_1, as: :file, input_html: { value: nil, class: 'hidden photo-input'}, label_html: { class: 'upload-photo photo-1'}, label: '+' %>
+      <button>Delete</button>
       <%= image_tag "", width: 200, height: 300, class: "hidden photo-preview-2"%>
       <%= f.input :photo_2, as: :file, input_html: { value: nil, class: 'hidden photo-input'}, label_html: { class: 'upload-photo hidden photo-2'}, label: '+' %>
       <%= image_tag "", width: 200, height: 300, class: "hidden photo-preview-3"%>

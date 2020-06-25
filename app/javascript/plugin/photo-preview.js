@@ -36,14 +36,14 @@ const displayPreview = (input) => {
       preview = '.photo-preview-3'
       photo3.style.position = 'relative';
       photo3.style.top = '108px';
-      photo3.style.right = '130px';
+      photo3.style.right = '140px';
       photo4.classList.remove('hidden');
     }
     if (input.id === 'product_photo_4') {
       preview = '.photo-preview-4'
       photo4.style.position = 'relative';
       photo4.style.top = '108px';
-      photo4.style.right = '120px';
+      photo4.style.right = '140px';
     }
     reader.onload = (event) => {
       document.querySelector(preview).src = event.currentTarget.result;
