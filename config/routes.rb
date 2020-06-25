@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   resources :posts, only: [:new, :create]
   resources :line_items
   resources :carts
+  # resources :orders, only: [:index, :show]
+  # resources :order_items, only: [:show]
 
   get '/merchants/:id', to: 'merchants#show', as: 'merchant'
   
@@ -20,6 +22,7 @@ Rails.application.routes.draw do
   get '/order', to: 'pages#order', as: 'order'
   
   get '/dashboard', to: 'pages#dashboard', as: :merchant_root
+  
   namespace :merchant do
     root to: 'pages#dashboard' # creates merchant dashboard root_path
   end
