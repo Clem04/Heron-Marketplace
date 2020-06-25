@@ -8,6 +8,7 @@ import { formInput } from "../plugin/form-input";
 import { previewImageOnFileSelect } from "../plugin/photo-preview";
 import { addToCartPopUp } from "../plugin/add-to-cart-pop-up";
 import { addToCartIconUpdate } from "../plugin/add-to-cart-icon-update";
+import { removePicture } from "../plugin/remve-picture";
 
 
 openNav();
@@ -17,7 +18,7 @@ addToCartPopUp();
 addToCartIconUpdate();
 formInput();
 previewImageOnFileSelect();
-
+removePicture();
 
 if(window.location.pathname === '/users/sign_up'){
   menu_toggle();
