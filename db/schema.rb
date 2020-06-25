@@ -207,7 +207,7 @@ ActiveRecord::Schema.define(version: 2020_06_23_204345) do
   add_foreign_key "label_products", "labels"
   add_foreign_key "label_products", "products"
   add_foreign_key "line_items", "carts"
-  add_foreign_key "line_items", "product_variants"
+  # add_foreign_key "line_items", "product_variants"
   add_foreign_key "post_labels", "labels"
   add_foreign_key "post_labels", "posts"
   add_foreign_key "posts", "categories"
