@@ -1,0 +1,2 @@
+class MerchantOrdersController < ApplicationController
+end
