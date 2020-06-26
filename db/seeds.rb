@@ -114,7 +114,7 @@ high_rise_jeans_367 = Product.create!(name: 'High Rise Jeans 367',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 79.00,
-  merchant_id: boutique_sleek_chic.id, sub_category_id: bottoms.id)
+  merchant_id: boutique_sleek_chic.id, sub_category_id: bottoms.id, sku: 'ABHD1783')
 
   high_rise_jeans_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588099235/Heron-Market/Products/Fashion/High-Rise-Jeans_nfax9y.jpg')
   high_rise_jeans_367.photos.attach(io: high_rise_jeans_photo_1, filename: 'High-Rise-Jeans_nfax9y.jpg', content_type: 'image/jpg')
@@ -127,7 +127,7 @@ black_backpack = Product.create!(name: 'Black Backpack',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 50.99,
-  merchant_id: boutique_sleek_chic.id, sub_category_id: bags.id)
+  merchant_id: boutique_sleek_chic.id, sub_category_id: bags.id, sku: 'ABHD1983')
 
   black_backpack_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175277/Heron-Market/Products/Fashion/Black-Backpack_qnkoe5.jpg')
   black_backpack.photos.attach(io: black_backpack_photo_1, filename: 'Black-Backpack_qnkoe5.jpg', content_type: 'image/jpg')
@@ -139,7 +139,7 @@ red_dress = Product.create!(name: 'Red Dress',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 120.99,
-  merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id)
+  merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id, sku: 'ABHD1784')
 
   red_dress_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175245/Heron-Market/Products/Fashion/Dress-Red-Front_znsbup.jpg')
   red_dress_photo_2 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175269/Heron-Market/Products/Fashion/Dress-Red-Back_jf1hrm.jpg')
@@ -155,7 +155,7 @@ pink_heels = Product.create!(name: 'Pink Heels',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 118.99,
-  merchant_id: boutique_sleek_chic.id, sub_category_id: shoes.id)
+  merchant_id: boutique_sleek_chic.id, sub_category_id: shoes.id, sku: 'AKJH1783')
 
   pink_heels_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175271/Heron-Market/Products/Fashion/Pink-Heels_xwtoy9.jpg')
   pink_heels.photos.attach(io: pink_heels_photo_1, filename: 'Pink-Heels_xwtoy9.jpg', content_type: 'image/jpg')
@@ -167,7 +167,7 @@ scarf_blue = Product.create!(name: 'Blue Scarf',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 25.00,
-  merchant_id: boutique_sleek_chic.id, sub_category_id: fashion_accessories.id)
+  merchant_id: boutique_sleek_chic.id, sub_category_id: fashion_accessories.id, sku: 'ABPO1783')
 
   scarf_blue_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175267/Heron-Market/Products/Fashion/Scarf-Blue_eoastr.jpg')
   scarf_blue.photos.attach(io: scarf_blue_photo_1, filename: 'Scarf-Blue_eoastr.jpg', content_type: 'image/jpg')
