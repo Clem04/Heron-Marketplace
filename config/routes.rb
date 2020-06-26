@@ -22,6 +22,7 @@ Rails.application.routes.draw do
 
   get '/inventory', to: 'pages#inventory', as: 'inventory'
   get '/order', to: 'pages#order', as: 'order'
+  get '/account', to: 'pages#account', as: 'account'
   
   # Dashboard for merchants
   get '/dashboard', to: 'pages#dashboard', as: :merchant_root
