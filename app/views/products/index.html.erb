@@ -33,7 +33,7 @@
             <div class="product-card">
               <div class="product-img" style ="background-image: url(<%= cl_image_path product.photos[0].key %>)">
                 <div class="price">
-                  <p><%= product.price %></p>
+                  <p><%= product.price %><%= currency_symbol %></p>
                 </div>
                 <div class="product-icons">
                   <div class="icon-btn">
