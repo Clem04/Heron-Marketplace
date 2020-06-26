@@ -8,6 +8,7 @@ class Product < ApplicationRecord
   has_many :labels, through: :label_products
   has_many :line_items
   has_many :product_variants
+  monetize :price_cents
 
   # validates :sub_category_id, presence: true
   # validates :name, :description, :photos, :price, :sku, :labels, presence: true
