@@ -23,10 +23,18 @@ Rails.application.routes.draw do
   get '/inventory', to: 'pages#inventory', as: 'inventory'
   get '/order', to: 'pages#order', as: 'order'
   
+  # Dashboard for merchants
   get '/dashboard', to: 'pages#dashboard', as: :merchant_root
   
   namespace :merchant do
     root to: 'pages#dashboard' # creates merchant dashboard root_path
+  end
+
+  # Dashboard for admins
+  get '/invitations', to: 'pages#invitations', as: :admin_root
+
+   namespace :admin do
+    root to: 'pages#invitations' # creates merchant dashboard root_path
   end
   
   as :merchant do
