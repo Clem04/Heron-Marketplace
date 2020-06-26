@@ -1,14 +1,26 @@
 <div class="content">
   <%= simple_form_for(@product) do |f| %>
     <div class="photo-preview">
-      <%= image_tag "", width: 200, height: 300, class: "hidden photo-preview-1"%>
-      <%= f.input :photo_1, as: :file, input_html: { value: nil, class: 'hidden photo-input'}, label_html: { class: 'upload-photo photo-1'}, label: '+' %>
-      <%= image_tag "", width: 200, height: 300, class: "hidden photo-preview-2"%>
-      <%= f.input :photo_2, as: :file, input_html: { value: nil, class: 'hidden photo-input'}, label_html: { class: 'upload-photo hidden photo-2'}, label: '+' %>
-      <%= image_tag "", width: 200, height: 300, class: "hidden photo-preview-3"%>
-      <%= f.input :photo_3, as: :file, input_html: { value: nil, class: 'hidden photo-input'}, label_html: { class: 'upload-photo hidden photo-3'}, label: '+' %>
-      <%= image_tag "", width: 200, height: 300, class: "hidden photo-preview-4"%>
-      <%= f.input :photo_4, as: :file, input_html: { value: nil, class: 'hidden photo-input'}, label_html: { class: 'upload-photo hidden photo-4'}, label: '+' %>
+      <div class="picture-creation">
+        <%= image_tag "", width: 200, height: 300, class: "hidden photo-preview"%>
+        <%= f.input :photo_1, as: :file, input_html: { value: nil, class: 'hidden photo-input'}, label_html: { class: 'upload-photo'}, label: '+' %>
+        <i class="fas fa-minus-circle delete hidden"></i>
+      </div>
+      <div class="picture-creation">
+        <%= image_tag "", width: 200, height: 300, class: "hidden photo-preview"%>
+        <%= f.input :photo_2, as: :file, input_html: { value: nil, class: 'hidden photo-input'}, label_html: { class: 'upload-photo hidden'}, label: '+' %>
+        <i class="fas fa-minus-circle delete hidden"></i>
+      </div>
+      <div class="picture-creation">
+        <%= image_tag "", width: 200, height: 300, class: "hidden photo-preview"%>
+        <%= f.input :photo_3, as: :file, input_html: { value: nil, class: 'hidden photo-input'}, label_html: { class: 'upload-photo hidden'}, label: '+' %>
+        <i class="fas fa-minus-circle delete hidden"></i>
+      </div>
+      <div class="picture-creation">
+        <%= image_tag "", width: 200, height: 300, class: "hidden photo-preview"%>
+        <%= f.input :photo_4, as: :file, input_html: { value: nil, class: 'hidden photo-input'}, label_html: { class: 'upload-photo hidden'}, label: '+' %>
+        <i class="fas fa-minus-circle delete hidden"></i>
+      </div>
     </div>
     <div class='category-form-group'>
       <%= f.input :category, input_html: { value: nil }, as: :radio_buttons, collection: Category.all %>
@@ -21,7 +33,7 @@
     <%= f.input :name %>
     <%= f.input :description %>
     <%= f.input :sku %>
-    <%= f.input :price %>
+    <%= f.input :price_cents %>
     <%= f.input :stock_XS, as: :integer, input_html: { value: nil }%>
     <%= f.input :stock_S, as: :integer, input_html: { value: nil }%>
     <%= f.input :stock_M, as: :integer, input_html: { value: nil }%>

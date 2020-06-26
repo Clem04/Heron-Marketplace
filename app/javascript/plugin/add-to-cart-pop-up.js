@@ -1,5 +1,5 @@
 const addToCartPopUp = () => {
-  const cartIcons = document.querySelectorAll('.add-to-cart')
+  const cartIcons = document.querySelectorAll('.add-cart-btn')
   cartIcons.forEach((icon) => {
     icon.addEventListener( 'click', (event) => {
       const successPopup = document.getElementById('add-product-to-cart');

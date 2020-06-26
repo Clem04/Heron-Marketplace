@@ -31,56 +31,47 @@
       </li>
     </ul>
   </div>
-  <div class="logo">
+
+  <div class="logo-category-menu">
     <a href="/"><%= image_tag 'heron-logo.png' %></a>
-  </div>
-  <div class="main-menu">
+
     <ul class="categories-list">
       <% categories.each do |category|%>
         <li><%= link_to category.name, category_products_path(category.id) %></li>
       <% end %>
     </ul>
-    <ul class="icon-menu">
+  </div>
+
+  <div class="icons-menu">
+    <ul class="user-love-icon-menu">
       <li class="icon" id="connect-user"><a href="#"><%= image_tag 'user-icon.svg' %></a></li>
       <li class="icon"><a href="#"><%= image_tag 'love-list-icon.svg' %></a></li>
+    </ul>
 
+    <ul class="cart-icon-menu">
       <% if @cart.line_items.length == 0 %>
-        <li id="shopping-bag"><%= link_to cart_path(@cart), class: 'icon' do %>
+        <li class="shopping-bag"><%= link_to cart_path(@cart), class: 'icon' do %>
           <%= image_tag 'shopping-bag-icon-white.svg', class: 'bag-img'%>
           <span class="num-item-in-cart no-display">0</span>
           <% end %>
         </li>
       <% else %>
-        <li id="shopping-bag"><%= link_to cart_path(@cart), class: 'icon' do %>
+        <li class="shopping-bag"><%= link_to cart_path(@cart), class: 'icon' do %>
           <%= image_tag 'shopping-bag-icon-black.svg', class: 'bag-img' %>
           <span class="num-item-in-cart"><%= total_cart_items %></span>
           <% end %>
         </li>
       <% end %>
-
-      <li><a href="#">EN</a></li>
     </ul>
 
-
-  </div>
-  <div class="mobile-icon-menu">
-    <ul class="icon-menu">
-      <% if @cart.line_items.length == 0 %>
-        <li id="shopping-bag"><%= link_to cart_path(@cart), class: 'icon' do %>
-          <%= image_tag 'shopping-bag-icon-white.svg', class: 'bag-img' %>
-          <span class="num-item-in-cart no-display">0</span>
-          <% end %>
-        </li>
-      <% else %>
-        <li id="shopping-bag"><%= link_to cart_path(@cart), class: 'icon' do %>
-          <%= image_tag 'shopping-bag-icon-black.svg', class: 'bag-img' %>
-          <span class="num-item-in-cart"><%= total_cart_items %></span>
-          <% end %>
-        </li>
-      <% end %>
+    <ul class="language-icon-menu">
+      <li><a href="#">EN</a></li>
     </ul>
   </div>
 </div>
+
+
+
 <div id="user-menu">
     <%= link_to 'Log out', destroy_user_session_path, method: 'DELETE', class: 'hidden' %>
   <% if user_signed_in? %>

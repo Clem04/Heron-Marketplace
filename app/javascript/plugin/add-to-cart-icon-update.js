@@ -1,5 +1,5 @@
 const addToCartIconUpdate = () => {
-  const navCartIcon = document.getElementById('shopping-bag');
+  const navCartIcon = document.querySelector('.shopping-bag');
   const navBagImg = navCartIcon.querySelector('.bag-img');
   const navItemCount = navCartIcon.querySelector('.num-item-in-cart');
   const addToCartButton = document.querySelector('.add-cart-btn');
