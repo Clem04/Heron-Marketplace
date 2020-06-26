@@ -1,3 +1,16 @@
+.picture-creation {
+  margin-right: 2rem;
+}
+
+.photo-preview {
+  display: flex;
+  margin: 30px;
+  img {
+    opacity: 0.6;
+    border-radius: 0.25rem;
+  }
+}
+
 .upload-photo {
   border: 1px solid #d3d3d3;
   padding: 16px 24px;
@@ -8,11 +21,15 @@
   margin: 10px;
 }
 
-.photo-preview {
-  display: flex;
-  margin: 30px;
-  img {
-    opacity: 0.6;
-  }
+.delete {
+  cursor: pointer;
+  bottom: 438px;
+  left: 210px;
+  font-size: 24px;
+  color: black;
+  background: white;
+  padding: 4px;
+  border-radius: 14px;
 }
+
 
