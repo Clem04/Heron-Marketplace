@@ -1,6 +1,36 @@
 <div class="content">
+  <div class="form-title">
+    <h1>Add a new product</h1>
+  </div>
   <%= simple_form_for(@product) do |f| %>
+    <div class="product-form-infos">
+      <%= f.input :name %>
+      <div class='category-form-group'>
+        <%= f.input :category, input_html: { value: nil }, as: :radio_buttons, collection: Category.all %>
+        <%= f.input :sub_category_id, collection: SubCategory.where('category_id = 1'), wrapper_html: { class: "hidden fashion-sub sub-categories-form" }%>
+        <%= f.input :sub_category_id, collection: SubCategory.where('category_id = 2'), wrapper_html: { class: "hidden beauty-sub sub-categories-form" }%>
+        <%= f.input :sub_category_id, collection: SubCategory.where('category_id = 3'), wrapper_html: { class: "hidden food-sub sub-categories-form" }%>
+        <%= f.input :sub_category_id, collection: SubCategory.where('category_id = 4'), wrapper_html: { class: "hidden home-sub sub-categories-form" }%>
+      </div>
+    </div>
+    <div class="product-form-details">
+      <%= f.input :price_cents, label: 'Price' %>
+      <div class="product-form-stock">
+        <%= f.input :stock_XS, as: :integer, input_html: { value: nil },class: "product-form-stock-input"%>
+        <%= f.input :stock_S, as: :integer, input_html: { value: nil },class: "product-form-stock-input"%>
+        <%= f.input :stock_M, as: :integer, input_html: { value: nil },class: "product-form-stock-input"%>
+        <%= f.input :stock_L, as: :integer, input_html: { value: nil },class: "product-form-stock-input"%>
+        <%= f.input :stock_XL, as: :integer, input_html: { value: nil },class: "product-form-stock-input"%>
+      </div>
+    </div>
+      <%= f.input :sku %>
+    <div class="product-form-label">
+      <%= f.input :label_ids, as: :check_boxes, collection: Label.all, label: 'Label'%>
+    </div>
+    <%= f.input :description %>
+    <p>Add product pictures</p>
     <div class="photo-preview">
+
       <div class="picture-creation">
         <%= image_tag "", width: 200, height: 300, class: "hidden photo-preview"%>
         <%= f.input :photo_1, as: :file, input_html: { value: nil, class: 'hidden photo-input'}, label_html: { class: 'upload-photo'}, label: '+' %>
@@ -22,23 +52,8 @@
         <i class="fas fa-minus-circle delete hidden"></i>
       </div>
     </div>
-    <div class='category-form-group'>
-      <%= f.input :category, input_html: { value: nil }, as: :radio_buttons, collection: Category.all %>
-      <%= f.input :sub_category_id, collection: SubCategory.where('category_id = 1'), wrapper_html: { class: "hidden fashion-sub sub-categories-form" }%>
-      <%= f.input :sub_category_id, collection: SubCategory.where('category_id = 2'), wrapper_html: { class: "hidden beauty-sub sub-categories-form" }%>
-      <%= f.input :sub_category_id, collection: SubCategory.where('category_id = 3'), wrapper_html: { class: "hidden food-sub sub-categories-form" }%>
-      <%= f.input :sub_category_id, collection: SubCategory.where('category_id = 4'), wrapper_html: { class: "hidden home-sub sub-categories-form" }%>
+    <div class="submit-button">
+      <%= f.submit 'Add product', class: "add-cart-btn form-btn"%>
     </div>
-    <%= f.input :label_ids, as: :check_boxes, collection: Label.all, label: 'Label'%>
-    <%= f.input :name %>
-    <%= f.input :description %>
-    <%= f.input :sku %>
-    <%= f.input :price_cents %>
-    <%= f.input :stock_XS, as: :integer, input_html: { value: nil }%>
-    <%= f.input :stock_S, as: :integer, input_html: { value: nil }%>
-    <%= f.input :stock_M, as: :integer, input_html: { value: nil }%>
-    <%= f.input :stock_L, as: :integer, input_html: { value: nil }%>
-    <%= f.input :stock_XL, as: :integer, input_html: { value: nil }%>
-    <%= f.submit 'Add product', class: "add-cart-btn"%>
   <% end %>
 </div>
