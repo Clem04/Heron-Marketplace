@@ -16,7 +16,7 @@
                 <ul>
                   <<li><a href="/dashboard">Dashboard</a></li>
                   <li><a href="/inventory">Inventory</a></li>
-                  <li><a href="/order">Orders</a></li>                
+                  <li><a href="/order">Orders</a></li>
                 </ul>
                 <p><a href="#">Account</a></p>
               </div>
@@ -45,8 +45,7 @@
 
 
   </div>
-  <div class="mobile-icon-menu">
-    <ul class="icon-menu">
+    <ul class="cart-icon-menu">
       <% if @cart.line_items.length == 0 %>
         <li id="shopping-bag"><%= link_to cart_path(@cart), class: 'icon' do %>
           <%= image_tag 'shopping-bag-icon-white.svg', class: 'bag-img' %>
@@ -61,7 +60,6 @@
         </li>
       <% end %>
     </ul>
-  </div>
 </div>
 <div id="user-menu">
     <%= link_to 'Log out', destroy_user_session_path, method: 'DELETE', class: 'hidden' %>

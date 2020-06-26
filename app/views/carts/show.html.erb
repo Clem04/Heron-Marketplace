@@ -6,7 +6,7 @@
       <li>
         <%= line_item.product_variant.product.name %><br>
         <%= line_item.product_variant.product.merchant.name %><br>
-        Unit price: <%= line_item.product_variant.product.price %>$<br>
+        Unit price: <%= line_item.product_variant.product.price_cents %>$<br>
         <br>
         Quantity: <%= line_item.quantity %><br>
         <%= link_to line_item_path(line_item.id), method: "delete" do %>
