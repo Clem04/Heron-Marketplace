@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   end
 
   def dashboard
+    @merchant = current_merchant
   end
 
   def inventory

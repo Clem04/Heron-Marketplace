@@ -1,6 +1,6 @@
 class Cart < ApplicationRecord
   has_many :line_items, dependent: :destroy
-  has_many :merchant_order
+  has_many :order
 
   def add_product(product_variant)
     current_item = line_items.find_by(product_variant_id: product_variant.id)
