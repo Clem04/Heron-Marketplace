@@ -34,12 +34,14 @@
     <%= f.input :description %>
     <%= f.input :sku %>
     <%= f.input :price_cents %>
-    <%= f.input :size, collection: ['OS', 'Diffrent Sizes'] %>
-    <%= f.input :stock_XS, as: :integer, input_html: { value: nil }%>
-    <%= f.input :stock_S, as: :integer, input_html: { value: nil }%>
-    <%= f.input :stock_M, as: :integer, input_html: { value: nil }%>
-    <%= f.input :stock_L, as: :integer, input_html: { value: nil }%>
-    <%= f.input :stock_XL, as: :integer, input_html: { value: nil }%>
+    <%= f.input :size, collection: ['One Size', 'Diffrent Sizes'] %>
+    <div class="diffrent-sizes hidden">
+      <%= f.input :stock_XS, as: :integer, input_html: { value: nil }%>
+      <%= f.input :stock_S, as: :integer, input_html: { value: nil }%>
+      <%= f.input :stock_M, as: :integer, input_html: { value: nil }%>
+      <%= f.input :stock_L, as: :integer, input_html: { value: nil }%>
+      <%= f.input :stock_XL, as: :integer, input_html: { value: nil }%>
+    </div>
     <%= f.submit 'Add product', class: "add-cart-btn"%>
   <% end %>
 </div>
