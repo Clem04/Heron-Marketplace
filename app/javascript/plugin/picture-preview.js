@@ -8,7 +8,6 @@ const previewImageOnFileSelect = () => {
         const button = div.querySelector('.delete');
         const img = div.querySelector('.photo-preview');
         const nextDiv = divs[index + 1];
-        console.log(nextDiv);
         if (nextDiv) {
           let nextLabel = nextDiv.querySelector('label');
           displayPreview(input, label, button, img, nextLabel);
