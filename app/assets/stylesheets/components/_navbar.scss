@@ -45,6 +45,7 @@
 
 .user-love-icon-menu {
   display: flex;
+  font-family: $poppins;
 }
 
 .shopping-bag {
@@ -93,6 +94,11 @@
   img {
     width: 20px;
   }
+}
+
+.logo img {
+  height: 30px;
+  width: auto;
 }
 
 
