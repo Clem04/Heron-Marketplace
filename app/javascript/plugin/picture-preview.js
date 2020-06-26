@@ -1,4 +1,3 @@
-
 const divs = document.querySelectorAll('.picture-creation')
 const previewImageOnFileSelect = () => {
   divs.forEach((div, index) => {

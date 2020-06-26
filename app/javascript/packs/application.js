@@ -5,10 +5,9 @@ import { openNav } from "../plugin/open-menu";
 import { closeNav } from "../plugin/close-menu";
 import { openUserNav } from "../plugin/user-menu";
 import { formInput } from "../plugin/form-input";
-// import { previewImageOnFileSelect } from "../plugin/photo-preview";
+import { previewImageOnFileSelect } from "../plugin/picture-preview";
 import { addToCartPopUp } from "../plugin/add-to-cart-pop-up";
 import { addToCartIconUpdate } from "../plugin/add-to-cart-icon-update";
-import { previewImageOnFileSelect } from "../plugin/remove-picture";
 
 
 openNav();
@@ -18,7 +17,6 @@ addToCartPopUp();
 addToCartIconUpdate();
 formInput();
 previewImageOnFileSelect();
-// removePicture();
 
 if(window.location.pathname === '/users/sign_up'){
   menu_toggle();
