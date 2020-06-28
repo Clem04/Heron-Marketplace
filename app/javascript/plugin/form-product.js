@@ -1,10 +1,16 @@
 const input = document.querySelector('.size-input');
+const selectField = input.querySelector('select');
+const options = selectField.querySelectorAll('option');
 
-if (input) {
-  input.addEventListener('click', displayBlockDifSizes);
+function displayBlockDifSizes(e) {
+  console.log(e);
 }
-const displayBlockDifSizes = () => {
-    console.log(input);
-}
+// if (selectField) {
+// }
+options.forEach((op) => {
+  // console.log(op);
+  op.addEventListener('change', displayBlockDifSizes);
+})
+
 
 export { displayBlockDifSizes };
