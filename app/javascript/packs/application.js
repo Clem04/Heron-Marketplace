@@ -8,7 +8,7 @@ import { formInput } from "../plugin/form-input";
 import { previewImageOnFileSelect } from "../plugin/picture-preview";
 import { addToCartPopUp } from "../plugin/add-to-cart-pop-up";
 import { addToCartIconUpdate } from "../plugin/add-to-cart-icon-update";
-import { displayBlockDifSizes } from "../plugin/form-product";
+import { displayBlockDifSizes } from "../plugin/sizes-product";
 
 
 openNav();

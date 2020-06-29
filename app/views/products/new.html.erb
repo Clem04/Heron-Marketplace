@@ -34,7 +34,7 @@
     <%= f.input :description %>
     <%= f.input :sku %>
     <%= f.input :price_cents %>
-    <%= f.input :size, collection: ['One Size', 'Diffrent Sizes'], wrapper_html: { class: "size-input" }%>
+    <%= f.input :size, collection: ['One Size', 'Diffrent Sizes'], wrapper_html: { class: "size-input hidden" }%>
     <div class="diffrent-sizes hidden">
       <%= f.input :stock_XS, as: :integer, input_html: { value: nil }%>
       <%= f.input :stock_S, as: :integer, input_html: { value: nil }%>
