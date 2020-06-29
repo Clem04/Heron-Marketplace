@@ -8,8 +8,11 @@ import { formInput } from "../plugin/form-input";
 import { previewImageOnFileSelect } from "../plugin/picture-preview";
 import { addToCartPopUp } from "../plugin/add-to-cart-pop-up";
 import { addToCartIconUpdate } from "../plugin/add-to-cart-icon-update";
+
 import { initAutocomplete } from "../plugin/init_autocomplete";
 import { postAutocomplete } from "../plugin/post_autocomplete";
+import { displayBlockDifSizes } from "../plugin/sizes-product";
+
 
 
 openNav();
@@ -21,6 +24,7 @@ formInput();
 previewImageOnFileSelect();
 initAutocomplete();
 postAutocomplete();
+displayBlockDifSizes();
 
 if(window.location.pathname === '/users/sign_up'){
   menu_toggle();
