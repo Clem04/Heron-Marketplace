@@ -10,8 +10,4 @@ class Merchant < ApplicationRecord
   validates :name, :public_email, :location, :description, 
   :website, :instagram, :picture_1, :picture_2, :picture_3, :picture_4, presence: true
 
-  # algoliasearch do
-  #   attributes :location
-  # end
-
 end
