@@ -21,6 +21,7 @@ class ProductsController < ApplicationController
     @product.merchant = current_merchant
     @product.photos = [params[:product][:photo_1], params[:product][:photo_2], params[:product][:photo_3], params[:product][:photo_4]]
     if @product.save
+      one_size = ProductVariant.create(size: "One Size", product_id: @product.id) if params[:product][:size] == 'One Size'
       xsmall = ProductVariant.create(size: "XS", stock_qty: params[:product][:stock_XS], product_id: @product.id)
       small = ProductVariant.create(size: "S", stock_qty: params[:product][:stock_S], product_id: @product.id)
       medium = ProductVariant.create(size: "M", stock_qty: params[:product][:stock_M], product_id: @product.id)
