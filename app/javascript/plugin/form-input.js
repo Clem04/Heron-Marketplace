@@ -1,11 +1,13 @@
 const form = document.querySelector('.category-form-group');
 const inputSizes = document.querySelector('.size-input');
+const sub = document.querySelector('.sub-categories-form');
+const subCatOptions = sub.querySelectorAll('option');
+console.log(subCatOptions);
 
 function handleClick(e) {
   const label = this.querySelector('label');
-  const sub = document.querySelectorAll('.sub-categories-form');
   if (sub) {
-    sub.forEach(subCat => subCat.classList.add('hidden'));
+    sub.classList.add('hidden');
   }
   if (label.innerText === 'Fashion') {
     const subCatFash = form.querySelector('.fashion-sub')

@@ -25,9 +25,6 @@
     <div class='category-form-group'>
       <%= f.input :category, input_html: { value: nil }, as: :radio_buttons, collection: Category.all %>
       <%= f.association :sub_category, wrapper_html: { class: "hidden fashion-sub sub-categories-form" }%>
-      <%#= f.input :sub_category_id, collection: SubCategory.where('category_id = 2'), wrapper_html: { class: "hidden beauty-sub sub-categories-form" }%>
-      <%#= f.input :sub_category_id, collection: SubCategory.where('category_id = 3'), wrapper_html: { class: "hidden food-sub sub-categories-form" }%>
-      <%#= f.input :sub_category_id, collection: SubCategory.where('category_id = 4'), wrapper_html: { class: "hidden home-sub sub-categories-form" }%>
     </div>
     <%= f.input :label_ids, as: :check_boxes, collection: Label.all, label: 'Label'%>
     <%= f.input :name %>
