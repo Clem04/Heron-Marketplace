@@ -1,4 +1,5 @@
 const form = document.querySelector('.category-form-group');
+const inputSizes = document.querySelector('.size-input');
 
 function handleClick(e) {
   const label = this.querySelector('label');
@@ -9,6 +10,9 @@ function handleClick(e) {
   if (label.innerText === 'Fashion') {
     const subCatFash = form.querySelector('.fashion-sub')
     subCatFash.classList.remove('hidden')
+    inputSizes.classList.remove('hidden')
+  } else {
+    inputSizes.classList.add('hidden')
   }
   if (label.innerText === 'Beauty & Wellness') {
     const subCatFash = form.querySelector('.beauty-sub')
