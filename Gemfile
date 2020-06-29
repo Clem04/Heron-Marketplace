@@ -23,6 +23,7 @@ gem 'cloudinary', '~> 1.12.0'
 gem 'devise_invitable', '~> 2.0.0'
 gem 'stripe'
 gem 'money-rails'
+gem "algoliasearch-rails"
 
 
 group :development do
