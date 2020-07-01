@@ -19,4 +19,6 @@ class Cart < ApplicationRecord
   def total_cart_price
     line_items.to_a.sum { |item| item.total_price }
   end
+
+  monetize :amount_cents
 end
