@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_30_235219) do
+ActiveRecord::Schema.define(version: 2020_07_01_182825) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,15 +51,6 @@ ActiveRecord::Schema.define(version: 2020_06_30_235219) do
   create_table "carts", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "status"
-    t.string "line_item_sku"
-    t.integer "amount_cents", default: 0, null: false
-    t.string "amount_currency", default: "CAD", null: false
-    t.string "checkout_session_id"
-    t.bigint "line_item_id"
-    t.bigint "user_id"
-    t.index ["line_item_id"], name: "index_carts_on_line_item_id"
-    t.index ["user_id"], name: "index_carts_on_user_id"
   end
 
   create_table "categories", force: :cascade do |t|
@@ -140,12 +131,11 @@ ActiveRecord::Schema.define(version: 2020_06_30_235219) do
     t.bigint "merchant_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "line_item_id"
     t.decimal "price_cents"
     t.string "status"
     t.string "token"
-    t.string "line_item_sku"
-    t.index ["line_item_id"], name: "index_orders_on_line_item_id"
+    t.bigint "cart_id"
+    t.index ["cart_id"], name: "index_orders_on_cart_id"
     t.index ["merchant_id"], name: "index_orders_on_merchant_id"
   end
 
@@ -230,14 +220,13 @@ ActiveRecord::Schema.define(version: 2020_06_30_235219) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "carts", "line_items"
-  add_foreign_key "carts", "users"
   add_foreign_key "label_products", "labels"
   add_foreign_key "label_products", "products"
   add_foreign_key "line_items", "carts"
   add_foreign_key "line_items", "orders"
   add_foreign_key "line_items", "product_variants"
   add_foreign_key "line_items", "products"
+  add_foreign_key "orders", "carts"
   add_foreign_key "orders", "merchants"
   add_foreign_key "post_labels", "labels"
   add_foreign_key "post_labels", "posts"

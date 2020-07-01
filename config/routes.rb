@@ -11,7 +11,6 @@ Rails.application.routes.draw do
   resources :products, only: [:new, :create]
   resources :posts, only: [:new, :create]
   resources :line_items
-  
   resources :carts, only: [:show, :create] do
     resources :payments, only: :new
   end
