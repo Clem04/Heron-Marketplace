@@ -11,10 +11,8 @@ Rails.application.routes.draw do
   resources :products, only: [:new, :create]
   resources :posts, only: [:new, :create]
   resources :line_items
-  resources :carts, only: [:show, :create] do
-    resources :payments, only: :new
-  end
-  # resources :orders, only: [:index, :show]
+  resources :carts
+  resources :orders, only: [:show, :create]
   # resources :order_items, only: [:show]
 
   get '/merchants/:id', to: 'merchants#show', as: 'merchant'
