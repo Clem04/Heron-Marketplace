@@ -6,16 +6,21 @@ const subCatOptions = sub.querySelectorAll('option');
 let subCatOp = sub.querySelectorAll('option');
 
 
+function handleSizes(label) {
+  if (labe.innerText === 'Fashion') {
+    inputSizes.classList.remove('hidden');
+  } else if (labe.innerText != 'Fashion')
+    inputSizes.classList.add('hidden');
+};
+
 function handleClick(e) {
   const label = this.querySelector('label');
   sub.classList.remove('hidden');
+  handleSizes(label);
   const subCat = subCatOptions.forEach((option) => {
     option.classList.add('hidden');
     if (label.innerText === 'Fashion' && option.value <= 8) {
-      inputSizes.classList.remove('hidden');
       option.classList.remove('hidden');
-    } else {
-      inputSizes.classList.add('hidden')
     }
     if (label.innerText === 'Beauty & Wellness' && option.value > 8 && option.value <= 16) {
       option.classList.remove('hidden');
