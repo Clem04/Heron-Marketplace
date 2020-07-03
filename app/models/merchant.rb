@@ -4,7 +4,7 @@ class Merchant < ApplicationRecord
   devise :invitable, :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :products
-  has_many :order
+  has_many :orders
   has_many :labels, -> { distinct }, through: :products
   has_many :category, through: :products
   validates :name, :public_email, :location, :description, 
