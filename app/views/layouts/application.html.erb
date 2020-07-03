@@ -18,6 +18,8 @@
       <%= render 'shared/navbar', :categories => Category.all %>
     <% elsif user_signed_in? %>
       <%= render 'shared/navbar', :categories => Category.all %>
+    <% elsif admin_signed_in? %>
+      <%= render 'shared/navbar_admin' %>
     <% elsif !merchant_signed_in? %>
       <%= render 'shared/navbar', :categories => Category.all %>
     <% else %>

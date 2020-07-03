@@ -17,14 +17,25 @@ Rails.application.routes.draw do
 
   get '/merchants/:id', to: 'merchants#show', as: 'merchant'
   
+  # Merchant onboarding url link once profile submitted
+  get "stripe/connect", to: "stripe#connect", as: :stripe_connect
 
   get '/inventory', to: 'pages#inventory', as: 'inventory'
   get '/order', to: 'pages#order', as: 'order'
+  get '/account', to: 'pages#account', as: 'account'
   
+  # Dashboard for merchants
   get '/dashboard', to: 'pages#dashboard', as: :merchant_root
   
   namespace :merchant do
     root to: 'pages#dashboard' # creates merchant dashboard root_path
+  end
+
+  # Dashboard for admins
+  get '/invitations', to: 'pages#invitations', as: :admin_root
+
+   namespace :admin do
+    root to: 'pages#invitations' # creates merchant dashboard root_path
   end
   
   as :merchant do

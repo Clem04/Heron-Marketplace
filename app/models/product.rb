@@ -1,4 +1,5 @@
 class Product < ApplicationRecord
+  attr_accessor :size
   before_destroy :not_referenced_by_any_line_item
   has_many_attached :photos
   belongs_to :sub_category
@@ -9,7 +10,6 @@ class Product < ApplicationRecord
   has_many :line_items
   has_many :product_variants
   monetize :price_cents
-
   # validates :sub_category_id, presence: true
   # validates :name, :description, :photos, :price, :sku, :labels, presence: true
   # validates :description, length: { minimum: 20 }

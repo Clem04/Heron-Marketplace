@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_25_211512) do
+ActiveRecord::Schema.define(version: 2020_06_26_215114) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -77,14 +77,16 @@ ActiveRecord::Schema.define(version: 2020_06_25_211512) do
   end
 
   create_table "line_items", force: :cascade do |t|
+    t.bigint "product_id"
     t.bigint "cart_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "quantity", default: 1
+    t.bigint "order_id"
     t.bigint "product_variant_id"
-    t.bigint "merchant_order_id"
     t.index ["cart_id"], name: "index_line_items_on_cart_id"
-    t.index ["merchant_order_id"], name: "index_line_items_on_merchant_order_id"
+    t.index ["order_id"], name: "index_line_items_on_order_id"
+    t.index ["product_id"], name: "index_line_items_on_product_id"
     t.index ["product_variant_id"], name: "index_line_items_on_product_variant_id"
   end
 
@@ -116,6 +118,7 @@ ActiveRecord::Schema.define(version: 2020_06_25_211512) do
     t.string "invited_by_type"
     t.bigint "invited_by_id"
     t.integer "invitations_count", default: 0
+    t.string "stripe_user_id"
     t.index ["email"], name: "index_merchants_on_email", unique: true
     t.index ["invitation_token"], name: "index_merchants_on_invitation_token", unique: true
     t.index ["invitations_count"], name: "index_merchants_on_invitations_count"
@@ -220,8 +223,9 @@ ActiveRecord::Schema.define(version: 2020_06_25_211512) do
   add_foreign_key "label_products", "labels"
   add_foreign_key "label_products", "products"
   add_foreign_key "line_items", "carts"
-  add_foreign_key "line_items", "orders", column: "merchant_order_id"
+  add_foreign_key "line_items", "orders"
   add_foreign_key "line_items", "product_variants"
+  add_foreign_key "line_items", "products"
   add_foreign_key "orders", "merchants"
   add_foreign_key "post_labels", "labels"
   add_foreign_key "post_labels", "posts"
