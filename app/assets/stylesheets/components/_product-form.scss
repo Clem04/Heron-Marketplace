@@ -1,0 +1,70 @@
+.form-title{
+  h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+  }
+}
+#new_product{
+  font-family: $poppins;
+  color: #333333
+}
+.product-form-infos{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.category-form-group{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 50%;
+}
+
+// sub category inout size
+.sub-categories-form, .product_name{
+  width: 40%;
+}
+// stock and price layout
+.product-form-details{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+//size layout
+.product-form-stock{
+  width: 50%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+
+//size box layout
+.product_stock_XS{
+  width: 14%
+}
+.product_stock_S{
+  width: 14%
+}
+.product_stock_M{
+  width: 14%
+}
+.product_stock_L{
+  width: 14%
+}
+.product_stock_XL{
+  width: 14%
+}
+
+//sku layout
+.product_sku{
+  width: 20%;
+}
+
+//product description text area
+
+#product_description{
+  height: 200px;
+}
