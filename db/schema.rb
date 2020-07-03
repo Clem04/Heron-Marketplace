@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_26_215114) do
+ActiveRecord::Schema.define(version: 2020_07_01_185545) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -131,11 +131,12 @@ ActiveRecord::Schema.define(version: 2020_06_26_215114) do
     t.bigint "merchant_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "line_item_id"
     t.decimal "price_cents"
     t.string "status"
     t.string "token"
-    t.index ["line_item_id"], name: "index_orders_on_line_item_id"
+    t.bigint "cart_id"
+    t.string "checkout_session_id"
+    t.index ["cart_id"], name: "index_orders_on_cart_id"
     t.index ["merchant_id"], name: "index_orders_on_merchant_id"
   end
 
@@ -226,6 +227,7 @@ ActiveRecord::Schema.define(version: 2020_06_26_215114) do
   add_foreign_key "line_items", "orders"
   add_foreign_key "line_items", "product_variants"
   add_foreign_key "line_items", "products"
+  add_foreign_key "orders", "carts"
   add_foreign_key "orders", "merchants"
   add_foreign_key "post_labels", "labels"
   add_foreign_key "post_labels", "posts"
