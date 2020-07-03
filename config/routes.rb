@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   get "stripe/connect", to: "stripe#connect", as: :stripe_connect
 
   get '/inventory', to: 'pages#inventory', as: 'inventory'
-  get '/order', to: 'pages#order', as: 'order'
+  # get '/order', to: 'pages#order', as: 'order'
   get '/account', to: 'pages#account', as: 'account'
   
   # Dashboard for merchants
