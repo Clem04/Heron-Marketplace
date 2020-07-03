@@ -7,7 +7,7 @@ let subCatOp = sub.querySelectorAll('option');
 
 
 function handleSizes(label) {
-  if (labe.innerText === 'Fashion') {
+  if (label.innerText === 'Fashion') {
     inputSizes.classList.remove('hidden');
   } else if (labe.innerText != 'Fashion')
     inputSizes.classList.add('hidden');
