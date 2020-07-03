@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "5.1.1",
+    "algoliasearch": "^4.3.0",
     "bootstrap": "^4.4.1",
     "jquery": "^3.5.0",
     "places.js": "^1.19.0",

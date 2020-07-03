@@ -50,11 +50,11 @@ class ProductsController < ApplicationController
   def photos_exist
     if params[:product][:photo_1]
       @product.photos = [params[:product][:photo_1]]
-    elsif params[:product][:photo_2]
+    elsif params[:product][:photo_1] && params[:product][:photo_2]
       @product.photos = [params[:product][:photo_1], params[:product][:photo_2]]
-    elsif params[:product][:photo_3]
+    elsif params[:product][:photo_1] && params[:product][:photo_2] && params[:product][:photo_3]
       @product.photos = [params[:product][:photo_1], params[:product][:photo_2], params[:product][:photo_3]]
-    elsif params[:product][:photo_4]
+    elsif params[:product][:photo_1] && params[:product][:photo_2] && params[:product][:photo_3] && params[:product][:photo_4]
       @product.photos = [params[:product][:photo_1], params[:product][:photo_2], params[:product][:photo_3], params[:product][:photo_4]]
     end
   end
