@@ -19,13 +19,12 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     @product.merchant = current_merchant
-    @product.photos = [params[:product][:photo_1], params[:product][:photo_2], params[:product][:photo_3], params[:product][:photo_4]]
+    photos_exist
     if @product.save
       product_variant_creation
       category = @product.sub_category.category
       redirect_to category_product_path(category, @product)
     else
-      # raise
       render :new
     end
   end
@@ -45,6 +44,18 @@ class ProductsController < ApplicationController
       medium = ProductVariant.create(size: "M", stock_qty: params[:product][:stock_M], product_id: @product.id)
       large = ProductVariant.create(size: "L", stock_qty: params[:product][:stock_L], product_id: @product.id)
       xlarge = ProductVariant.create(size: "XL", stock_qty: params[:product][:stock_XL], product_id: @product.id)
+    end
+  end
+
+  def photos_exist
+    if params[:product][:photo_1]
+      @product.photos = [params[:product][:photo_1]]
+    elsif params[:product][:photo_2]
+      @product.photos = [params[:product][:photo_1], params[:product][:photo_2]]
+    elsif params[:product][:photo_3]
+      @product.photos = [params[:product][:photo_1], params[:product][:photo_2], params[:product][:photo_3]]
+    elsif params[:product][:photo_4]
+      @product.photos = [params[:product][:photo_1], params[:product][:photo_2], params[:product][:photo_3], params[:product][:photo_4]]
     end
   end
 end
