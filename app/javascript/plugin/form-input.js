@@ -9,7 +9,7 @@ let subCatOp = sub.querySelectorAll('option');
 function handleSizes(label) {
   if (label.innerText === 'Fashion') {
     inputSizes.classList.remove('hidden');
-  } else if (labe.innerText != 'Fashion')
+  } else if (label.innerText != 'Fashion')
     inputSizes.classList.add('hidden');
 };
 
