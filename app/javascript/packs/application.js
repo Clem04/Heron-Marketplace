@@ -9,9 +9,9 @@ import { previewImageOnFileSelect } from "../plugin/picture-preview";
 import { addToCartPopUp } from "../plugin/add-to-cart-pop-up";
 import { addToCartIconUpdate } from "../plugin/add-to-cart-icon-update";
 
-// import { initAutocomplete } from "../plugin/init_autocomplete";
-// import { postAutocomplete } from "../plugin/post_autocomplete";
-// import { displayBlockDifSizes } from "../plugin/sizes-product";
+import { initAutocomplete } from "../plugin/init_autocomplete";
+import { postAutocomplete } from "../plugin/post_autocomplete";
+import { displayBlockDifSizes } from "../plugin/sizes-product";
 
 
 
@@ -22,9 +22,9 @@ addToCartPopUp();
 addToCartIconUpdate();
 formInput();
 previewImageOnFileSelect();
-// initAutocomplete();
-// postAutocomplete();
-// displayBlockDifSizes();
+initAutocomplete();
+postAutocomplete();
+
 
 if(window.location.pathname === '/users/sign_up'){
   menu_toggle();
@@ -36,4 +36,8 @@ if(window.location.pathname === '/posts/new'){
 
 if(window.location.pathname === '/users/sign_in'){
   menu_toggle();
+};
+
+if(window.location.pathname === '/products/new'){
+  displayBlockDifSizes();
 };
