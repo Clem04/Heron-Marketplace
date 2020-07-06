@@ -1,9 +1,5 @@
 const form = document.querySelector('.category-form-group');
 const inputSizes = document.querySelector('.size-input');
-const sub = document.querySelector('.sub-categories-form');
-const subCatSelect = sub.querySelector('select');
-const subCatOptions = sub.querySelectorAll('option');
-let subCatOp = sub.querySelectorAll('option');
 
 
 function handleSizes(label) {
@@ -14,6 +10,11 @@ function handleSizes(label) {
 };
 
 function handleClick(e) {
+  const sub = document.querySelector('.sub-categories-form');
+  const subCatSelect = sub.querySelector('select');
+  const subCatOptions = sub.querySelectorAll('option');
+  let subCatOp = sub.querySelectorAll('option');
+
   const label = this.querySelector('label');
   sub.classList.remove('hidden');
   handleSizes(label);
