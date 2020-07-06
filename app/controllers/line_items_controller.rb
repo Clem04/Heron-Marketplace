@@ -18,8 +18,17 @@ class LineItemsController < ApplicationController
   # end
 
   def create
-    product_variant = ProductVariant.find(params[:product_variant_id])
-    @line_item = @cart.add_product(product_variant)
+    # @line_item = LineItem.new
+    @category = Product.find(params[:line_item][:product_id]).category
+    @product = Product.find(params[:line_item][:product_id])
+
+    if params[:line_item][:product_variant_id] != ""
+      product_variant = ProductVariant.where(size: (params[:line_item][:product_variant_id]))
+      @line_item = @cart.add_product(product_variant)
+    else
+      flash[:notice] = "Choose a size"
+      redirect_to category_product_path(@category, @product)
+    end
   end
 
   def destroy

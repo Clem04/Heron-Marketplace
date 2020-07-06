@@ -51,8 +51,13 @@
                 <p>SKU NO: <%= @product.sku %></p>
               <% end %>
           </div>
+
+          <div class="product-price">
+            <p>Price: <%= @product.price %><%= currency_symbol %></p>
+          </div>
+
           <div class="product-variations">
-            <div class="product-colors">
+<!--             <div class="product-colors">
               <p>Colors:</p>
               <div class="colors">
                 <div class="color" style="background-color: #FFD9E7 "></div>
@@ -60,12 +65,29 @@
                 <div class="color" style="background-color: #A9DAEA "></div>
                 <div class="color" style="background-color: #C1A3CF "></div>
               </div>
-            </div>
-            <div class="product-price">
-              <p>Price: <%= @product.price %><%= currency_symbol %></p>
-            </div>
+            </div> -->
 
-            <%= button_to 'ADD TO CART', line_items_path(product_variant_id: @product.product_variants[0]), class: 'add-cart-btn' %>
+
+
+            <% if @category.name == 'Fashion' %>
+              <div class="size">
+                <%= simple_form_for [@line_item] do |f| %>
+                  <%= f.input :product_variant_id,
+                  collection: @product_variants,
+                  label: 'Sizes', required: true %>
+                  <%= f.hidden_field :product_id,
+                  value: @product.id %>
+                  <%= f.button :submit, 'ADD TO CART',class: 'add-cart-btn' %>
+                <% end %>
+              </div>
+            <% else %>
+              <%= simple_form_for [@line_item] do |f| %>
+                <%= f.hidden_field :product_variant_id,
+                value: @product_variants[0] %>
+                <%= f.button :submit, 'ADD TO CART',class: 'add-cart-btn' %>
+              <% end %>
+              <%#= button_to 'ADD TO CART', line_items_path(product_variant_id: @product.product_variants[0]), class: 'add-cart-btn' %>
+            <% end %>
 
             <div class="hidden-add-to-cart-success" id="add-product-to-cart">
               <p><i class="check-mark fas fa-check"></i></p>

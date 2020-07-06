@@ -10,6 +10,8 @@ class ProductsController < ApplicationController
   def show
     @product = Product.find(params[:id])
     @category = Category.find(params[:category_id])
+    @product_variants = ProductVariant.where(product_id: @product.id).map {|variant| variant.size}
+    @line_item = LineItem.new
   end
 
   def new
