@@ -1,1 +1,25 @@
-<h1>inventory</h1>
+
+<div class="product-list">
+  <% @products.each do |product| %>
+    <div class="product-card">
+      <div class="product-img" style ="background-image: url(<%= cl_image_path product.photos[0].key %>)">
+        <div class="price">
+            <p><%= product.price %><%= currency_symbol %></p>
+        </div>
+        <div class="product-icons">
+          <div class="icon-btn">
+            <a href="#"><%= image_tag 'love-list-icon'%></a>
+          </div>
+        </div>
+      </div>
+      <div class="product-infos">
+        <%= link_to category_product_path(@category, product) do %>
+          <h4><%= product.name %></h4>
+        <% end %>
+        <%= link_to merchant_path(product.merchant) do %>
+          <p><%= product.merchant.name %></p>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>

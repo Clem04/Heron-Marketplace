@@ -4,7 +4,10 @@ class MerchantsController < ApplicationController
   end
 
   def inventory
-    @merchant = current_merchant
+    @products = current_merchant.products
+    @products.each do |product|
+      @category = product.category
+    end
   end
 
   private
