@@ -3,11 +3,15 @@ class MerchantsController < ApplicationController
     @merchant = Merchant.find(params[:id])
   end
 
+  def inventory
+    @merchant = current_merchant
+  end
+
   private
 
   def merchant_params
-  	params.require(:merchant).permit(:name, :public_email, :location, :description, 
-  		:comment, :facebook, :instagram, :website, :picture_1, :picture_2, :picture_3, :picture_4, 
+  	params.require(:merchant).permit(:name, :public_email, :location, :description,
+  		:comment, :facebook, :instagram, :website, :picture_1, :picture_2, :picture_3, :picture_4,
   		:email)
   end
 end
