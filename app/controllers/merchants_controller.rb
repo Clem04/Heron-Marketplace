@@ -1,4 +1,5 @@
 class MerchantsController < ApplicationController
+  before_action :authenticate_merchant!, only: [:inventory]
   def show
     @merchant = Merchant.find(params[:id])
   end
