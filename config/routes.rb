@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   # Merchant onboarding url link once profile submitted
   get "stripe/connect", to: "stripe#connect", as: :stripe_connect
 
-  get '/merchants/:id/inventory', to: 'merchants#inventory', as: 'inventory'
+  get '/inventory', to: 'merchants#inventory', as: 'inventory'
   # get '/order', to: 'pages#order', as: 'order'
   get '/account', to: 'pages#account', as: 'account'
 
