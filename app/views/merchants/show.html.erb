@@ -74,7 +74,7 @@
   <div class="merchant-product-list">
     <% @merchant.products[0..3].each do |product| %>
       <div class="product-card">
-        <div class="product-img" style ="background-image: url(<%= product.photos.first.key %>)">
+        <div class="product-img" style ="background-image: url(<%= cl_image_path product.photos.first.key %>)">
           <div class="price">
             <p><%= product.price %>$</p>
           </div>
