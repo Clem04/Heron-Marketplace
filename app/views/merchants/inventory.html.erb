@@ -1,5 +1,11 @@
 <div>
   <div>
+    <form method="get" action="/inventory">
+      <div>
+        <!-- <span class="iconify" data-icon="ei:search" data-inline="false"></span> -->
+        <input type="text" value="<%= @keyword %>" name="search">
+      </div>
+    </form>
     <%= link_to 'Add Product', new_product_path, class: 'add-cart-btn form-btn' %>
   </div>
   <div class="product-list">

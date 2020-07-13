@@ -18,4 +18,9 @@ class MerchantsController < ApplicationController
   		:comment, :facebook, :instagram, :website, :picture_1, :picture_2, :picture_3, :picture_4,
   		:email)
   end
+
+  def search
+    @keyword = params[:search]
+    @products = current_merchant.products.where("lower(#{:name}) LIKE ?", "%#{@keyword.downcase}%")
+  end
 end
