@@ -1,0 +1,38 @@
+<div>
+  <div>
+    <form method="get" action="/inventory">
+      <div>
+        <!-- <span class="iconify" data-icon="ei:search" data-inline="false"></span> -->
+        <input type="text" value="<%= @keyword %>" name="search">
+      </div>
+    </form>
+    <%= link_to 'Add Product', new_product_path, class: 'add-cart-btn form-btn' %>
+  </div>
+  <div class="product-list">
+    <% @products.each do |product| %>
+      <div class="product-card">
+        <div class="product-img" style ="background-image: url(<%= cl_image_path product.photos[0].key %>)">
+          <div class="product-icons">
+            <div class="icon-btn">
+              <a href="#"><%= image_tag 'edit-list-icon'%></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-infos">
+          <div>
+            <%= link_to category_product_path(@category, product) do %>
+              <h4><%= product.name %></h4>
+            <% end %>
+              <h4><%= @category.name %></h4>
+          </div>
+          <div>
+            <p>Stock</p>
+            <% total = 0 %>
+            <% product.product_variants.each { |variant| p total += variant.stock_qty.to_i } %>
+            <p><%= total %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
