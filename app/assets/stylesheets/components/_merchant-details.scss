@@ -58,6 +58,14 @@
     flex-direction: column;
     grid-template-columns: none;
   }
+    .merchant-links {
+    border-left: none;
+    border-bottom: 1px solid black;
+    padding-right: 0px;
+    margin: 20px;
+    text-align: center;
+    width: 92%;
+    }
 
   .merchant-infos{
     border-right: none;
