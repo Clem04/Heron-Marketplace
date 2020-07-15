@@ -23,13 +23,13 @@ class LineItemsController < ApplicationController
     @product = Product.find(params[:line_item][:product_id])
 
     if params[:line_item][:product_variant_id].include? "out of stock"
-      flash[:notice] = "This size is not available"
+      flash[:notice] = "Sorry, this size is not available"
       redirect_to category_product_path(@category, @product)
     elsif params[:line_item][:product_variant_id] != ""
       product_variant = ProductVariant.where(size: (params[:line_item][:product_variant_id]))
       @line_item = @cart.add_product(product_variant)
     else
-      flash[:notice] = "Choose a size"
+      flash[:notice] = "Please, select a size"
       redirect_to category_product_path(@category, @product)
     end
   end
