@@ -1,23 +1,43 @@
-<% if @cart.line_items.length == 0 %>
-  <p>Your cart is empty</p>
-<% else %>
-  <ul>
-    <% @cart.line_items.each do |line_item| %>
-      <li>
-        <%= line_item.product_variant.product.name %><br>
-        <%= line_item.product_variant.product.merchant.name %><br>
-        Unit price: <%= line_item.product_variant.product.price %><%= currency_symbol %><br>
-        <br>
-        Quantity: <%= line_item.quantity %><br>
-        <%= link_to line_item_path(line_item.id), method: "delete" do %>
-          <i class="far fa-trash-alt"></i>
+<div class="content">
+  <div class="title-points">
+    <h1>Shopping Cart</h1>
+    <p>Available Points: <strong>200pts</strong></p>
+  </div>
+
+  <%= link_to '<- Continue Shopping', root_path %>
+
+  <div class="product-list-order-summary">
+    <div class="product-list">
+      <% if @cart.line_items.length == 0 %>
+        <p>Your cart is empty</p>
+      <% else %>
+        <% @cart.line_items.each do |line_item| %>
+          <div class="line-item-card">
+            <%= line_item.product_variant.product.name %><br>
+            <%= line_item.product_variant.product.merchant.name %><br>
+            Unit price: <%= line_item.product_variant.product.price %><%= currency_symbol %><br>
+            <br>
+            Quantity: <%= line_item.quantity %><br>
+            <%= link_to line_item_path(line_item.id), method: "delete" do %>
+              <i class="far fa-trash-alt"></i>
+            <% end %>
+          </div>
         <% end %>
-      </li>
-    <% end %>
-  </ul>
+      <% end %>
+    </div>
 
-  <p>Total: <%= @cart.total_cart_price %><%= currency_symbol %></p>
-  <%= button_to 'BUY NOW', class: 'add-cart-btn' %>
-<% end %>
-
-
+    <div class="order-summary">
+      <h2>Order Summary</h2>
+      <span class="line"></span>
+      <div class="item-count-price">
+        <p><%= @cart.line_items.length %></p>
+        <p><%= @cart.total_cart_price %><%= currency_symbol %></p>
+      </div>
+      <h3>Shipping</h3>
+      <h3>Points Redeem</h3>
+      <span class="line"></span>
+      <p>TOTAL COST: <%= @cart.total_cart_price %><%= currency_symbol %></p>
+      <%= link_to 'CHECKOUT', class: 'grey-btn' %>
+    </div>
+  </div>
+</div>
