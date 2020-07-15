@@ -18,7 +18,6 @@ class LineItemsController < ApplicationController
   # end
 
   def create
-    # @line_item = LineItem.new
     @category = Product.find(params[:line_item][:product_id]).category
     @product = Product.find(params[:line_item][:product_id])
 
