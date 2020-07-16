@@ -713,7 +713,7 @@ body_oil = Product.create!(name: 'Rose Body Oil',
   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 25.95,
-  merchant_id: bare_beauty.id, sub_category_id: body_care.id, , sku: 'ABPO4582')
+  merchant_id: bare_beauty.id, sub_category_id: body_care.id, sku: 'ABPO4582')
 
   body_oil_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257704/Heron-Market/Products/beautywellness/Body-Oil_b2pt39.jpg')
   body_oil.photos.attach(io: body_oil_photo_1, filename: 'Body-Oil_b2pt39.jpg', content_type: 'image/jpg')

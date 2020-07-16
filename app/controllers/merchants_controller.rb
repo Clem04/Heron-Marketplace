@@ -1,5 +1,5 @@
 class MerchantsController < ApplicationController
-  before_action :authenticate_merchant!, only: [:inventory]
+  before_action :authenticate_merchant!,  only: [:inventory]
   def show
     @merchant = Merchant.find(params[:id])
   end
@@ -26,9 +26,6 @@ class MerchantsController < ApplicationController
 
   def search
     @keyword = params[:search]
-    # Author.joins(:articles).where(articles: { author: author })
-    @products = Merchant.joins(:products).where("lower(#{:sku}) LIKE ?", "%#{@keyword.downcase}%")
-    # @products = Merchant.product(:sku)
-    # @products = Product.where("lower(#{:sku}) LIKE ?", "%#{@keyword.downcase}%")
+    @products = current_merchant.products.where("lower(#{:sku}) LIKE ?", "%#{@keyword.downcase}%")
   end
 end
