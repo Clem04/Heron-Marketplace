@@ -5,7 +5,12 @@ class MerchantsController < ApplicationController
   end
 
   def inventory
-    @products = current_merchant.products
+    if params[:search].present?
+      search
+      # raise
+    else
+      @products = current_merchant.products
+    end
     @products.each do |product|
       @category = product.category
     end
@@ -21,6 +26,9 @@ class MerchantsController < ApplicationController
 
   def search
     @keyword = params[:search]
-    @products = current_merchant.products.where("lower(#{:sku}) LIKE ?", "%#{@keyword.downcase}%")
+    # Author.joins(:articles).where(articles: { author: author })
+    @products = Merchant.joins(:products).where("lower(#{:sku}) LIKE ?", "%#{@keyword.downcase}%")
+    # @products = Merchant.product(:sku)
+    # @products = Product.where("lower(#{:sku}) LIKE ?", "%#{@keyword.downcase}%")
   end
 end
