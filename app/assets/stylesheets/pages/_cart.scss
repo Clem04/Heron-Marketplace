@@ -111,3 +111,19 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .product-list-order-summary {
+    flex-direction: column;
+  }
+
+  .title-points {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .order-summary {
+    width: 100%;
+  }
+}
+
