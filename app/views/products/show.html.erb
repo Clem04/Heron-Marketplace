@@ -80,7 +80,6 @@
               </div>
             <% else %>
               <%= simple_form_for [@line_item] do |f| %>
-
                 <%= f.hidden_field :product_variant_id,
                 value: @product_variants[0] %>
                 <%= f.hidden_field :product_id,
