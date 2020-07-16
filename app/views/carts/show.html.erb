@@ -4,7 +4,12 @@
     <p>Available Points: <strong>200pts</strong></p>
   </div>
 
-  <%= link_to '<- Continue Shopping', root_path %>
+  <div class="continue-shopping">
+    <%= link_to root_path do %>
+        <i class="fas fa-long-arrow-alt-left"></i>
+        <p>Continue Shopping</p>
+    <% end %>
+  </div>
 
   <div class="product-list-order-summary">
     <div class="product-list">
@@ -13,14 +18,21 @@
       <% else %>
         <% @cart.line_items.each do |line_item| %>
           <div class="line-item-card">
-            <%= line_item.product_variant.product.name %><br>
-            <%= line_item.product_variant.product.merchant.name %><br>
-            Unit price: <%= line_item.product_variant.product.price %><%= currency_symbol %><br>
-            <br>
-            Quantity: <%= line_item.quantity %><br>
-            <%= link_to line_item_path(line_item.id), method: "delete" do %>
-              <i class="far fa-trash-alt"></i>
-            <% end %>
+
+            <%= cl_image_tag line_item.product_variant.product.photos[0].key %>
+            <div class="product-text">
+              <div class="product-info">
+                <p class="product-name"><%= line_item.product_variant.product.name %></p>
+                <p class="merchant-name"><%= line_item.product_variant.product.merchant.name %></p>
+                <p>Unit price: <%= line_item.product_variant.product.price %><%= currency_symbol %></p>
+                <br>
+                <p>Quantity: <%= line_item.quantity %></p>
+              </div>
+
+              <%= link_to line_item_path(line_item.id), method: "delete" do %>
+                <i class="fas fa-trash-alt"></i>
+              <% end %>
+            </div>
           </div>
         <% end %>
       <% end %>
