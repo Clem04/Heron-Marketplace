@@ -28,16 +28,31 @@
 
     <div class="order-summary">
       <h2>Order Summary</h2>
-      <span class="line"></span>
+      <hr class="line">
       <div class="item-count-price">
-        <p><%= @cart.line_items.length %></p>
+        <p>Items <%= @cart.line_items.length %></p>
         <p><%= @cart.total_cart_price %><%= currency_symbol %></p>
       </div>
       <h3>Shipping</h3>
+      <form action="#">
+        <select class="delivery-options" name="" id="">
+          <option class="delivery-option" value="#">Standard Delivery - $7.00</option>
+          <option  class="delivery-option" value="#">Standard Delivery - $7.00</option>
+        </select>
+      </form>
       <h3>Points Redeem</h3>
-      <span class="line"></span>
-      <p>TOTAL COST: <%= @cart.total_cart_price %><%= currency_symbol %></p>
-      <%= link_to 'CHECKOUT', class: 'grey-btn' %>
+      <form action="#" class="points-form">
+        <input class="points-input" type="number" placeholder="200">
+        <input class="apply-points-button" type="submit" value="APPLY">
+      </form>
+      <hr class="line">
+      <div class="total-cost">
+        <p>TOTAL COST</p>
+        <p><strong><%= @cart.total_cart_price %><%= currency_symbol %></strong></p>
+      </div>
+      <%= link_to root_path do %>
+        <p class="grey-btn">CHECKOUT</p>
+      <% end%>
     </div>
   </div>
 </div>

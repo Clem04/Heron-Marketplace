@@ -10,10 +10,13 @@
   width: 250px;
   &:hover{
     color: white;
-    // box-shadow:
   }
 }
 .submit-button {
   text-align: center;
+}
+
+.order-summary .grey-btn {
+  width: 100%;
 }
 
