@@ -1,0 +1,12 @@
+.header-inventory {
+  display: flex;
+  margin-bottom: 22px;
+  justify-content: space-between;
+}
+
+.product-inventory {
+  .product-img {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
