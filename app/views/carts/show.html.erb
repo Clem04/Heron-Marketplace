@@ -1,23 +1,70 @@
-<% if @cart.line_items.length == 0 %>
-  <p>Your cart is empty</p>
-<% else %>
-  <ul>
-    <% @cart.line_items.each do |line_item| %>
-      <li>
-        <%= line_item.product_variant.product.name %><br>
-        <%= line_item.product_variant.product.merchant.name %><br>
-        Unit price: <%= line_item.product_variant.product.price %><%= currency_symbol %><br>
-        <br>
-        Quantity: <%= line_item.quantity %><br>
-        <%= link_to line_item_path(line_item.id), method: "delete" do %>
-          <i class="far fa-trash-alt"></i>
-        <% end %>
-      </li>
+<div class="content">
+  <div class="title-points">
+    <h1>Shopping Cart</h1>
+    <p>Available Points: <strong>200pts</strong></p>
+  </div>
+
+  <div class="continue-shopping">
+    <%= link_to root_path do %>
+        <i class="fas fa-long-arrow-alt-left"></i>
+        <p>Continue Shopping</p>
     <% end %>
-  </ul>
+  </div>
 
-  <p>Total: <%= @cart.total_cart_price %><%= currency_symbol %></p>
-  <%= button_to 'BUY NOW', class: 'add-cart-btn' %>
-<% end %>
+  <div class="product-list-order-summary">
+    <div class="cart-product-list">
+      <% if @cart.line_items.length == 0 %>
+        <p>Your cart is empty</p>
+      <% else %>
+        <% @cart.line_items.each do |line_item| %>
+          <div class="line-item-card">
 
+            <%= cl_image_tag line_item.product_variant.product.photos[0].key %>
+            <div class="product-text">
+              <div class="product-info">
+                <p class="product-name"><%= line_item.product_variant.product.name %></p>
+                <p class="merchant-name"><%= line_item.product_variant.product.merchant.name %></p>
+                <p>Unit price: <%= line_item.product_variant.product.price %><%= currency_symbol %></p>
+                <br>
+                <p>Quantity: <%= line_item.quantity %></p>
+              </div>
 
+              <%= link_to line_item_path(line_item.id), method: "delete" do %>
+                <i class="fas fa-trash-alt"></i>
+              <% end %>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+
+    <div class="order-summary">
+      <h2>Order Summary</h2>
+      <hr class="line">
+      <div class="item-count-price">
+        <p>Items <%= @cart.line_items.length %></p>
+        <p><%= @cart.total_cart_price %><%= currency_symbol %></p>
+      </div>
+      <h3>Shipping</h3>
+      <form action="#">
+        <select class="delivery-options" name="" id="">
+          <option class="delivery-option" value="#">Standard Delivery - $7.00</option>
+          <option  class="delivery-option" value="#">Standard Delivery - $7.00</option>
+        </select>
+      </form>
+      <h3>Points Redeem</h3>
+      <form action="#" class="points-form">
+        <input class="points-input" type="number" placeholder="200">
+        <input class="apply-points-button" type="submit" value="APPLY">
+      </form>
+      <hr class="line">
+      <div class="total-cost">
+        <p>TOTAL COST</p>
+        <p><strong><%= @cart.total_cart_price %><%= currency_symbol %></strong></p>
+      </div>
+      <%= link_to root_path do %>
+        <p class="grey-btn">CHECKOUT</p>
+      <% end%>
+    </div>
+  </div>
+</div>
