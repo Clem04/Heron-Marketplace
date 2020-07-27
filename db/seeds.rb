@@ -1392,37 +1392,37 @@ blanket = Product.create!(name: 'Fluffy Blanket',
 # Labels
 organic = Label.create!(name: "Organic Products", description: 'This brand uses/offers organic fabrics,
   ingredients and/or comply with standards of organic farming.',
-  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/Organic_-_Label_nqbzbh.png')
+  icon: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595872779/labels/Organic_-_Label_uheyze.png')
 made_in_canada = Label.create!(name: "Made in Canada", description: 'At least 70 percent of this brand
   merchandise is produced in Canada.',
-  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/MadeInCanada-Label_thqrob.png')
+  icon: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595872779/labels/MadeInCanada-Label_wamcz8.png')
 fair_trade = Label.create!(name: "Fair Trade", description: 'This brand helps artisans in developing
   countries achieve good trading and improves social and environmental standards.',
-  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/FairTrade-Label_atozrh.png')
+  icon: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595872779/labels/FairTrade-Label_plafqo.png')
 cruelty_free = Label.create!(name: "Cruelty Free", description: 'This brand does not manufacture or
   offer products made by methods that involve experimentation on animals.',
-  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/CrueltyFree-Label_bodsdp.png')
+  icon: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595872779/labels/CrueltyFree-Label_dvfev1.png')
 vegan = Label.create!(name: "Vegan", description: 'This brand does not produce products that
   comes from animals or goods containing animal products.',
-  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/Vegan-Label_w0oss7.png')
+  icon: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595872779/labels/Vegan-Label_q2cayj.png')
 paraben_free = Label.create!(name: "Paraben Free", description: 'This brand offers and/or produces
   paraben free products',
-  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/ParabenFree-Label_hphsok.png')
+  icon: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595872779/labels/ParabenFree-Label_dhs65v.png')
 green_and_clean = Label.create!(name: "Green and Clean", description: 'This brand offers and/or produces products with
   environmentally friendly ingredients and their procedures are designed to
   preserve human health and environmental quality.',
-  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/GreenAndClean-Label_hulnkv.png')
+  icon: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595872779/labels/GreenAndClean-Label_vhxiw7.png')
 recycle_material = Label.create!(name: "Recycle Material", description: 'This brand offers and/or manufures
   products made of recycled materials(s)',
-  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/RecycleMaterial-Label_uhbgga.png')
+  icon: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595872779/labels/RecycleMaterial-Label_qyx4pn.png')
 transparent = Label.create!(name: "Transparency", description: 'This brand is transparent about its
   business activities.',
-  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/Transparency-Label_dnlgmt.png')
+  icon: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595872779/labels/Transparency-Label_fdm8wt.png')
 ethical = Label.create!(name: "Ethical", description: 'This brand follows ethical pratices regarding
   their workplace and production activities.',
-  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/Ethical-Label_kbypfh.png')
+  icon: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595872779/labels/Ethical-Label_yehd6d.png')
 women_founded = Label.create!(name: "Women Founded", description: 'This brands is women founded and/or owned.',
-  icon: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588174025/Heron-Market/Labels/WomanFounded-Label_ldxtys.png')
+  icon: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595872779/labels/WomanFounded-Label_pw0x5u.png')
 
 # Label Products
 label = [organic, made_in_canada, fair_trade, cruelty_free, vegan, paraben_free, green_and_clean, recycle_material, transparent, ethical, women_founded]
