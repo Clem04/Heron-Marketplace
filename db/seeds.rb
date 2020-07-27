@@ -116,7 +116,7 @@ high_rise_jeans_367 = Product.create!(name: 'High Rise Jeans 367',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 79.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: bottoms.id, sku: 'ABHD1783')
 
-  high_rise_jeans_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588099235/Heron-Market/Products/Fashion/High-Rise-Jeans_nfax9y.jpg')
+  high_rise_jeans_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595349784/Products/Fashion/QSNwJUCGKebrCSahCAxnMddw_ukp4yq.jpg')
   high_rise_jeans_367.photos.attach(io: high_rise_jeans_photo_1, filename: 'High-Rise-Jeans_nfax9y.jpg', content_type: 'image/jpg')
 xsmall = ProductVariant.create(size: "XS", stock_qty: 3, product_id: high_rise_jeans_367.id)
 
@@ -129,7 +129,7 @@ black_backpack = Product.create!(name: 'Black Backpack',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 50.99,
   merchant_id: boutique_sleek_chic.id, sub_category_id: bags.id, sku: 'ABHD1983')
 
-  black_backpack_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175277/Heron-Market/Products/Fashion/Black-Backpack_qnkoe5.jpg')
+  black_backpack_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595349539/Products/Fashion/u2Wa4gjdQa7ygKi72JAmPBLa_dnst2c.jpg')
   black_backpack.photos.attach(io: black_backpack_photo_1, filename: 'Black-Backpack_qnkoe5.jpg', content_type: 'image/jpg')
 
 red_dress = Product.create!(name: 'Red Dress',
@@ -141,12 +141,12 @@ red_dress = Product.create!(name: 'Red Dress',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 120.99,
   merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id, sku: 'ABHD1784')
 
-  red_dress_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175245/Heron-Market/Products/Fashion/Dress-Red-Front_znsbup.jpg')
-  red_dress_photo_2 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175269/Heron-Market/Products/Fashion/Dress-Red-Back_jf1hrm.jpg')
-  red_dress_photo_3 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175271/Heron-Market/Products/Fashion/Dress-Red-Details-Back_fww2ud.jpg')
+  red_dress_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595294991/Products/Fashion/6Ak7SnCorjJhmi6vhHtBkBwx_mwokct.jpg')
+  red_dress_photo_2 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595294987/Products/Fashion/2qZdNFPfdy2B6gmfUx65xzqy_pptkov.jpg')
+  # red_dress_photo_3 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175271/Heron-Market/Products/Fashion/Dress-Red-Details-Back_fww2ud.jpg')
   red_dress.photos.attach(io: red_dress_photo_1, filename: 'Dress-Red-Front_znsbup.jpg', content_type: 'image/jpg')
   red_dress.photos.attach(io: red_dress_photo_2, filename: 'Dress-Red-Back_jf1hrm.jpg', content_type: 'image/jpg')
-  red_dress.photos.attach(io: red_dress_photo_3, filename: 'Dress-Red-Details-Back_fww2ud.jpg', content_type: 'image/jpg')
+  # red_dress.photos.attach(io: red_dress_photo_3, filename: 'Dress-Red-Details-Back_fww2ud.jpg', content_type: 'image/jpg')
 
 pink_heels = Product.create!(name: 'Pink Heels',
   description: 'Elit labore dolore voluptate
@@ -157,7 +157,7 @@ pink_heels = Product.create!(name: 'Pink Heels',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 118.99,
   merchant_id: boutique_sleek_chic.id, sub_category_id: shoes.id, sku: 'AKJH1783')
 
-  pink_heels_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175271/Heron-Market/Products/Fashion/Pink-Heels_xwtoy9.jpg')
+  pink_heels_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595349766/Products/Fashion/ReuKo3KuCdUfVfaxUrYHQPiv_m3yuhe.jpg')
   pink_heels.photos.attach(io: pink_heels_photo_1, filename: 'Pink-Heels_xwtoy9.jpg', content_type: 'image/jpg')
 
 scarf_blue = Product.create!(name: 'Blue Scarf',
@@ -169,7 +169,7 @@ scarf_blue = Product.create!(name: 'Blue Scarf',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 25.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: fashion_accessories.id, sku: 'ABPO1783')
 
-  scarf_blue_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175267/Heron-Market/Products/Fashion/Scarf-Blue_eoastr.jpg')
+  scarf_blue_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295016/Products/Fashion/5hJdxAeuY5H7hhrGqe6wXKv1_l30pyq.jpg')
   scarf_blue.photos.attach(io: scarf_blue_photo_1, filename: 'Scarf-Blue_eoastr.jpg', content_type: 'image/jpg')
 
 scarf_red = Product.create!(name: 'Red Scarf',
@@ -181,24 +181,24 @@ scarf_red = Product.create!(name: 'Red Scarf',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 25.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: fashion_accessories.id)
 
-  scarf_red_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175207/Heron-Market/Products/Fashion/Scarf-Red_pisovv.jpg')
+  scarf_red_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295011/Products/Fashion/Az7RLURDRSjDx5bSuuxoKuKc_cwosvn.jpg')
   scarf_red.photos.attach(io: scarf_red_photo_1, filename: 'Scarf-Red_pisovv.jpg', content_type: 'image/jpg')
 
-satin_blouse = Product.create!(name: 'Satin Blouse',
-  description: 'Elit labore dolore voluptate
-  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
-  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
-  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
-  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
-  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 89.99,
-  merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id)
+# satin_blouse = Product.create!(name: 'Satin Blouse',
+#   description: 'Elit labore dolore voluptate
+#   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+#   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+#   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+#   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+#   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 89.99,
+#   merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id)
 
-  satin_blouse_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175183/Heron-Market/Products/Fashion/Satin-Blouse-Front_ud14op.jpg')
-  satin_blouse_photo_2 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175171/Heron-Market/Products/Fashion/Satin-Blouse-Details-Front_hrnoc9.jpg')
-  satin_blouse_photo_3 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175177/Heron-Market/Products/Fashion/Satin-Blouse-Back_bpbqxb.jpg')
-  satin_blouse.photos.attach(io: satin_blouse_photo_1, filename: 'Satin-Blouse-Front_ud14op.jpg', content_type: 'image/jpg')
-  satin_blouse.photos.attach(io: satin_blouse_photo_2, filename: 'Satin-Blouse-Details-Front_hrnoc9.jpg', content_type: 'image/jpg')
-  satin_blouse.photos.attach(io: satin_blouse_photo_3, filename: 'Satin-Blouse-Back_bpbqxb.jpg', content_type: 'image/jpg')
+#   satin_blouse_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175183/Heron-Market/Products/Fashion/Satin-Blouse-Front_ud14op.jpg')
+#   satin_blouse_photo_2 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175171/Heron-Market/Products/Fashion/Satin-Blouse-Details-Front_hrnoc9.jpg')
+#   satin_blouse_photo_3 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175177/Heron-Market/Products/Fashion/Satin-Blouse-Back_bpbqxb.jpg')
+#   satin_blouse.photos.attach(io: satin_blouse_photo_1, filename: 'Satin-Blouse-Front_ud14op.jpg', content_type: 'image/jpg')
+#   satin_blouse.photos.attach(io: satin_blouse_photo_2, filename: 'Satin-Blouse-Details-Front_hrnoc9.jpg', content_type: 'image/jpg')
+#   satin_blouse.photos.attach(io: satin_blouse_photo_3, filename: 'Satin-Blouse-Back_bpbqxb.jpg', content_type: 'image/jpg')
 
 mid_rise_jeans = Product.create!(name: 'Mid-Rise Jeans 367',
   description: 'Elit labore dolore voluptate
@@ -209,7 +209,7 @@ mid_rise_jeans = Product.create!(name: 'Mid-Rise Jeans 367',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 75.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: bottoms.id)
 
-  mid_rise_jeans_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588098951/Heron-Market/Products/Fashion/Mid-Rise-Jeans367_n4eict.jpg')
+  mid_rise_jeans_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595349418/Products/Fashion/k3snwiy7HWbvP19oDET3sCDJ_h30pt6.jpg')
   mid_rise_jeans.photos.attach(io: mid_rise_jeans_photo_1, filename: 'Mid-Rise-Jeans367_n4eict.jpg', content_type: 'image/jpg')
 
 sweater_pink = Product.create!(name: 'Pink Sweater',
@@ -221,7 +221,7 @@ sweater_pink = Product.create!(name: 'Pink Sweater',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 67.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id)
 
-  sweater_pink_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588098951/Heron-Market/Products/Fashion/pink-sweater_m8pyvw.jpg')
+  sweater_pink_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595349802/Products/Fashion/jaDPjtA27zwkzTYW7vwL8JYa_ftkjny.jpg')
   sweater_pink.photos.attach(io: sweater_pink_photo_1, filename: 'pink-sweater_m8pyvw.jpg', content_type: 'image/jpg')
 
 over_the_knee_boots = Product.create!(name: 'Suede Over-the-Knee Boots',
@@ -233,7 +233,7 @@ over_the_knee_boots = Product.create!(name: 'Suede Over-the-Knee Boots',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 110.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: shoes.id)
 
-  over_the_knee_boots_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588175207/Heron-Market/Products/Fashion/Over-The-Knee-Boots_dms3zy.jpg')
+  over_the_knee_boots_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295002/Products/Fashion/1grqHQFybj3EU7s6kaXF942k_mq2pdu.jpg')
   over_the_knee_boots.photos.attach(io: over_the_knee_boots_photo_1, filename: 'ver-The-Knee-Boots_dms3zy.jpg', content_type: 'image/jpg')
 
 pastel_blazer = Product.create!(name: 'Pastel Blazer',
@@ -245,9 +245,9 @@ pastel_blazer = Product.create!(name: 'Pastel Blazer',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 89.99,
   merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id)
 
-  pastel_blazer_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189613/Heron-Market/Products/Fashion/Pastel-Spring-Blazer-Front_ihnh1t.png')
-  pastel_blazer_photo_2 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189611/Heron-Market/Products/Fashion/Pastel-Spring-Blazer-Outfit_hanmwe.jpg')
-  pastel_blazer_photo_3 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189608/Heron-Market/Products/Fashion/Pastel-Srping-Blazer-Outfit-2_yiu9qi.jpg')
+  pastel_blazer_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595349466/Products/Fashion/rxdpxatnJPBnrmeHwjoRvAWn_tqur18.png')
+  pastel_blazer_photo_2 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595349511/Products/Fashion/ukTQ8VwWEASVWs86rW21XfKs_bpt9e1.jpg')
+  pastel_blazer_photo_3 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595349457/Products/Fashion/Mp6vVWvkhbwaGMHLEmGxjzUq_ukar5v.jpg')
   pastel_blazer.photos.attach(io: pastel_blazer_photo_1, filename: 'Pastel-Spring-Blazer-Front_ihnh1t.png', content_type: 'image/jpg')
   pastel_blazer.photos.attach(io: pastel_blazer_photo_2, filename: 'Pastel-Spring-Blazer-Outfit_hanmwe.jpg', content_type: 'image/jpg')
   pastel_blazer.photos.attach(io: pastel_blazer_photo_3, filename: 'Pastel-Srping-Blazer-Outfit-2_yiu9qi.jpg', content_type: 'image/jpg')
@@ -261,24 +261,24 @@ tims_blue = Product.create!(name: 'Blue Tims',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 150.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: shoes.id)
 
-  tims_blue_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189623/Heron-Market/Products/Fashion/Tims-Blue_cv96hm.png')
-  tims_blue_photo_2 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189600/Heron-Market/Products/Fashion/Tims-Blue-2_cngeg3.png')
-  tims_blue_photo_3 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189655/Heron-Market/Products/Fashion/Times-Blue-3_ddcg4a.png')
+  tims_blue_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295000/Products/Fashion/dyXEhZiTihZsWeXiL9BmghFD_jzkdqy.png')
+  tims_blue_photo_2 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595294993/Products/Fashion/a4N4EhA6AWDLEP9FqdJ67X6o_ubnqya.png')
+  # tims_blue_photo_3 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189655/Heron-Market/Products/Fashion/Times-Blue-3_ddcg4a.png')
   tims_blue.photos.attach(io: tims_blue_photo_1, filename: 'Tims-Blue_cv96hm.png', content_type: 'image/jpg')
   tims_blue.photos.attach(io: tims_blue_photo_2, filename: 'Tims-Blue-2_cngeg3.png', content_type: 'image/jpg')
-  tims_blue.photos.attach(io: tims_blue_photo_3, filename: 'Times-Blue-3_ddcg4a.png', content_type: 'image/jpg')
+  # tims_blue.photos.attach(io: tims_blue_photo_3, filename: 'Times-Blue-3_ddcg4a.png', content_type: 'image/jpg')
 
-studded_flats = Product.create!(name: 'Studded Flats',
-  description: 'Elit labore dolore voluptate
-  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
-  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
-  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
-  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
-  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 200.00,
-  merchant_id: boutique_sleek_chic.id, sub_category_id: shoes.id)
+# studded_flats = Product.create!(name: 'Studded Flats',
+#   description: 'Elit labore dolore voluptate
+#   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+#   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+#   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+#   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+#   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 200.00,
+#   merchant_id: boutique_sleek_chic.id, sub_category_id: shoes.id)
 
-  studded_flats_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588190413/Heron-Market/Products/Fashion/Studded-Flats_zqzjxi.png')
-  studded_flats.photos.attach(io: studded_flats_photo_1, filename: 'Studded-Flats_zqzjxi.png', content_type: 'image/jpg')
+#   studded_flats_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588190413/Heron-Market/Products/Fashion/Studded-Flats_zqzjxi.png')
+#   studded_flats.photos.attach(io: studded_flats_photo_1, filename: 'Studded-Flats_zqzjxi.png', content_type: 'image/jpg')
 
 washed_jeans = Product.create!(name: 'Washed Jeans',
   description: 'Elit labore dolore voluptate
@@ -289,7 +289,7 @@ washed_jeans = Product.create!(name: 'Washed Jeans',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 155.99,
   merchant_id: boutique_sleek_chic.id, sub_category_id: bottoms.id)
 
-  washed_jeans_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588190609/Heron-Market/Products/Fashion/Washed-Jeans_s5lmgp.png')
+  washed_jeans_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595349352/Products/Fashion/CdrUeQ11uCAk15oHSfgG2Eev_yxhbmi.png')
   washed_jeans.photos.attach(io: washed_jeans_photo_1, filename: 'Washed-Jeans_s5lmgp.png', content_type: 'image/jpg')
 
 pink_silhettos = Product.create!(name: 'Pink Silhetto',
@@ -301,7 +301,7 @@ pink_silhettos = Product.create!(name: 'Pink Silhetto',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 250.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: shoes.id)
 
-  pink_silhettos_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189638/Heron-Market/Products/Fashion/Pink_Silhetto_mjmt1u.png')
+  pink_silhettos_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595349710/Products/Fashion/V4JksdWs7SrJWfud4UXvsee6_bzg2ve.png')
   pink_silhettos.photos.attach(io: pink_silhettos_photo_1, filename: 'Pink_Silhetto_mjmt1u.png', content_type: 'image/jpg')
 
 panama_hat = Product.create!(name: 'Panama Hat',
@@ -313,7 +313,7 @@ panama_hat = Product.create!(name: 'Panama Hat',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 45.99,
   merchant_id: boutique_sleek_chic.id, sub_category_id: fashion_accessories.id)
 
-  panama_hat_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189623/Heron-Market/Products/Fashion/Panama-Hat_lfr2g4.jpg')
+  panama_hat_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595294995/Products/Fashion/6BEvY9ghid8xPqxej7GJQJsW_pui37v.jpg')
   panama_hat.photos.attach(io: panama_hat_photo_1, filename: 'Panama-Hat_lfr2g4.jpg', content_type: 'image/jpg')
 
 jean_short = Product.create!(name: 'Jean Short',
@@ -325,20 +325,20 @@ jean_short = Product.create!(name: 'Jean Short',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 50.99,
   merchant_id: boutique_sleek_chic.id, sub_category_id: bottoms.id)
 
-  jean_short_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189673/Heron-Market/Products/Fashion/Jean-Short-Outfit_tfhcsr.jpg')
+  jean_short_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595349471/Products/Fashion/5GP2cX2bh9sUqjL6NXTWfhom_x3l8qd.jpg')
   jean_short.photos.attach(io: jean_short_photo_1, filename: 'Jean-Short-Outfit_tfhcsr.jpg', content_type: 'image/jpg')
 
-red_shoes = Product.create!(name: 'Red Shoes',
-  description: 'Elit labore dolore voluptate
-  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
-  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
-  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
-  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
-  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 175.00,
-  merchant_id: boutique_sleek_chic.id, sub_category_id: shoes.id)
+# red_shoes = Product.create!(name: 'Red Shoes',
+#   description: 'Elit labore dolore voluptate
+#   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+#   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+#   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+#   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+#   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 175.00,
+#   merchant_id: boutique_sleek_chic.id, sub_category_id: shoes.id)
 
-  red_shoes_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189600/Heron-Market/Products/Fashion/Red-Shoes_leldby.jpg')
-  red_shoes.photos.attach(io: red_shoes_photo_1, filename: 'Red-Shoes_leldby.jpg', content_type: 'image/jpg')
+#   red_shoes_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189600/Heron-Market/Products/Fashion/Red-Shoes_leldby.jpg')
+#   red_shoes.photos.attach(io: red_shoes_photo_1, filename: 'Red-Shoes_leldby.jpg', content_type: 'image/jpg')
 
 leather_jacket = Product.create!(name: 'Leather Jacket',
   description: 'Elit labore dolore voluptate
@@ -350,9 +350,9 @@ leather_jacket = Product.create!(name: 'Leather Jacket',
   merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id)
 
 
-  leather_jacket_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189654/Heron-Market/Products/Fashion/Leather-Jacket_fh8yj7.jpg')
-  leather_jacket_photo_2 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189663/Heron-Market/Products/Fashion/Leather-Jacket-Angle_ycr6pz.jpg')
-  leather_jacket_photo_3 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189658/Heron-Market/Products/Fashion/Leather-Jacket-Outfit_o5sfcj.jpg')
+  leather_jacket_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595294990/Products/Fashion/1J8sq2scPWEJLYN446bRmhVH_rgh7lw.jpg')
+  leather_jacket_photo_2 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595294997/Products/Fashion/6RvYmFsYEt6jXodtCrNMQpvu_frsjlw.jpg')
+  leather_jacket_photo_3 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295002/Products/Fashion/biNTqEgWe2TtHPnFpkXft5Pv_nsnlr8.jpg')
   leather_jacket.photos.attach(io: leather_jacket_photo_1, filename: 'Leather-Jacket_fh8yj7.jpg', content_type: 'image/jpg')
   leather_jacket.photos.attach(io: leather_jacket_photo_2, filename: 'Leather-Jacket-Angle_ycr6pz.jpg', content_type: 'image/jpg')
   leather_jacket.photos.attach(io: leather_jacket_photo_3, filename: 'Leather-Jacket-Outfit_o5sfcj.jpg', content_type: 'image/jpg')
@@ -366,9 +366,9 @@ white_shirt = Product.create!(name: 'Crispy White Shirt',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 79.99,
   merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id)
 
-  white_shirt_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189599/Heron-Market/Products/Fashion/White-Shirt-Front_ndwyxk.jpg')
-  white_shirt_photo_2 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189599/Heron-Market/Products/Fashion/White-Shirt-Details_fglcw8.jpg')
-  white_shirt_photo_3 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189598/Heron-Market/Products/Fashion/White-Shirt-Outfit_hzkqj3.jpg')
+  white_shirt_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595349479/Products/Fashion/PjyRsurAD5zsAxuGD6thXo4J_xjlhjs.jpg')
+  white_shirt_photo_2 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595349440/Products/Fashion/N8oATHxSEifpQknEkhEkLPi4_oesqwz.jpg')
+  white_shirt_photo_3 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595294998/Products/Fashion/97gThyedpbEYrEGpZ6VWEhz7_vdhrau.jpg')
   white_shirt.photos.attach(io: white_shirt_photo_1, filename: 'White-Shirt-Front_ndwyxk.jpg', content_type: 'image/jpg')
   white_shirt.photos.attach(io: white_shirt_photo_2, filename: 'White-Shirt-Details_fglcw8.jpg', content_type: 'image/jpg')
   white_shirt.photos.attach(io: white_shirt_photo_3, filename: 'White-Shirt-Outfit_hzkqj3.jpg', content_type: 'image/jpg')
@@ -382,20 +382,20 @@ bra_pantie_kit = Product.create!(name: 'Sexy Bra Panti Kit',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 135.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: underwears.id)
 
-  bra_pantie_kit_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189707/Heron-Market/Products/Fashion/Bra-Pantie-Kit_kxa4nr.jpg')
+  bra_pantie_kit_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295014/Products/Fashion/HmyeQ4cmkHSVzquoY2eGmHbz_bwrgzp.jpg')
   bra_pantie_kit.photos.attach(io: bra_pantie_kit_photo_1, filename: 'Bra-Pantie-Kit_kxa4nr.jpg', content_type: 'image/jpg')
 
-lingerie_set = Product.create!(name: 'Cute Lingerie Set',
-  description: 'Elit labore dolore voluptate
-  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
-  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
-  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
-  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
-  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 275.00,
-  merchant_id: boutique_sleek_chic.id, sub_category_id: underwears.id)
+# lingerie_set = Product.create!(name: 'Cute Lingerie Set',
+#   description: 'Elit labore dolore voluptate
+#   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+#   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+#   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+#   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+#   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 275.00,
+#   merchant_id: boutique_sleek_chic.id, sub_category_id: underwears.id)
 
-  lingerie_set_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189652/Heron-Market/Products/Fashion/Lingerie-Set_afrsve.jpg')
-  lingerie_set.photos.attach(io: lingerie_set_photo_1, filename: 'Lingerie-Set_afrsve.jpg', content_type: 'image/jpg')
+#   lingerie_set_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189652/Heron-Market/Products/Fashion/Lingerie-Set_afrsve.jpg')
+#   lingerie_set.photos.attach(io: lingerie_set_photo_1, filename: 'Lingerie-Set_afrsve.jpg', content_type: 'image/jpg')
 
 blue_shirt = Product.create!(name: 'Blue Shirt',
   description: 'Elit labore dolore voluptate
@@ -406,12 +406,12 @@ blue_shirt = Product.create!(name: 'Blue Shirt',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 78.99,
   merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id)
 
-  blue_shirt_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189706/Heron-Market/Products/Fashion/Blue-Shirt-Front_pxy7a5.jpg')
-  blue_shirt_photo_2 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189696/Heron-Market/Products/Fashion/Blue-Shirt-Side_ptmqnf.jpg')
+  blue_shirt_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595349372/Products/Fashion/J5Ly9tcG5ArwkWx4aMqhuaud_cttca7.jpg')
+  blue_shirt_photo_2 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595349542/Products/Fashion/uuQKKS6E1imjmAr5JeSjVc8g_wzk8d8.jpg')
   blue_shirt_photo_3 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189692/Heron-Market/Products/Fashion/Blue-Shirt-Details_i5entx.jpg')
-  blue_shirt.photos.attach(io: blue_shirt_photo_1, filename: 'Blue-Shirt-Front_pxy7a5.jpg', content_type: 'image/jpg')
+  # blue_shirt.photos.attach(io: blue_shirt_photo_1, filename: 'Blue-Shirt-Front_pxy7a5.jpg', content_type: 'image/jpg')
   blue_shirt.photos.attach(io: blue_shirt_photo_2, filename: 'Blue-Shirt-Side_ptmqnf.jpg', content_type: 'image/jpg')
-  blue_shirt.photos.attach(io: blue_shirt_photo_3, filename: 'Blue-Shirt-Details_i5entx.jpg', content_type: 'image/jpg')
+  # blue_shirt.photos.attach(io: blue_shirt_photo_3, filename: 'Blue-Shirt-Details_i5entx.jpg', content_type: 'image/jpg')
 
 embroided_Top = Product.create!(name: 'Embroided White Shirt',
   description: 'Elit labore dolore voluptate
@@ -422,22 +422,22 @@ embroided_Top = Product.create!(name: 'Embroided White Shirt',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 75.95,
   merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id)
 
-  embroided_Top_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189686/Heron-Market/Products/Fashion/Embroided-Top-Front_cxj3hk.jpg')
-  embroided_Top_photo_2 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189681/Heron-Market/Products/Fashion/Embroided-Top-Side_gpyvs5.jpg')
+  embroided_Top_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295010/Products/Fashion/hxSUmtRRz2CMCatQc2G7k4cS_xabi6l.jpg')
+  embroided_Top_photo_2 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595349428/Products/Fashion/mFHBXTCqCuDxUc1sprgXXnp8_m1tbam.jpg')
   embroided_Top.photos.attach(io: embroided_Top_photo_1, filename: 'Embroided-Top-Front_cxj3hk.jpg', content_type: 'image/jpg')
   embroided_Top.photos.attach(io: embroided_Top_photo_2, filename: 'Embroided-Top-Side_gpyvs5.jpg', content_type: 'image/jpg')
 
-light_pink_purse = Product.create!(name: 'Light Pink Purse',
-  description: 'Elit labore dolore voluptate
-  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
-  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
-  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
-  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
-  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 89.99,
-  merchant_id: boutique_sleek_chic.id, sub_category_id: fashion_accessories.id)
+# light_pink_purse = Product.create!(name: 'Light Pink Purse',
+#   description: 'Elit labore dolore voluptate
+#   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+#   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+#   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+#   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+#   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 89.99,
+#   merchant_id: boutique_sleek_chic.id, sub_category_id: fashion_accessories.id)
 
-  light_pink_purse_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189642/Heron-Market/Products/Fashion/Light-Pink-Purse_ckgxal.jpg')
-  light_pink_purse.photos.attach(io: light_pink_purse_photo_1, filename: 'Light-Pink-Purse_ckgxal.jpg', content_type: 'image/jpg')
+#   light_pink_purse_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189642/Heron-Market/Products/Fashion/Light-Pink-Purse_ckgxal.jpg')
+#   light_pink_purse.photos.attach(io: light_pink_purse_photo_1, filename: 'Light-Pink-Purse_ckgxal.jpg', content_type: 'image/jpg')
 
 red_bag = Product.create!(name: 'Mini Red Bag',
   description: 'Elit labore dolore voluptate
@@ -448,7 +448,7 @@ red_bag = Product.create!(name: 'Mini Red Bag',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 125.95,
   merchant_id: boutique_sleek_chic.id, sub_category_id: fashion_accessories.id)
 
-  red_bag_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189605/Heron-Market/Products/Fashion/Red-Bag_jrtx51.jpg')
+  red_bag_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295013/Products/Fashion/EqFP4mM6b3ykJVcdrPJcadYx_gt7tq9.jpg')
   red_bag.photos.attach(io: red_bag_photo_1, filename: 'Red-Bag_jrtx51.jpg', content_type: 'image/jpg')
 
 jean_coat = Product.create!(name: 'Jean Coat',
@@ -460,7 +460,7 @@ jean_coat = Product.create!(name: 'Jean Coat',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 189.99,
   merchant_id: boutique_sleek_chic.id, sub_category_id: tops.id)
 
-  jean_coat_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189663/Heron-Market/Products/Fashion/Jean-Coat_eaw4j6.png')
+  jean_coat_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295003/Products/Fashion/FaYtCfnu31sq7QbcatcVE6Uj_z2kp1i.png')
   jean_coat.photos.attach(io: jean_coat_photo_1, filename: 'Jean-Coat_eaw4j6.png', content_type: 'image/jpg')
 
 sexy_red_pump = Product.create!(name: 'Sexy Red Pump',
@@ -472,7 +472,7 @@ sexy_red_pump = Product.create!(name: 'Sexy Red Pump',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 225.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: shoes.id)
 
-  sexy_red_pump_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189600/Heron-Market/Products/Fashion/Sexy-Red-Pump_vud4ri.png')
+  sexy_red_pump_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595554255/Products/Fashion/NedP1t32o7vc8gDiydC1AbL8_pvh3r3.jpg')
   sexy_red_pump.photos.attach(io: sexy_red_pump_photo_1, filename: 'Sexy-Red-Pump_vud4ri.png', content_type: 'image/jpg')
 
 light_brown_clutch = Product.create!(name: 'Mini Light Brown Clutch',
@@ -484,22 +484,22 @@ light_brown_clutch = Product.create!(name: 'Mini Light Brown Clutch',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 330.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: fashion_accessories.id)
 
-  light_brown_clutch_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189648/Heron-Market/Products/Fashion/Light-Brown-Clutch_v0femp.jpg')
+  light_brown_clutch_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295010/Products/Fashion/DyxV2H7vVhMPwQzSkFEPLd8Q_yfoqby.jpg')
   light_brown_clutch.photos.attach(io: light_brown_clutch_photo_1, filename: 'Light-Brown-Clutch_v0femp.jpg', content_type: 'image/jpg')
 
-marble_earrings = Product.create!(name: 'Marble Earrings',
-  description: 'Elit labore dolore voluptate
-  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
-  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
-  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
-  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
-  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 225.00,
-  merchant_id: boutique_sleek_chic.id, sub_category_id: jewelleries.id)
+# marble_earrings = Product.create!(name: 'Marble Earrings',
+#   description: 'Elit labore dolore voluptate
+#   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+#   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+#   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+#   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+#   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 225.00,
+#   merchant_id: boutique_sleek_chic.id, sub_category_id: jewelleries.id)
 
-  marble_earrings_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189661/Heron-Market/Products/Fashion/marble-earrings_1_w5mmyl.jpg')
-  marble_earrings_photo_2 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189706/Heron-Market/Products/Fashion/marble-earrings_dvdcsd.jpg')
-  marble_earrings.photos.attach(io: marble_earrings_photo_1, filename: 'marble-earrings_1_w5mmyl.jpg', content_type: 'image/jpg')
-  marble_earrings.photos.attach(io: marble_earrings_photo_2, filename: 'marble-earrings_dvdcsd.jpg.jpg', content_type: 'image/jpg')
+#   marble_earrings_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189661/Heron-Market/Products/Fashion/marble-earrings_1_w5mmyl.jpg')
+#   marble_earrings_photo_2 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189706/Heron-Market/Products/Fashion/marble-earrings_dvdcsd.jpg')
+#   marble_earrings.photos.attach(io: marble_earrings_photo_1, filename: 'marble-earrings_1_w5mmyl.jpg', content_type: 'image/jpg')
+#   marble_earrings.photos.attach(io: marble_earrings_photo_2, filename: 'marble-earrings_dvdcsd.jpg.jpg', content_type: 'image/jpg')
 
 pearl_earrings = Product.create!(name: 'Pearl Earrings',
   description: 'Elit labore dolore voluptate
@@ -510,20 +510,20 @@ pearl_earrings = Product.create!(name: 'Pearl Earrings',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 175.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: jewelleries.id)
 
-  pearl_earrings_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189707/Heron-Market/Products/Fashion/Pearl-Earrings_narsws.jpg')
+  pearl_earrings_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295291/Products/Fashion/ckfVgPKo2pAHDAZHaQbU4ZWj_pzovf6.jpg')
   pearl_earrings.photos.attach(io: pearl_earrings_photo_1, filename: 'Pearl-Earrings_narsws.jpg', content_type: 'image/jpg')
 
-gold_chocker = Product.create!(name: 'Gold Chocker',
-  description: 'Elit labore dolore voluptate
-  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
-  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
-  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
-  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
-  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 45.95,
-  merchant_id: boutique_sleek_chic.id, sub_category_id: jewelleries.id)
+# gold_chocker = Product.create!(name: 'Gold Chocker',
+#   description: 'Elit labore dolore voluptate
+#   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+#   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+#   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+#   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+#   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 45.95,
+#   merchant_id: boutique_sleek_chic.id, sub_category_id: jewelleries.id)
 
-  gold_chocker_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189693/Heron-Market/Products/Fashion/Gold-Chocker_ik9oys.jpg')
-  gold_chocker.photos.attach(io: gold_chocker_photo_1, filename: 'Gold-Chocker_ik9oys.jpg', content_type: 'image/jpg')
+#   gold_chocker_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189693/Heron-Market/Products/Fashion/Gold-Chocker_ik9oys.jpg')
+#   gold_chocker.photos.attach(io: gold_chocker_photo_1, filename: 'Gold-Chocker_ik9oys.jpg', content_type: 'image/jpg')
 
 gold_bracelet = Product.create!(name: 'Gold Bracelet',
   description: 'Elit labore dolore voluptate
@@ -534,7 +534,7 @@ gold_bracelet = Product.create!(name: 'Gold Bracelet',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 165.00,
   merchant_id: boutique_sleek_chic.id, sub_category_id: jewelleries.id)
 
-  gold_bracelet_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189676/Heron-Market/Products/Fashion/Gold-Bracelet_ctafq7.jpg')
+  gold_bracelet_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295289/Products/Fashion/c2Sawrk92GUF1rrPLVTjxFHD_qocp41.jpg')
   gold_bracelet.photos.attach(io: gold_bracelet_photo_1, filename: 'Gold-Bracelet_ctafq7.jpg', content_type: 'image/jpg')
 
 gold_necklace = Product.create!(name: 'Dainty Gold Necklace',
@@ -546,7 +546,7 @@ gold_necklace = Product.create!(name: 'Dainty Gold Necklace',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 185.99,
   merchant_id: boutique_sleek_chic.id, sub_category_id: jewelleries.id)
 
-  gold_necklace_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588189704/Heron-Market/Products/Fashion/dainty-gold-necklace_qlvzqa.jpg')
+  gold_necklace_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295290/Products/Fashion/aC1hnniHPzgjMdPogVxaEnKE_a9zmsw.jpg')
   gold_necklace.photos.attach(io: gold_necklace_photo_1, filename: 'dainty-gold-necklace_qlvzqa.jpg', content_type: 'image/jpg')
 
 
@@ -564,10 +564,10 @@ bare_beauty = Merchant.create!(name: 'Bare Beauty',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.',
   website: 'https://www.barebeauty.ca',
-  picture_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091074/Heron-Market/merchants/BareBeauty-BathInspo_b25zkz.jpg',
-  picture_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091010/Heron-Market/merchants/BareBeauty-Product_kcnuud.jpg',
-  picture_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091036/Heron-Market/merchants/BareBeauty-NailPolisg_mthses.jpg',
-  picture_4: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091047/Heron-Market/merchants/BareBeauty-EssentialOils_jkwoq5.jpg')
+  picture_1: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595876637/Merchants/holger-link-MqNyusb_ne4-unsplash_fnkbsz.jpg',
+  picture_2: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595876643/Merchants/annie-spratt-bFAfyqxRdPA-unsplash_ktcwkj.jpg',
+  picture_3: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595876640/Merchants/taisiia-shestopal-0vUv61WZ2hI-unsplash_o6t6b2.jpg',
+  picture_4: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595876910/Merchants/uby-yanes-QPI0xq-52Ds-unsplash_d6kqti.jpg')
 
 
 # Products - Beauty and Wellness
@@ -580,23 +580,23 @@ infuser_oil = Product.create!(name: 'Essential Oil Infuser',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 75.00,
   merchant_id: bare_beauty.id, sub_category_id: candles_and_essential_oils.id)
 
-  infuser_oil_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257714/Heron-Market/Products/beautywellness/Essential-Oils-Infuser_bq6auj.jpg')
+  infuser_oil_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595348591/Products/Beauty%20And%20Wellness/oY6z39kgzBsaaVAH7TMa2cUi_a3uew1.jpg')
   infuser_oil.photos.attach(io: infuser_oil_photo_1, filename: 'Essential-Oils-Infuser_bq6auj.jpg', content_type: 'image/jpg')
 
   quantity_ml = ProductVariant.create(size: "75ml", stock_qty: 3, product_id: infuser_oil.id)
 
 
-flask_induser = Product.create!(name: 'Flask Difuser',
-  description: 'Elit labore dolore voluptate
-  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
-  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
-  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
-  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
-  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 28.65,
-  merchant_id: bare_beauty.id, sub_category_id: candles_and_essential_oils.id)
+# flask_induser = Product.create!(name: 'Flask Difuser',
+#   description: 'Elit labore dolore voluptate
+#   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+#   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+#   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+#   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+#   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 28.65,
+#   merchant_id: bare_beauty.id, sub_category_id: candles_and_essential_oils.id)
 
-  flask_induser_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257688/Heron-Market/Products/beautywellness/flask-infuser_kfpvms.jpg')
-  flask_induser.photos.attach(io: flask_induser_photo_1, filename: 'flask-infuser_kfpvms.jpg', content_type: 'image/jpg')
+#   flask_induser_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257688/Heron-Market/Products/beautywellness/flask-infuser_kfpvms.jpg')
+#   flask_induser.photos.attach(io: flask_induser_photo_1, filename: 'flask-infuser_kfpvms.jpg', content_type: 'image/jpg')
 
 aroma_candle = Product.create!(name: 'Aroma Candle',
   description: 'Elit labore dolore voluptate
@@ -607,7 +607,7 @@ aroma_candle = Product.create!(name: 'Aroma Candle',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 45.00,
   merchant_id: bare_beauty.id, sub_category_id: candles_and_essential_oils.id)
 
-  aroma_candle_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257740/Heron-Market/Products/beautywellness/Aroma-Candles_byvhbj.jpg')
+  aroma_candle_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595553730/Products/Beauty%20And%20Wellness/tsUcx1HiosTyTsHQ7wzn1zf7_z3xxxw.jpg')
   aroma_candle.photos.attach(io: aroma_candle_photo_1, filename: 'Aroma-Candles_byvhbj.jpg', content_type: 'image/jpg')
 
 eyeshadow = Product.create!(name: 'Classic Nude Shadows',
@@ -619,7 +619,7 @@ eyeshadow = Product.create!(name: 'Classic Nude Shadows',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 45.95,
   merchant_id: bare_beauty.id, sub_category_id: makeup.id)
 
-  eyeshadow_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257697/Heron-Market/Products/beautywellness/Eyeshadow_uqpwkb.jpg')
+  eyeshadow_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595348576/Products/Beauty%20And%20Wellness/Dm3iK3dmaEHMN7uLnmhQ7zHd_faek8j.jpg')
   eyeshadow.photos.attach(io: eyeshadow_photo_1, filename: 'Eyeshadow_uqpwkb.jpg', content_type: 'image/jpg')
 
 soy_candle = Product.create!(name: 'Jasmin Soy Candle',
@@ -631,7 +631,7 @@ soy_candle = Product.create!(name: 'Jasmin Soy Candle',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 80.00,
   merchant_id: bare_beauty.id, sub_category_id: candles_and_essential_oils.id)
 
-  soy_candle_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257664/Heron-Market/Products/beautywellness/Soy_andle_inxlws.jpg')
+  soy_candle_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595553593/Products/Beauty%20And%20Wellness/1yRkkmcz86jPyNoLjbKeHqY1_lh03i0.jpg')
   soy_candle.photos.attach(io: soy_candle_photo_1, filename: 'Soy_andle_inxlws.jpg', content_type: 'image/jpg')
 
 skincare_bundle = Product.create!(name: 'One Skincare Bundle',
@@ -643,7 +643,7 @@ skincare_bundle = Product.create!(name: 'One Skincare Bundle',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 40.95,
   merchant_id: bare_beauty.id, sub_category_id: skin_care.id)
 
-  skincare_bundle_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257660/Heron-Market/Products/beautywellness/skincare-bundle_lwicqh.jpg')
+  skincare_bundle_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295182/Products/Beauty%20And%20Wellness/g76Z3FxMfYUfCpU8R7Uxbgay_atbbqn.jpg')
   skincare_bundle.photos.attach(io: skincare_bundle_photo_1, filename: 'skincare-bundle_lwicqh.jpg', content_type: 'image/jpg')
 
 countour_palette = Product.create!(name: 'Aly Countour Palette',
@@ -655,7 +655,7 @@ countour_palette = Product.create!(name: 'Aly Countour Palette',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 55.00,
   merchant_id: bare_beauty.id, sub_category_id: makeup.id)
 
-  countour_palette_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257733/Heron-Market/Products/beautywellness/contour-palette_t8rs64.jpg')
+  countour_palette_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295189/Products/Beauty%20And%20Wellness/5nwW49BK13oQJa1VocYDtuK9_w8fl3c.jpg')
   countour_palette.photos.attach(io: countour_palette_photo_1, filename: 'contour-palette_t8rs64.jpg', content_type: 'image/jpg')
 
 makeup_brush = Product.create!(name: 'Chelsea Makeup Brushes',
@@ -667,7 +667,7 @@ makeup_brush = Product.create!(name: 'Chelsea Makeup Brushes',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 75.96,
   merchant_id: bare_beauty.id, sub_category_id: accessories_tools.id)
 
-  makeup_brush_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257672/Heron-Market/Products/beautywellness/Makeup-brush_fz9hqu.jpg')
+  makeup_brush_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595348576/Products/Beauty%20And%20Wellness/RTJ3Yw5VTfy8vMpSiMfUruPX_uhx4rq.jpg')
   makeup_brush.photos.attach(io: makeup_brush_photo_1, filename: 'Makeup-brush_fz9hqu.jpg', content_type: 'image/jpg')
 
 lipstick = Product.create!(name: 'Pinky Chicky Lipstick',
@@ -679,20 +679,20 @@ lipstick = Product.create!(name: 'Pinky Chicky Lipstick',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 65.00,
   merchant_id: bare_beauty.id, sub_category_id: makeup.id)
 
-  lipstick_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257668/Heron-Market/Products/beautywellness/lipstick_zlkrhj.jpg')
+  lipstick_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595348565/Products/Beauty%20And%20Wellness/tvf4ec8X1hiXWdxkWcsCctHH_dyz2hw.jpg')
   lipstick.photos.attach(io: lipstick_photo_1, filename: 'lipstick_zlkrhj.jpg', content_type: 'image/jpg')
 
-shampoo = Product.create!(name: 'Apothecary87 Shampoo',
-  description: 'Elit labore dolore voluptate
-  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
-  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
-  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
-  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
-  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 32.95,
-  merchant_id: bare_beauty.id, sub_category_id: hair_care.id)
+# shampoo = Product.create!(name: 'Apothecary87 Shampoo',
+#   description: 'Elit labore dolore voluptate
+#   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+#   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+#   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+#   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+#   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 32.95,
+#   merchant_id: bare_beauty.id, sub_category_id: hair_care.id)
 
-  shampoo_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257698/Heron-Market/Products/beautywellness/Shampoo_z7bga5.jpg')
-  shampoo.photos.attach(io: shampoo_photo_1, filename: 'Shampoo_z7bga5.jpg', content_type: 'image/jpg')
+#   shampoo_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257698/Heron-Market/Products/beautywellness/Shampoo_z7bga5.jpg')
+#   shampoo.photos.attach(io: shampoo_photo_1, filename: 'Shampoo_z7bga5.jpg', content_type: 'image/jpg')
 
 facial_roller = Product.create!(name: 'Sculpt Facial Roller',
   description: 'Elit labore dolore voluptate
@@ -703,7 +703,7 @@ facial_roller = Product.create!(name: 'Sculpt Facial Roller',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 58.99,
   merchant_id: bare_beauty.id, sub_category_id: accessories_tools.id)
 
-  facial_roller_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257738/Heron-Market/Products/beautywellness/Faceroller_eb0l9u.jpg')
+  facial_roller_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295190/Products/Beauty%20And%20Wellness/ES7V3ehtU9riDyQGMUWfJn5N_kixezy.jpg')
   facial_roller.photos.attach(io: facial_roller_photo_1, filename: 'Faceroller_eb0l9u.jpg', content_type: 'image/jpg')
 
 body_oil = Product.create!(name: 'Rose Body Oil',
@@ -715,7 +715,7 @@ body_oil = Product.create!(name: 'Rose Body Oil',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 25.95,
   merchant_id: bare_beauty.id, sub_category_id: body_care.id)
 
-  body_oil_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257704/Heron-Market/Products/beautywellness/Body-Oil_b2pt39.jpg')
+  body_oil_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295183/Products/Beauty%20And%20Wellness/i1DVpBJbQmqLHap1tsqHVTd3_jpxyd6.jpg')
   body_oil.photos.attach(io: body_oil_photo_1, filename: 'Body-Oil_b2pt39.jpg', content_type: 'image/jpg')
 
 one_beauty = Product.create!(name: 'One Beauty Moisturizing Serum',
@@ -727,7 +727,7 @@ one_beauty = Product.create!(name: 'One Beauty Moisturizing Serum',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 48.99,
   merchant_id: bare_beauty.id, sub_category_id: skin_care.id)
 
-  one_beauty_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257660/Heron-Market/Products/beautywellness/One-Beauty-Skincare_vas7to.jpg')
+  one_beauty_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595348578/Products/Beauty%20And%20Wellness/ouA1YHyrUrBaVoTLgvPSfDAb_yqwlsc.jpg')
   one_beauty.photos.attach(io: one_beauty_photo_1, filename: 'One-Beauty-Skincare_vas7to.jpg', content_type: 'image/jpg')
 
 mascara = Product.create!(name: 'Pink Lash Mascara',
@@ -739,7 +739,7 @@ mascara = Product.create!(name: 'Pink Lash Mascara',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 18.90,
   merchant_id: bare_beauty.id, sub_category_id: makeup.id)
 
-  mascara_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257708/Heron-Market/Products/beautywellness/Mascara_ydaba2.jpg')
+  mascara_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595348609/Products/Beauty%20And%20Wellness/VfwepnnhP52fjzaBA3GCTU4m_p3rogr.jpg')
   mascara.photos.attach(io: mascara_photo_1, filename: 'Mascara_ydaba2.jpg', content_type: 'image/jpg')
 
 face_sculpte = Product.create!(name: 'Quartz Luxury Face Sculpt',
@@ -751,7 +751,7 @@ face_sculpte = Product.create!(name: 'Quartz Luxury Face Sculpt',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 38.99,
   merchant_id: bare_beauty.id, sub_category_id: accessories_tools.id)
 
-  face_sculpte_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257695/Heron-Market/Products/beautywellness/face-sculpte_dsmm0m.jpg')
+  face_sculpte_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295182/Products/Beauty%20And%20Wellness/5P7UZ8c7okqy3qHjWNTXt4Y4_guygcq.jpg')
   face_sculpte.photos.attach(io: face_sculpte_photo_1, filename: 'face-sculpte_dsmm0m.jpg', content_type: 'image/jpg')
 
 
@@ -769,10 +769,10 @@ rustic_grocery = Merchant.create!(name: 'Rustic Grocery',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.',
   website: 'https://www.rusticgrocery.com',
-  picture_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091074/Heron-Market/merchants/RusticGrocery-Front-Store_qtrofr.jpg',
-  picture_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091080/Heron-Market/merchants/RusticGrocery-Fruits-Picking_lx92dc.jpg',
-  picture_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091071/Heron-Market/merchants/RusticGrocery-Bakery_kl0ycx.jpg',
-  picture_4: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091058/Heron-Market/merchants/RusticGrocery-Meat_ac5n8b.jpg')
+  picture_1: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595876192/Merchants/igor-dernovoy-fzlqazt0PxA-unsplash_mm5qlm.jpg',
+  picture_2: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595876191/Merchants/morgan-von-gunten-IF2PxIT7UNE-unsplash_awii35.jpg',
+  picture_3: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595876184/Merchants/gaelle-marcel-g917EoHF-Ls-unsplash_wximfn.jpg',
+  picture_4: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595876196/Merchants/dane-deaner-w4XNPJNMllA-unsplash_ewzldt.jpg')
 
 
 # Products - Food
