@@ -1080,10 +1080,10 @@ wild_bungalow = Merchant.create!(name: 'Wild Bungalow',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.',
   website: 'https://www.wildbungalow.com',
-  picture_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091027/Heron-Market/merchants/HomeDecor-Photo1_f1w93m.jpg',
-  picture_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091086/Heron-Market/merchants/HomeDecor-Photo2_yhe9ww.jpg',
-  picture_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091042/Heron-Market/merchants/HomeDecor-Photo3_z9xjo8.jpg',
-  picture_4: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091063/Heron-Market/merchants/HomeDecor-Photo4_vofz6u.jpg')
+  picture_1: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595874725/Merchants/david-clarke-coUcbdXHrG0-unsplash_iex9mp.jpg',
+  picture_2: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595874740/Merchants/haley-truong-g3gn-IP1rPU-unsplash_zk9wln.jpg',
+  picture_3: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595874740/Merchants/paul-hanaoka-jqgc0u3FrmI-unsplash_g2mf9h.jpg',
+  picture_4: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595874727/Merchants/kevin-maillefer-ZjAdEuyH6d0-unsplash_uuerzt.jpg')
 
 
 
