@@ -785,7 +785,7 @@ bread_loaf = Product.create!(name: 'Sweet Bread Loaf',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 9.90,
   merchant_id: rustic_grocery.id, sub_category_id: bread_and_bakery.id)
 
-  bread_loaf_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197581/Heron-Market/Products/Food/Bread-Loaf_olrezn.jpg')
+  bread_loaf_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295109/Products/Food/EgVqFhd4iY9gbL1eyuGDcK3A_viv20b.jpg')
   bread_loaf.photos.attach(io: bread_loaf_photo_1, filename: 'Bread-Loaf_olrezn.jpg', content_type: 'image/jpg')
 
   bread_loaf_variant = ProductVariant.create(stock_qty: 100, product_id: bread_loaf.id)
@@ -799,7 +799,7 @@ granola_bites = Product.create!(name: 'Sweet Granola Bar',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 6.99,
   merchant_id: rustic_grocery.id, sub_category_id: snacks_cookies.id)
 
-  granola_bites_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197511/Heron-Market/Products/Food/granola-bites_ykgxlh.jpg')
+  granola_bites_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595554345/Products/Food/porEJAhY61PGrEin1ZZqR4nW_m7w8n3.jpg')
   granola_bites.photos.attach(io: granola_bites_photo_1, filename: 'granola-bites_ykgxlh.jpg', content_type: 'image/jpg')
 
 chocovanilla_cake = Product.create!(name: 'Chocovanilla Cake',
@@ -811,7 +811,7 @@ chocovanilla_cake = Product.create!(name: 'Chocovanilla Cake',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 30.95,
   merchant_id: rustic_grocery.id, sub_category_id: bread_and_bakery.id)
 
-  chocovanilla_cake_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197568/Heron-Market/Products/Food/Chocovanilla-Cake_cj43uv.jpg')
+  chocovanilla_cake_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595554314/Products/Food/V5jCtf7f816JJSdXtx8vty5Q_it5zxv.jpg')
   chocovanilla_cake.photos.attach(io: chocovanilla_cake_photo_1, filename: 'Chocovanilla-Cake_cj43uv.jpg', content_type: 'image/jpg')
 
 reusable_bag = Product.create!(name: 'Brown Reusable Bag',
@@ -823,20 +823,20 @@ reusable_bag = Product.create!(name: 'Brown Reusable Bag',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 5.99,
   merchant_id: rustic_grocery.id, sub_category_id: organic_goods.id)
 
-  reusable_bag_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197447/Heron-Market/Products/Food/Reusable-Bag_vqvjwd.jpg')
+  reusable_bag_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595349825/Products/Food/rcCCDBDb9EA9uNov7K61t5hm_yeloj5.jpg')
   reusable_bag.photos.attach(io: reusable_bag_photo_1, filename: 'Reusable-Bag_vqvjwd.jpg', content_type: 'image/jpg')
 
-coffee = Product.create!(name: 'Dark Coffe Beans',
-  description: 'Elit labore dolore voluptate
-  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
-  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
-  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
-  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
-  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 25.90,
-  merchant_id: rustic_grocery.id, sub_category_id: beverages.id)
+# coffee = Product.create!(name: 'Dark Coffe Beans',
+#   description: 'Elit labore dolore voluptate
+#   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+#   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+#   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+#   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+#   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 25.90,
+#   merchant_id: rustic_grocery.id, sub_category_id: beverages.id)
 
-  coffee_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197543/Heron-Market/Products/Food/coffee_akhhag.jpg')
-  coffee.photos.attach(io: coffee_photo_1, filename: 'coffee_akhhag.jpg', content_type: 'image/jpg')
+#   coffee_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197543/Heron-Market/Products/Food/coffee_akhhag.jpg')
+#   coffee.photos.attach(io: coffee_photo_1, filename: 'coffee_akhhag.jpg', content_type: 'image/jpg')
 
 cookies_snack = Product.create!(name: 'Apple Cookies',
   description: 'Elit labore dolore voluptate
@@ -847,7 +847,7 @@ cookies_snack = Product.create!(name: 'Apple Cookies',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 8.00,
   merchant_id: rustic_grocery.id, sub_category_id: snacks_cookies.id)
 
-  cookies_snack_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197569/Heron-Market/Products/Food/Cookies-Snacks_gnskae.jpg')
+  cookies_snack_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595553815/Products/Food/vbdggyBsiCS7VkqRfqEawaGj_dacodt.jpg')
   cookies_snack.photos.attach(io: cookies_snack_photo_1, filename: 'Cookies-Snacks_gnskae.jpg', content_type: 'image/jpg')
 
 cupcake = Product.create!(name: 'Straberry & Vanilla Cupcake',
@@ -859,20 +859,20 @@ cupcake = Product.create!(name: 'Straberry & Vanilla Cupcake',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 18.99,
   merchant_id: rustic_grocery.id, sub_category_id: bread_and_bakery.id)
 
-  cupcake_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197549/Heron-Market/Products/Food/cupcake_j5fbeh.jpg')
+  cupcake_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295301/Products/Food/7KJ9uP1ZyWDWyMBgzFZWXrGz_pebr7h.jpg')
   cupcake.photos.attach(io: cupcake_photo_1, filename: 'cupcake_j5fbeh.jpg', content_type: 'image/jpg')
 
-eart_juice = Product.create!(name: 'Earthy Juice',
-  description: 'Elit labore dolore voluptate
-  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
-  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
-  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
-  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
-  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 9.97,
-  merchant_id: rustic_grocery.id, sub_category_id: beverages.id)
+# eart_juice = Product.create!(name: 'Earthy Juice',
+#   description: 'Elit labore dolore voluptate
+#   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+#   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+#   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+#   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+#   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 9.97,
+#   merchant_id: rustic_grocery.id, sub_category_id: beverages.id)
 
-  eart_juice_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197542/Heron-Market/Products/Food/Earth-Juice_n40mln.jpg')
-  eart_juice.photos.attach(io: eart_juice_photo_1, filename: 'Earth-Juice_n40mln.jpg', content_type: 'image/jpg')
+#   eart_juice_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197542/Heron-Market/Products/Food/Earth-Juice_n40mln.jpg')
+#   eart_juice.photos.attach(io: eart_juice_photo_1, filename: 'Earth-Juice_n40mln.jpg', content_type: 'image/jpg')
 
 habit_drink = Product.create!(name: 'Habit Healthy Juice',
   description: 'Elit labore dolore voluptate
@@ -883,7 +883,7 @@ habit_drink = Product.create!(name: 'Habit Healthy Juice',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 8.67,
   merchant_id: rustic_grocery.id, sub_category_id: beverages.id)
 
-  habit_drink_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197540/Heron-Market/Products/Food/Habit-Drinks_lzhkgw.jpg')
+  habit_drink_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595554335/Products/Food/sDVsD8DPuv9uDeWhb9skcgWD_ouadcj.jpg')
   habit_drink.photos.attach(io: habit_drink_photo_1, filename: 'Habit-Drinks_lzhkgw.jpg', content_type: 'image/jpg')
 
 maccaron = Product.create!(name: 'Sweet French Maccaron',
@@ -895,7 +895,7 @@ maccaron = Product.create!(name: 'Sweet French Maccaron',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 14.99,
   merchant_id: rustic_grocery.id, sub_category_id: bread_and_bakery.id)
 
-  maccaron_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197489/Heron-Market/Products/Food/Maccaron_mbuplk.jpg')
+  maccaron_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595553809/Products/Food/Vmhbn5q37vmtG29DrpQLfcSc_geoqio.jpg')
   maccaron.photos.attach(io: maccaron_photo_1, filename: 'Maccaron_mbuplk.jpg', content_type: 'image/jpg')
 
 mixed_granola = Product.create!(name: 'Mixed Granola',
@@ -907,20 +907,20 @@ mixed_granola = Product.create!(name: 'Mixed Granola',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 7.99,
   merchant_id: rustic_grocery.id, sub_category_id: snacks_cookies.id)
 
-  mixed_granola_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197465/Heron-Market/Products/Food/mixed-granola_pfmxdj.jpg')
+  mixed_granola_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295092/Products/Food/csjeiRKcDASJjzePEQvJ7B3V_h8f0td.jpg')
   mixed_granola.photos.attach(io: mixed_granola_photo_1, filename: 'mixed-granola_pfmxdj.jpg', content_type: 'image/jpg')
 
-organic_oil = Product.create!(name: 'Zen Organic Oil',
-  description: 'Elit labore dolore voluptate
-  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
-  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
-  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
-  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
-  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 10.98,
-  merchant_id: rustic_grocery.id, sub_category_id: organic_goods.id)
+# organic_oil = Product.create!(name: 'Zen Organic Oil',
+#   description: 'Elit labore dolore voluptate
+#   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+#   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+#   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+#   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+#   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 10.98,
+#   merchant_id: rustic_grocery.id, sub_category_id: organic_goods.id)
 
-  organic_oil_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197501/Heron-Market/Products/Food/Organic_Oil_kalw6t.jpg')
-  organic_oil.photos.attach(io: organic_oil_photo_1, filename: 'Organic_Oil_kalw6t.jpg', content_type: 'image/jpg')
+#   organic_oil_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197501/Heron-Market/Products/Food/Organic_Oil_kalw6t.jpg')
+#   organic_oil.photos.attach(io: organic_oil_photo_1, filename: 'Organic_Oil_kalw6t.jpg', content_type: 'image/jpg')
 
 popcorn = Product.create!(name: 'Buttery Popcorn',
   description: 'Elit labore dolore voluptate
@@ -931,7 +931,7 @@ popcorn = Product.create!(name: 'Buttery Popcorn',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 6.90,
   merchant_id: rustic_grocery.id, sub_category_id: snacks_cookies.id)
 
-  popcorn_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197444/Heron-Market/Products/Food/popcorn_qbb81a.jpg')
+  popcorn_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595553909/Products/Food/JRCAHpHdL5YUqZtREeT9rkZP_bzrvvb.jpg')
   popcorn.photos.attach(io: popcorn_photo_1, filename: 'popcorn_qbb81a.jpg', content_type: 'image/jpg')
 
 pressed_juice = Product.create!(name: 'Fruity Pressed Juice',
@@ -943,7 +943,7 @@ pressed_juice = Product.create!(name: 'Fruity Pressed Juice',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 7.90,
   merchant_id: rustic_grocery.id, sub_category_id: beverages.id)
 
-  pressed_juice_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197497/Heron-Market/Products/Food/Pressed_Juice_fqt2ij.jpg')
+  pressed_juice_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595553891/Products/Food/L3WfC4vQpRyE1MNX3pkHi6FN_yuxakd.jpg')
   pressed_juice.photos.attach(io: pressed_juice_photo_1, filename: 'Pressed_Juice_fqt2ij.jpg', content_type: 'image/jpg')
 
 milk_bottle = Product.create!(name: 'Cow Milk',
@@ -955,7 +955,7 @@ milk_bottle = Product.create!(name: 'Cow Milk',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 6.90,
   merchant_id: rustic_grocery.id, sub_category_id: dairy_and_eggs.id)
 
-  milk_bottle_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197477/Heron-Market/Products/Food/Milk-Bottle_r10nvu.jpg')
+  milk_bottle_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295096/Products/Food/BDQjf7kSby6nR6CXG286BnMc_jbzjp7.jpg')
   milk_bottle.photos.attach(io: milk_bottle_photo_1, filename: 'Milk-Bottle_r10nvu.jpg', content_type: 'image/jpg')
 
 brocoli = Product.create!(name: 'Brocoli',
@@ -967,7 +967,7 @@ brocoli = Product.create!(name: 'Brocoli',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 3.99,
   merchant_id: rustic_grocery.id, sub_category_id: vegetables.id)
 
-  brocoli_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197580/Heron-Market/Products/Food/brocoli_d0s3ke.jpg')
+  brocoli_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295109/Products/Food/D2MV3hzJf3t4SR2FzuBMtFn8_zevovs.jpg')
   brocoli.photos.attach(io: brocoli_photo_1, filename: 'brocoli_d0s3ke.jpg', content_type: 'image/jpg')
 
 cheese = Product.create!(name: 'Creamy Cheese',
@@ -979,7 +979,7 @@ cheese = Product.create!(name: 'Creamy Cheese',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 11.69,
   merchant_id: rustic_grocery.id, sub_category_id: dairy_and_eggs.id)
 
-  cheese_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197575/Heron-Market/Products/Food/cheese_vkjnqv.jpg')
+  cheese_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595553874/Products/Food/nbbApDMZiqerpqKXnWjmwWQV_zgirem.jpg')
   cheese.photos.attach(io: cheese_photo_1, filename: 'cheese_vkjnqv.jpg', content_type: 'image/jpg')
 
 mushroom = Product.create!(name: 'Wild Mushrooms',
@@ -991,7 +991,7 @@ mushroom = Product.create!(name: 'Wild Mushrooms',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 3.99,
   merchant_id: rustic_grocery.id, sub_category_id: vegetables.id)
 
-  mushroom_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197469/Heron-Market/Products/Food/mushrooms_nxoar1.jpg')
+  mushroom_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295100/Products/Food/9qk3G5GK45E2CsHhGCpHNNiZ_rqfsup.jpg')
   mushroom.photos.attach(io: mushroom_photo_1, filename: 'mushrooms_nxoar1.jpg', content_type: 'image/jpg')
 
 eggs = Product.create!(name: 'Wild Eggs',
@@ -1003,7 +1003,7 @@ eggs = Product.create!(name: 'Wild Eggs',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 3.99,
   merchant_id: rustic_grocery.id, sub_category_id: dairy_and_eggs.id)
 
-  eggs_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197555/Heron-Market/Products/Food/eggs_auoxy3.jpg')
+  eggs_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295104/Products/Food/69wonEJK95d7XcHQJ81xYugb_tphj1o.jpg')
   eggs.photos.attach(io: eggs_photo_1, filename: 'eggs_auoxy3.jpg', content_type: 'image/jpg')
 
 grapes = Product.create!(name: 'Red Grapes',
@@ -1015,7 +1015,7 @@ grapes = Product.create!(name: 'Red Grapes',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 4.99,
   merchant_id: rustic_grocery.id, sub_category_id: fruits.id)
 
-  grapes_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197535/Heron-Market/Products/Food/grapes_tuzmwl.jpg')
+  grapes_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595553868/Products/Food/RBbnk3tzYW86MK1DXK3TF3E7_omjuaw.jpg')
   grapes.photos.attach(io: grapes_photo_1, filename: 'grapes_tuzmwl.jpg', content_type: 'image/jpg')
 
 noodles = Product.create!(name: 'Spaghetti Noodles',
@@ -1027,7 +1027,7 @@ noodles = Product.create!(name: 'Spaghetti Noodles',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 3.90,
   merchant_id: rustic_grocery.id, sub_category_id: bread_and_bakery.id)
 
-  noodles_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197504/Heron-Market/Products/Food/noodles_q0k1hy.jpg')
+  noodles_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595553824/Products/Food/sjqqhjLp1EiKjkDuuyq2Yc9h_dfe9ak.jpg')
   noodles.photos.attach(io: noodles_photo_1, filename: 'noodles_q0k1hy.jpg', content_type: 'image/jpg')
 
 pineapple = Product.create!(name: 'Pineapple',
@@ -1039,7 +1039,7 @@ pineapple = Product.create!(name: 'Pineapple',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 6.90,
   merchant_id: rustic_grocery.id, sub_category_id: fruits.id)
 
-  pineapple_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197494/Heron-Market/Products/Food/pineapple_kn2o9z.jpg')
+  pineapple_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295114/Products/Food/f65txMG497Do6V6bkZgKzEm6_fa4tih.jpg')
   pineapple.photos.attach(io: pineapple_photo_1, filename: 'pineapple_kn2o9z.jpg', content_type: 'image/jpg')
 
 salmon = Product.create!(name: 'Wild Salmon',
@@ -1051,7 +1051,7 @@ salmon = Product.create!(name: 'Wild Salmon',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 14.90,
   merchant_id: rustic_grocery.id, sub_category_id: meat_and_fish.id)
 
-  salmon_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197456/Heron-Market/Products/Food/salmon_omrjqm.jpg')
+  salmon_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295106/Products/Food/GndZBiWw9oakdtsfmgf8J1yb_tkqaif.jpg')
   salmon.photos.attach(io: salmon_photo_1, filename: 'salmon_omrjqm.jpg', content_type: 'image/jpg')
 
 steak = Product.create!(name: 'Juicy Steak',
@@ -1063,7 +1063,7 @@ steak = Product.create!(name: 'Juicy Steak',
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 17.68,
   merchant_id: rustic_grocery.id, sub_category_id: meat_and_fish.id)
 
-  steak_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588197450/Heron-Market/Products/Food/steak_bedj8k.jpg')
+  steak_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595553900/Products/Food/kkeZcCPRPUTjMYpYyzXZMaJ9_yvahhw.jpg')
   steak.photos.attach(io: steak_photo_1, filename: 'steak_bedj8k.jpg', content_type: 'image/jpg')
 
 
@@ -1340,17 +1340,17 @@ vine_plant = Product.create!(name: 'Vine Plants',
   vine_plant_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595554455/Products/Home%20Decor/r6abHXHSD53YTJctkCYcLPNZ_d7hd0s.jpg')
   vine_plant.photos.attach(io: vine_plant_photo_1, filename: 'Vine-Plant_mzzvry.jpg', content_type: 'image/jpg')
 
-# wine_glass = Product.create!(name: 'Wine Glass',
-#   description: 'Elit labore dolore voluptate
-#   pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
-#   do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
-#   dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
-#   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
-#   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 18.95,
-#   merchant_id: wild_bungalow.id, sub_category_id: glassware_and_mugs.id)
+wine_glass = Product.create!(name: 'Wine Glass',
+  description: 'Elit labore dolore voluptate
+  pariatur proident tempor eiusmod aliquip excepteur quis velit. Nostrud aute
+  do occaecat anim nostrud aute labore commodo aute sit. Eu esse reprehenderit
+  dolore proident occaecat nulla. Dolor pariatur aute eu eu excepteur officia
+  Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
+  reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.', price: 18.95,
+  merchant_id: wild_bungalow.id, sub_category_id: glassware_and_mugs.id)
 
-#   wine_glass_photo_1 = URI.open('https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588257779/Heron-Market/Products/homedecor/wine-glass_o1oqvc.jpg')
-#   wine_glass.photos.attach(io: wine_glass_photo_1, filename: 'wine-glass_o1oqvc.jpg', content_type: 'image/jpg')
+  wine_glass_photo_1 = URI.open('https://res.cloudinary.com/dx3ppyigo/image/upload/v1595295095/Products/Home%20Decor/57jFAQJ4LBxjDy8fUdNXor82_hzkvn4.jpg')
+  wine_glass.photos.attach(io: wine_glass_photo_1, filename: 'wine-glass_o1oqvc.jpg', content_type: 'image/jpg')
 
 yellow_grey_pillow = Product.create!(name: 'Yellow Grey Pillows',
   description: 'Elit labore dolore voluptate
