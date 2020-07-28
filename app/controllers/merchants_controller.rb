@@ -7,7 +7,6 @@ class MerchantsController < ApplicationController
   def inventory
     if params[:search].present?
       search
-      # raise
     else
       @products = current_merchant.products
     end

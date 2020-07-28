@@ -10,6 +10,7 @@
   </div>
   <div class="product-list product-inventory">
     <% @products.each do |product| %>
+
       <div class="product-card">
         <div class="product-img" style ="background-image: url(<%= cl_image_path product.photos[0].key %>)">
           <div class="product-icons">
