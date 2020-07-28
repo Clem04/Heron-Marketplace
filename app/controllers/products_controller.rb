@@ -10,7 +10,14 @@ class ProductsController < ApplicationController
   def show
     @product = Product.find(params[:id])
     @category = Category.find(params[:category_id])
-    @product_variants = ProductVariant.where(product_id: @product.id).map {|variant| variant.size}
+    @product_variants = ProductVariant.where(product_id: @product.id)
+                                      .map do |variant|
+                                        if variant.stock_qty > 0
+                                          variant.size
+                                        else
+                                          "#{variant.size} - out of stock"
+                                        end
+                                      end
     @line_item = LineItem.new
   end
 

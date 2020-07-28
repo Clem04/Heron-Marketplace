@@ -1,0 +1,129 @@
+.title-points {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  p {
+    font-family: $poppins;
+  }
+}
+
+.continue-shopping a {
+  display: block;
+  width: 185px;
+  font-family: $poppins;
+  color: black;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  &:hover {
+    text-decoration: none;
+  }
+  p {
+    margin-bottom: 0;
+    margin-left: 16px;
+  }
+}
+
+.product-list-order-summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-product-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-summary {
+  box-shadow: 0px 6px 23px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 20px 18px;
+}
+
+.order-summary {
+  width: 500px;
+  height: 515px;
+  h2 {
+  font-size: 32px;
+  font-weight: 400;
+  }
+  h3 {
+    font-weight: 300;
+  }
+}
+
+.line {
+  border-color: #000000;
+}
+
+.item-count-price {
+  display: flex;
+  justify-content: space-between;
+  font-family: $poppins;
+}
+
+.delivery-options {
+  width: 100%;
+  padding: 6px 4px;
+  font-family: $poppins;
+  color: #A0A0A0;
+  margin: 10px 0 30px 0;
+  border-radius: 6px;
+  border: 1px solid #000000;
+}
+
+.points-form{
+  position: relative;
+}
+
+.points-input {
+  padding: 6px 8px;
+  font-family: $poppins;
+  color: #A0A0A0;
+  margin: 10px 0 30px 0;
+  border-radius: 6px;
+  border: 1px solid #000000;
+  border-right: none;
+  width: 100%;
+}
+
+.apply-points-button {
+  background: #E8E8E8;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  padding: 6px 20px;
+  font-family: $poppins;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+
+.total-cost {
+  display: flex;
+  justify-content: space-between;
+  p {
+    font-family: $poppins;
+  }
+}
+
+@media (max-width: 1024px) {
+  .product-list-order-summary {
+    flex-direction: column;
+  }
+
+  .title-points {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .order-summary {
+    width: 100%;
+  }
+}
+
