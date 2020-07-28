@@ -1,0 +1,39 @@
+.header-inventory {
+  display: flex;
+  margin-bottom: 22px;
+  justify-content: space-between;
+  position: relative;
+  .search-input {
+    svg {
+      margin: 0;
+      position: absolute;
+      left: 1%;
+      top: 16%;
+      width: 1em;
+      height: 1em;
+    }
+    input {
+      width: 100%;
+      border: 1px solid #666;
+      border-radius: 3px;
+    }
+  }
+}
+
+.product-inventory {
+  width: 114%;
+  .product-img {
+    display: flex;
+    justify-content: flex-end;
+    width: 300px;
+    height: 300px;
+  }
+
+  .product-stock {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 10px;
+  }
+
+}

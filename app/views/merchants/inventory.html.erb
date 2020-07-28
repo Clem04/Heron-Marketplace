@@ -1,15 +1,16 @@
-<div>
-  <div>
+<div class="content">
+  <div class="header-inventory">
     <form method="get" action="/inventory">
-      <div>
-        <!-- <span class="iconify" data-icon="ei:search" data-inline="false"></span> -->
+      <div class="search-input">
+        <span class="iconify" data-icon="ei:search" data-inline="false"></span>
         <input type="text" value="<%= @keyword %>" name="search">
       </div>
     </form>
     <%= link_to 'Add Product', new_product_path, class: 'add-cart-btn form-btn' %>
   </div>
-  <div class="product-list">
+  <div class="product-list product-inventory">
     <% @products.each do |product| %>
+
       <div class="product-card">
         <div class="product-img" style ="background-image: url(<%= cl_image_path product.photos[0].key %>)">
           <div class="product-icons">
@@ -25,7 +26,7 @@
             <% end %>
               <h4><%= @category.name %></h4>
           </div>
-          <div>
+          <div class="product-stock">
             <p>Stock</p>
             <% total = 0 %>
             <% product.product_variants.each { |variant| p total += variant.stock_qty.to_i } %>
