@@ -100,10 +100,10 @@ boutique_sleek_chic = Merchant.create!(name: 'Boutique sleek Chic',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.',
   website: 'https://www.sleekchic.net',
-  picture_1: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091050/Heron-Market/merchants/SleekChic-Photo1_uc0pfn.jpg',
-  picture_2: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091025/Heron-Market/merchants/SleekChic-Photo2_rajrqi.jpg',
-  picture_3: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091042/Heron-Market/merchants/SleekChic-Photo3_vpkq9q.jpg',
-  picture_4: 'https://res.cloudinary.com/ddmvqmg2x/image/upload/v1588091028/Heron-Market/merchants/SleekChic-Photo4_at7ecu.jpg')
+  picture_1: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595895173/Merchants/milad-b-fakurian-K4FgcyyFXC8-unsplash_zsemuk.jpg',
+  picture_2: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595895183/Merchants/charisse-kenion-o_g8hqyLFhY-unsplash_v5qhkc.jpg',
+  picture_3: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595895192/Merchants/ddp-Ci8wQO4Ehlo-unsplash_jm9lko.jpg',
+  picture_4: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595895183/Merchants/amanda-vick-zw_oaDbfzyE-unsplash_l4plli.jpg')
 
 
 # Products - Fashion
@@ -1080,7 +1080,7 @@ wild_bungalow = Merchant.create!(name: 'Wild Bungalow',
   Lorem anim magna cupidatat consequat magna eu magna. Occaecat est
   reprehenderit nisi ex qui Lorem aliqua. Aute enim irure excepteur est.',
   website: 'https://www.wildbungalow.com',
-  picture_1: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595874725/Merchants/david-clarke-coUcbdXHrG0-unsplash_iex9mp.jpg',
+  picture_1: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595895374/Merchants/david-nabil-ocQcix1Rgcg-unsplash_hfyapq.jpg',
   picture_2: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595874740/Merchants/haley-truong-g3gn-IP1rPU-unsplash_zk9wln.jpg',
   picture_3: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595874740/Merchants/paul-hanaoka-jqgc0u3FrmI-unsplash_g2mf9h.jpg',
   picture_4: 'https://res.cloudinary.com/dx3ppyigo/image/upload/v1595874727/Merchants/kevin-maillefer-ZjAdEuyH6d0-unsplash_uuerzt.jpg')
