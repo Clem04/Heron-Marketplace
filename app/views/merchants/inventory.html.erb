@@ -8,30 +8,25 @@
     </form>
     <%= link_to 'Add Product', new_product_path, class: 'add-cart-btn form-btn' %>
   </div>
-  <div class="product-list product-inventory">
+  <div class="inventory-list">
     <% @products.each do |product| %>
-
-      <div class="product-card">
-        <div class="product-img" style ="background-image: url(<%= cl_image_path product.photos[0].key %>)">
-          <div class="product-icons">
-            <div class="icon-btn">
-              <a href="#"><%= image_tag 'edit-list-icon'%></a>
-            </div>
-          </div>
-        </div>
-        <div class="product-infos">
-          <div>
+      <div class="inventory-product-card">
+        <img src="<%= cl_image_path product.photos[0].key %>">
+        <div class="inventory-product-name">
             <%= link_to category_product_path(@category, product) do %>
               <h4><%= product.name %></h4>
             <% end %>
-              <h4><%= @category.name %></h4>
-          </div>
-          <div class="product-stock">
-            <p>Stock</p>
-            <% total = 0 %>
-            <% product.product_variants.each { |variant| p total += variant.stock_qty.to_i } %>
-            <p><%= total %></p>
-          </div>
+            <h4><%= @category.name %></h4>
+        </div>
+        <div class="inventory-product-details">
+          <h4>Stock</h4>
+          <% total = 0 %>
+          <% product.product_variants.each { |variant| p total += variant.stock_qty.to_i } %>
+          <p><%= total %></p>
+        </div>
+        <div class="inventory-product-details">
+          <h4>SKU</h4>
+          <%= product.sku %>
         </div>
       </div>
     <% end %>
