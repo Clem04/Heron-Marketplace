@@ -11,7 +11,7 @@
   <div class="inventory-list">
     <% @products.each do |product| %>
       <div class="inventory-product-card">
-        <img src="<%= cl_image_path product.photos[0].key %>">
+        <img src="<%= cl_image_path product.photos[0].key %>" class="product-img">
         <div class="inventory-product-name">
             <%= link_to category_product_path(@category, product) do %>
               <h4><%= product.name %></h4>
