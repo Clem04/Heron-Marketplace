@@ -24,15 +24,27 @@
   width: 100%;
   margin-top: 20px;
   .inventory-product-card {
+    border-bottom: 1px solid #E0E0E0;
     width: 100%;
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
+    .inventory-product-name {
+      a > h4 {
+        text-decoration: none;
+        color: black;
+      }
+      h4 {
+        color: #939393;
+      }
+    }
   }
   .product-img {
     width: 155px;
     height: 155px;
+    border-radius: 4px;
+    object-fit: cover;
   }
 
   .product-stock {
