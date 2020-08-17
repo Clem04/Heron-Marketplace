@@ -21,12 +21,18 @@
 }
 
 .inventory-list {
-  width: 114%;
+  width: 100%;
+  margin-top: 20px;
+  .inventory-product-card {
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+  }
   .product-img {
-    display: flex;
-    justify-content: flex-end;
-    width: 300px;
-    height: 300px;
+    width: 155px;
+    height: 155px;
   }
 
   .product-stock {
